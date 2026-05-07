@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>テックニュース日報</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif;
+      background: #f0f2f5;
+      color: #333;
+    }
+    header {
+      background: #1a1a2e;
+      color: #fff;
+      padding: 32px 24px 24px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2rem;
+      letter-spacing: 0.05em;
+      margin-bottom: 8px;
+    }
+    header .date {
+      font-size: 0.95rem;
+      color: #a0aec0;
+    }
+    main {
+      max-width: 860px;
+      margin: 36px auto;
+      padding: 0 16px;
+      display: grid;
+      gap: 24px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      padding: 24px 28px;
+      border-left: 5px solid #4a6fa5;
+    }
+    .card:nth-child(2) { border-left-color: #e53e3e; }
+    .card:nth-child(3) { border-left-color: #38a169; }
+    .category {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+      background: #ebf4ff;
+      color: #4a6fa5;
+    }
+    .card:nth-child(2) .category { background: #fff5f5; color: #e53e3e; }
+    .card:nth-child(3) .category { background: #f0fff4; color: #38a169; }
+    .card h2 {
+      font-size: 1.18rem;
+      line-height: 1.5;
+      margin-bottom: 12px;
+      color: #1a202c;
+    }
+    .card p {
+      font-size: 0.93rem;
+      line-height: 1.8;
+      color: #4a5568;
+      margin-bottom: 16px;
+    }
+    .card a {
+      font-size: 0.85rem;
+      color: #4a6fa5;
+      text-decoration: none;
+      border-bottom: 1px solid #bee3f8;
+      padding-bottom: 1px;
+    }
+    .card:nth-child(2) a { color: #e53e3e; border-bottom-color: #fed7d7; }
+    .card:nth-child(3) a { color: #38a169; border-bottom-color: #c6f6d5; }
+    .card a:hover { opacity: 0.75; }
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.8rem;
+      color: #a0aec0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>テックニュース日報</h1>
+    <div class="date">2026年5月7日</div>
+  </header>
+
+  <main>
+
+    <div class="card">
+      <span class="category">AI / 機械学習</span>
+      <h2>ヤン・ルカン創設の AMI Labs、「ワールドモデル」開発に向け約10億ドルの資金調達</h2>
+      <p>
+        Advanced Machine Intelligence (AMI) Labs は、ヤン・ルカン氏が主導するAIスタートアップで、大規模言語モデル（LLM）に代わる新アーキテクチャ「ワールドモデル」の研究開発を目的に、シードラウンドで10億3000万ドルの資金調達を完了し、評価額35億ドルに達した。
+        ワールドモデルは物理世界の仕組みを理解することで学習を進めるアプローチであり、ロボティクス・医療・製造分野への応用が期待されている。
+        LLMの限界を超える次世代AIとして、業界内外から大きな注目を集めている。
+      </p>
+      <a href="https://www.nature.com/articles/d41586-026-00820-5" target="_blank" rel="noopener">元記事を読む → Nature</a>
+    </div>
+
+    <div class="card">
+      <span class="category">サイバーセキュリティ</span>
+      <h2>Linux 特権昇格の重大脆弱性 CVE-2026-31431、CISA の KEV リストに追加</h2>
+      <p>
+        Red Hat・Ubuntu・SUSE・AWS Linux など主要な Linux ディストリビューションに影響する高深刻度の特権昇格脆弱性（CVE-2026-31431）が、米国サイバーセキュリティ・インフラセキュリティ庁（CISA）の既知悪用脆弱性（KEV）カタログに追加された。
+        2017年以降のカーネルを使用するシステムが広く影響を受けるとされており、Microsoft の分析によれば、クラウド環境を含む幅広い Linux ホストで root 権限奪取が可能となる。
+        各ディストリビューションのベンダーはすでにパッチをリリースしており、管理者に対して早急な適用が呼びかけられている。
+      </p>
+      <a href="https://thehackernews.com/2026/05/cisa-adds-actively-exploited-linux-root.html" target="_blank" rel="noopener">元記事を読む → The Hacker News</a>
+    </div>
+
+    <div class="card">
+      <span class="category">クラウド / 開発ツール</span>
+      <h2>Google Cloud の Apigee MCP が正式リリース — API を AI ツールに変換する新機能が GA に</h2>
+      <p>
+        Google Cloud は、Apigee Model Context Protocol（MCP）の一般提供（GA）を開始した。開発者は既存の OpenAPI 仕様を活用して API を AI 対応ツールへと変換できるようになり、ローカルの MCP サーバーや追加インフラが不要になる。
+        また、Google Cloud Workbench のローカル IDE 拡張機能が新たにオープンソースとして公開され、ML ワークフローにおけるコンテキスト切り替えを削減しつつクラウドの高性能コンピュートを活用できるようになった。
+        これらのアップデートにより、AIエージェント開発とクラウドネイティブな ML パイプライン構築の効率が大幅に向上する見込みだ。
+      </p>
+      <a href="https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud" target="_blank" rel="noopener">元記事を読む → Google Cloud Blog</a>
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 テックニュース日報 — 自動生成レポート
+  </footer>
+</body>
+</html>
