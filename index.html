@@ -38,10 +38,10 @@
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
       padding: 24px 28px;
-      border-left: 5px solid #4a6fa5;
+      border-left: 5px solid #6c3be4;
     }
-    .card:nth-child(2) { border-left-color: #e53e3e; }
-    .card:nth-child(3) { border-left-color: #38a169; }
+    .card:nth-child(2) { border-left-color: #c0392b; }
+    .card:nth-child(3) { border-left-color: #0d6efd; }
     .category {
       display: inline-block;
       font-size: 0.72rem;
@@ -51,11 +51,11 @@
       padding: 3px 10px;
       border-radius: 20px;
       margin-bottom: 12px;
-      background: #ebf4ff;
-      color: #4a6fa5;
+      background: #ede9ff;
+      color: #6c3be4;
     }
-    .card:nth-child(2) .category { background: #fff5f5; color: #e53e3e; }
-    .card:nth-child(3) .category { background: #f0fff4; color: #38a169; }
+    .card:nth-child(2) .category { background: #fff5f5; color: #c0392b; }
+    .card:nth-child(3) .category { background: #e8f0ff; color: #0d6efd; }
     .card h2 {
       font-size: 1.18rem;
       line-height: 1.5;
@@ -70,13 +70,13 @@
     }
     .card a {
       font-size: 0.85rem;
-      color: #4a6fa5;
+      color: #6c3be4;
       text-decoration: none;
-      border-bottom: 1px solid #bee3f8;
+      border-bottom: 1px solid #d6c8ff;
       padding-bottom: 1px;
     }
-    .card:nth-child(2) a { color: #e53e3e; border-bottom-color: #fed7d7; }
-    .card:nth-child(3) a { color: #38a169; border-bottom-color: #c6f6d5; }
+    .card:nth-child(2) a { color: #c0392b; border-bottom-color: #fed7d7; }
+    .card:nth-child(3) a { color: #0d6efd; border-bottom-color: #bee3f8; }
     .card a:hover { opacity: 0.75; }
     footer {
       text-align: center;
@@ -89,48 +89,48 @@
 <body>
   <header>
     <h1>テックニュース日報</h1>
-    <div class="date">2026年5月7日</div>
+    <div class="date">2026年5月7日（木）</div>
   </header>
 
   <main>
 
     <div class="card">
       <span class="category">AI / 機械学習</span>
-      <h2>ヤン・ルカン創設の AMI Labs、「ワールドモデル」開発に向け約10億ドルの資金調達</h2>
+      <h2>AnthropicのARRがOpenAIを超え300億ドル規模に — AIパワーバランスが逆転</h2>
       <p>
-        Advanced Machine Intelligence (AMI) Labs は、ヤン・ルカン氏が主導するAIスタートアップで、大規模言語モデル（LLM）に代わる新アーキテクチャ「ワールドモデル」の研究開発を目的に、シードラウンドで10億3000万ドルの資金調達を完了し、評価額35億ドルに達した。
-        ワールドモデルは物理世界の仕組みを理解することで学習を進めるアプローチであり、ロボティクス・医療・製造分野への応用が期待されている。
-        LLMの限界を超える次世代AIとして、業界内外から大きな注目を集めている。
+        AIスタートアップのAnthropicが年換算収益（ARR）で300億ドルに達し、OpenAIの240億ドルを上回ったことが明らかになった。
+        Claude シリーズの急速な普及と法人契約の拡大が背景にあり、AI業界の勢力図が大きく塗り替えられつつある。
+        一方、JPMorgan ChaseはAI投資を研究開発から「コアインフラ」へと正式に再分類し、2026年の技術予算として約198億ドルを計上、2,000人のスタッフをAI専従とする方針を発表した。
       </p>
-      <a href="https://www.nature.com/articles/d41586-026-00820-5" target="_blank" rel="noopener">元記事を読む → Nature</a>
+      <a href="https://www.crescendo.ai/news/latest-ai-news-and-updates" target="_blank" rel="noopener">元記事を読む → Crescendo AI</a>
     </div>
 
     <div class="card">
       <span class="category">サイバーセキュリティ</span>
-      <h2>Linux 特権昇格の重大脆弱性 CVE-2026-31431、CISA の KEV リストに追加</h2>
+      <h2>MetInfo CMSに深刻な脆弱性（CVSSスコア9.8）— 攻撃者による悪用が活発化</h2>
       <p>
-        Red Hat・Ubuntu・SUSE・AWS Linux など主要な Linux ディストリビューションに影響する高深刻度の特権昇格脆弱性（CVE-2026-31431）が、米国サイバーセキュリティ・インフラセキュリティ庁（CISA）の既知悪用脆弱性（KEV）カタログに追加された。
-        2017年以降のカーネルを使用するシステムが広く影響を受けるとされており、Microsoft の分析によれば、クラウド環境を含む幅広い Linux ホストで root 権限奪取が可能となる。
-        各ディストリビューションのベンダーはすでにパッチをリリースしており、管理者に対して早急な適用が呼びかけられている。
+        オープンソースCMS「MetInfo」において、コードインジェクションの致命的な脆弱性（CVE-2026-29014、CVSSスコア9.8）が発見され、脅威アクターによる積極的な悪用が確認されている。
+        この脆弱性を悪用されると、リモートから任意のコードを実行される可能性があり、管理者はただちにパッチ適用またはアクセス制限の措置を取ることが求められる。
+        また、中国系APTグループ「UAT-8302」が南米・東南欧の政府機関を標的にした攻撃キャンペーンもCisco Talosによって報告されており、国際的なサイバー脅威が高まっている。
       </p>
-      <a href="https://thehackernews.com/2026/05/cisa-adds-actively-exploited-linux-root.html" target="_blank" rel="noopener">元記事を読む → The Hacker News</a>
+      <a href="https://thehackernews.com/2026/05/2026-year-of-ai-assisted-attacks.html" target="_blank" rel="noopener">元記事を読む → The Hacker News</a>
     </div>
 
     <div class="card">
       <span class="category">クラウド / 開発ツール</span>
-      <h2>Google Cloud の Apigee MCP が正式リリース — API を AI ツールに変換する新機能が GA に</h2>
+      <h2>Google Cloud Next 2026：第8世代TPU発表と「新規コードの75%がAI生成」宣言</h2>
       <p>
-        Google Cloud は、Apigee Model Context Protocol（MCP）の一般提供（GA）を開始した。開発者は既存の OpenAPI 仕様を活用して API を AI 対応ツールへと変換できるようになり、ローカルの MCP サーバーや追加インフラが不要になる。
-        また、Google Cloud Workbench のローカル IDE 拡張機能が新たにオープンソースとして公開され、ML ワークフローにおけるコンテキスト切り替えを削減しつつクラウドの高性能コンピュートを活用できるようになった。
-        これらのアップデートにより、AIエージェント開発とクラウドネイティブな ML パイプライン構築の効率が大幅に向上する見込みだ。
+        Google Cloud Next 2026で、最大9,600基のTPUと2ペタバイトの共有高帯域メモリを搭載した第8世代TPU（TPU 8t）が発表され、大規模AIモデルのトレーニング能力が飛躍的に向上した。
+        Sundar Pichai CEOは「Google社内で書かれる新しいコードの75%はAIが生成しており、エンジニアが承認する形式をとっている」と述べ、開発現場へのAI浸透を明らかにした。
+        さらに、ApigeeのModel Context Protocol（MCP）が正式GA（一般提供）となり、OpenAPI仕様を使ってAPIをAI対応ツールへ変換する機能が広く開発者に利用可能となった。
       </p>
-      <a href="https://cloud.google.com/blog/topics/inside-google-cloud/whats-new-google-cloud" target="_blank" rel="noopener">元記事を読む → Google Cloud Blog</a>
+      <a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cloud-next-2026-sundar-pichai/" target="_blank" rel="noopener">元記事を読む → Google Blog</a>
     </div>
 
   </main>
 
   <footer>
-    &copy; 2026 テックニュース日報 — 自動生成レポート
+    &copy; 2026 テックニュース日報 — Tech News Agent による自動生成レポート
   </footer>
 </body>
 </html>
