@@ -3,134 +3,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テックニュース日報</title>
+  <title>テックニュース日報 - 2026年5月8日</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: 'Segoe UI', 'Hiragino Sans', 'Meiryo', sans-serif;
+      font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
       background: #f0f2f5;
-      color: #333;
+      color: #222;
+      line-height: 1.7;
     }
     header {
-      background: #1a1a2e;
+      background: linear-gradient(135deg, #0f1923 0%, #1a2e44 100%);
       color: #fff;
-      padding: 32px 24px 24px;
+      padding: 36px 24px 28px;
       text-align: center;
     }
     header h1 {
       font-size: 2rem;
-      letter-spacing: 0.05em;
+      font-weight: 700;
+      letter-spacing: 0.04em;
       margin-bottom: 8px;
     }
     header .date {
       font-size: 0.95rem;
-      color: #a0aec0;
+      color: #8eb4d4;
+      letter-spacing: 0.08em;
     }
     main {
       max-width: 860px;
-      margin: 36px auto;
-      padding: 0 16px;
-      display: grid;
-      gap: 24px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
     }
     .card {
       background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-      padding: 24px 28px;
-      border-left: 5px solid #6c3be4;
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      padding: 28px 32px;
+      border-top: 4px solid #2563eb;
     }
-    .card:nth-child(2) { border-left-color: #c0392b; }
-    .card:nth-child(3) { border-left-color: #0d6efd; }
-    .category {
+    .card:nth-child(2) { border-top-color: #16a34a; }
+    .card:nth-child(3) { border-top-color: #d97706; }
+    .tag {
       display: inline-block;
       font-size: 0.72rem;
       font-weight: 700;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
       padding: 3px 10px;
       border-radius: 20px;
       margin-bottom: 12px;
-      background: #ede9ff;
-      color: #6c3be4;
     }
-    .card:nth-child(2) .category { background: #fff5f5; color: #c0392b; }
-    .card:nth-child(3) .category { background: #e8f0ff; color: #0d6efd; }
+    .tag-ai    { background: #dbeafe; color: #1d4ed8; }
+    .tag-cloud { background: #dcfce7; color: #15803d; }
+    .tag-hw    { background: #fef3c7; color: #b45309; }
     .card h2 {
-      font-size: 1.18rem;
-      line-height: 1.5;
+      font-size: 1.2rem;
+      font-weight: 700;
       margin-bottom: 12px;
-      color: #1a202c;
+      color: #111827;
+      line-height: 1.5;
     }
     .card p {
-      font-size: 0.93rem;
-      line-height: 1.8;
-      color: #4a5568;
+      font-size: 0.95rem;
+      color: #374151;
       margin-bottom: 16px;
+      line-height: 1.85;
     }
     .card a {
+      display: inline-block;
       font-size: 0.85rem;
-      color: #6c3be4;
+      font-weight: 600;
+      color: #2563eb;
       text-decoration: none;
-      border-bottom: 1px solid #d6c8ff;
-      padding-bottom: 1px;
     }
-    .card:nth-child(2) a { color: #c0392b; border-bottom-color: #fed7d7; }
-    .card:nth-child(3) a { color: #0d6efd; border-bottom-color: #bee3f8; }
-    .card a:hover { opacity: 0.75; }
+    .card:nth-child(2) a { color: #15803d; }
+    .card:nth-child(3) a { color: #b45309; }
+    .card a:hover { text-decoration: underline; }
+    .card a::after { content: ' →'; }
     footer {
       text-align: center;
       padding: 24px;
       font-size: 0.8rem;
-      color: #a0aec0;
+      color: #9ca3af;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>テックニュース日報</h1>
-    <div class="date">2026年5月7日（木）</div>
-  </header>
 
-  <main>
+<header>
+  <h1>テックニュース日報</h1>
+  <div class="date">2026年5月8日（金）</div>
+</header>
 
-    <div class="card">
-      <span class="category">AI / 機械学習</span>
-      <h2>AnthropicのARRがOpenAIを超え300億ドル規模に — AIパワーバランスが逆転</h2>
-      <p>
-        AIスタートアップのAnthropicが年換算収益（ARR）で300億ドルに達し、OpenAIの240億ドルを上回ったことが明らかになった。
-        Claude シリーズの急速な普及と法人契約の拡大が背景にあり、AI業界の勢力図が大きく塗り替えられつつある。
-        一方、JPMorgan ChaseはAI投資を研究開発から「コアインフラ」へと正式に再分類し、2026年の技術予算として約198億ドルを計上、2,000人のスタッフをAI専従とする方針を発表した。
-      </p>
-      <a href="https://www.crescendo.ai/news/latest-ai-news-and-updates" target="_blank" rel="noopener">元記事を読む → Crescendo AI</a>
-    </div>
+<main>
 
-    <div class="card">
-      <span class="category">サイバーセキュリティ</span>
-      <h2>MetInfo CMSに深刻な脆弱性（CVSSスコア9.8）— 攻撃者による悪用が活発化</h2>
-      <p>
-        オープンソースCMS「MetInfo」において、コードインジェクションの致命的な脆弱性（CVE-2026-29014、CVSSスコア9.8）が発見され、脅威アクターによる積極的な悪用が確認されている。
-        この脆弱性を悪用されると、リモートから任意のコードを実行される可能性があり、管理者はただちにパッチ適用またはアクセス制限の措置を取ることが求められる。
-        また、中国系APTグループ「UAT-8302」が南米・東南欧の政府機関を標的にした攻撃キャンペーンもCisco Talosによって報告されており、国際的なサイバー脅威が高まっている。
-      </p>
-      <a href="https://thehackernews.com/2026/05/2026-year-of-ai-assisted-attacks.html" target="_blank" rel="noopener">元記事を読む → The Hacker News</a>
-    </div>
+  <div class="card">
+    <span class="tag tag-ai">AI / 機械学習</span>
+    <h2>OpenAI、ChatGPTのデフォルトモデルを「GPT-5.5 Instant」に刷新——高リスク分野でのハルシネーション削減に注力</h2>
+    <p>
+      OpenAIは5月5日、ChatGPTの新しいデフォルトモデル「GPT-5.5 Instant」をリリースした。
+      このモデルは法律・医療・金融などの高リスク分野における誤情報（ハルシネーション）の大幅な削減を主眼に置きながら、低レイテンシを同時に維持することを特徴とする。
+      企業や専門職向けの信頼性向上を狙った本リリースは、AIの実用展開における精度と速度の両立という重要な課題への一つの回答を示している。
+    </p>
+    <a href="https://techstartups.com/2026/05/07/top-tech-news-today-may-7-2026/" target="_blank" rel="noopener">元記事を読む（Tech Startups）</a>
+  </div>
 
-    <div class="card">
-      <span class="category">クラウド / 開発ツール</span>
-      <h2>Google Cloud Next 2026：第8世代TPU発表と「新規コードの75%がAI生成」宣言</h2>
-      <p>
-        Google Cloud Next 2026で、最大9,600基のTPUと2ペタバイトの共有高帯域メモリを搭載した第8世代TPU（TPU 8t）が発表され、大規模AIモデルのトレーニング能力が飛躍的に向上した。
-        Sundar Pichai CEOは「Google社内で書かれる新しいコードの75%はAIが生成しており、エンジニアが承認する形式をとっている」と述べ、開発現場へのAI浸透を明らかにした。
-        さらに、ApigeeのModel Context Protocol（MCP）が正式GA（一般提供）となり、OpenAPI仕様を使ってAPIをAI対応ツールへ変換する機能が広く開発者に利用可能となった。
-      </p>
-      <a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cloud-next-2026-sundar-pichai/" target="_blank" rel="noopener">元記事を読む → Google Blog</a>
-    </div>
+  <div class="card">
+    <span class="tag tag-cloud">クラウド / セキュリティ</span>
+    <h2>Google Cloud Next 2026：AIエージェント型サイバーセキュリティ基盤と第8世代TPUチップを発表</h2>
+    <p>
+      Googleは「Google Cloud Next 2026」にて、脅威インテリジェンスとWizのクラウドセキュリティプラットフォームを統合したAIエージェント型セキュリティ基盤を発表した。
+      新機能「Threat Hunting Agent」はセキュリティ脅威を自律的に探索し、防御ルールを自動生成する能力を持つ。
+      さらに、学習特化型「TPU 8t」と推論特化型「TPU 8i」からなる第8世代TPUも公開され、1ポッドあたり1,152基を接続し、従来比3倍のオンチップSRAMを実現している。
+    </p>
+    <a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cloud-next-2026-sundar-pichai/" target="_blank" rel="noopener">元記事を読む（Google Blog）</a>
+  </div>
 
-  </main>
+  <div class="card">
+    <span class="tag tag-hw">ハードウェア / モバイル</span>
+    <h2>Qualcomm、大手ハイパースケーラー向けカスタムデータセンタープロセッサを今年中に出荷——AI向け独自シリコン市場に本格参入</h2>
+    <p>
+      モバイルチップ大手のQualcommが、名称非公開の大手クラウド事業者向けにカスタムデータセンタープロセッサを2026年内に出荷する計画を明らかにした。
+      AIインフラ需要の急拡大がモバイル向けSoCメーカーに新たな収益機会をもたらしており、従来のサーバー向けプロセッサメーカーとの競争が激化する見通しだ。
+      スマートフォン市場にとどまらない多角化戦略は、AIチップ市場の勢力図を塗り替える可能性を秘めている。
+    </p>
+    <a href="https://techstartups.com/2026/05/07/top-tech-news-today-may-7-2026/" target="_blank" rel="noopener">元記事を読む（Tech Startups）</a>
+  </div>
 
-  <footer>
-    &copy; 2026 テックニュース日報 — Tech News Agent による自動生成レポート
-  </footer>
+</main>
+
+<footer>
+  Tech News Agent による自動生成レポート &mdash; 2026年5月8日
+</footer>
+
 </body>
 </html>
