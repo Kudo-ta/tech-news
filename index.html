@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テックニュース日報 - 2026年5月8日</title>
+  <title>テックニュース日報 - 2026年5月9日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -44,8 +44,8 @@
       padding: 28px 32px;
       border-top: 4px solid #2563eb;
     }
-    .card:nth-child(2) { border-top-color: #16a34a; }
-    .card:nth-child(3) { border-top-color: #d97706; }
+    .card:nth-child(2) { border-top-color: #dc2626; }
+    .card:nth-child(3) { border-top-color: #16a34a; }
     .tag {
       display: inline-block;
       font-size: 0.72rem;
@@ -56,9 +56,9 @@
       border-radius: 20px;
       margin-bottom: 12px;
     }
-    .tag-ai    { background: #dbeafe; color: #1d4ed8; }
-    .tag-cloud { background: #dcfce7; color: #15803d; }
-    .tag-hw    { background: #fef3c7; color: #b45309; }
+    .tag-ai       { background: #dbeafe; color: #1d4ed8; }
+    .tag-security { background: #fee2e2; color: #b91c1c; }
+    .tag-cloud    { background: #dcfce7; color: #15803d; }
     .card h2 {
       font-size: 1.2rem;
       font-weight: 700;
@@ -79,8 +79,8 @@
       color: #2563eb;
       text-decoration: none;
     }
-    .card:nth-child(2) a { color: #15803d; }
-    .card:nth-child(3) a { color: #b45309; }
+    .card:nth-child(2) a { color: #b91c1c; }
+    .card:nth-child(3) a { color: #15803d; }
     .card a:hover { text-decoration: underline; }
     .card a::after { content: ' →'; }
     footer {
@@ -95,48 +95,48 @@
 
 <header>
   <h1>テックニュース日報</h1>
-  <div class="date">2026年5月8日（金）</div>
+  <div class="date">2026年5月9日（土）</div>
 </header>
 
 <main>
 
   <div class="card">
-    <span class="tag tag-ai">AI / 機械学習</span>
-    <h2>OpenAI、ChatGPTのデフォルトモデルを「GPT-5.5 Instant」に刷新——高リスク分野でのハルシネーション削減に注力</h2>
+    <span class="tag tag-ai">AI / ビジネス</span>
+    <h2>AnthropicがARRでOpenAIを初めて逆転——年換算売上高3兆円超、エンタープライズ市場が牽引</h2>
     <p>
-      OpenAIは5月5日、ChatGPTの新しいデフォルトモデル「GPT-5.5 Instant」をリリースした。
-      このモデルは法律・医療・金融などの高リスク分野における誤情報（ハルシネーション）の大幅な削減を主眼に置きながら、低レイテンシを同時に維持することを特徴とする。
-      企業や専門職向けの信頼性向上を狙った本リリースは、AIの実用展開における精度と速度の両立という重要な課題への一つの回答を示している。
+      AIスタートアップのAnthropicが年間経常収益（ARR）で初めてOpenAIを上回り、年換算で約300億ドル（約3兆円）に達したことが明らかになりました。OpenAIのARRは同時期に約240億ドルにとどまっています。
+      この逆転は、消費者向けチャットよりも企業向けエージェント型AIワークフローの採用が急速に拡大していることが主因とされており、大手金融・製薬各社によるAI基盤投資の加速がAnthropicの成長を後押ししています。
+      JPMorganが2026年のAI予算を約1兆9,800億円と設定しNovo NordiskがOpenAIと全社AI展開を締結するなど、エンタープライズAI市場の競争はさらに激化する見通しです。
     </p>
-    <a href="https://techstartups.com/2026/05/07/top-tech-news-today-may-7-2026/" target="_blank" rel="noopener">元記事を読む（Tech Startups）</a>
+    <a href="https://nathanbenaich.substack.com/p/state-of-ai-may-2026" target="_blank" rel="noopener">元記事を読む（State of AI）</a>
   </div>
 
   <div class="card">
-    <span class="tag tag-cloud">クラウド / セキュリティ</span>
-    <h2>Google Cloud Next 2026：AIエージェント型サイバーセキュリティ基盤と第8世代TPUチップを発表</h2>
+    <span class="tag tag-security">サイバーセキュリティ</span>
+    <h2>クラウド基盤を標的にする新マルウェア「PCPJack」が発覚——ワーム型で自律拡散、730万DLの不正アプリも</h2>
     <p>
-      Googleは「Google Cloud Next 2026」にて、脅威インテリジェンスとWizのクラウドセキュリティプラットフォームを統合したAIエージェント型セキュリティ基盤を発表した。
-      新機能「Threat Hunting Agent」はセキュリティ脅威を自律的に探索し、防御ルールを自動生成する能力を持つ。
-      さらに、学習特化型「TPU 8t」と推論特化型「TPU 8i」からなる第8世代TPUも公開され、1ポッドあたり1,152基を接続し、従来比3倍のオンチップSRAMを実現している。
+      セキュリティ研究者が、露出したクラウドインフラを狙う新たな認証情報窃取フレームワーク「PCPJack」の詳細を公開しました。PCPJackはDocker・Kubernetes・Redis・MongoDB・RayMLなどのクラウドサービスや脆弱なWebアプリを標的とし、ワームのように自律的に感染を広げる設計が特徴です。
+      また同時期に、Google Playストアで電話番号から通話履歴を取得できると偽る不正アプリ28本が計730万回以上ダウンロードされていたことも判明しており、クラウド・モバイル双方での警戒が急務となっています。
+      企業はクラウドポートの公開設定の見直しと認証情報の定期ローテーションを直ちに実施することが強く推奨されます。
     </p>
-    <a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/google-cloud/cloud-next-2026-sundar-pichai/" target="_blank" rel="noopener">元記事を読む（Google Blog）</a>
+    <a href="https://thehackernews.com/" target="_blank" rel="noopener">元記事を読む（The Hacker News）</a>
   </div>
 
   <div class="card">
-    <span class="tag tag-hw">ハードウェア / モバイル</span>
-    <h2>Qualcomm、大手ハイパースケーラー向けカスタムデータセンタープロセッサを今年中に出荷——AI向け独自シリコン市場に本格参入</h2>
+    <span class="tag tag-cloud">クラウド / 開発者ツール</span>
+    <h2>Google Cloud Next '26——WizとのAIセキュリティ統合を発表、Lovable・Databricksにも対応拡大</h2>
     <p>
-      モバイルチップ大手のQualcommが、名称非公開の大手クラウド事業者向けにカスタムデータセンタープロセッサを2026年内に出荷する計画を明らかにした。
-      AIインフラ需要の急拡大がモバイル向けSoCメーカーに新たな収益機会をもたらしており、従来のサーバー向けプロセッサメーカーとの競争が激化する見通しだ。
-      スマートフォン市場にとどまらない多角化戦略は、AIチップ市場の勢力図を塗り替える可能性を秘めている。
+      Google Cloud Next '26にて、GoogleはWiz（2025年買収）との深化した統合を発表しました。5月より一般提供が始まったWizのセキュリティスキャンがローコード開発プラットフォーム「Lovable」に組み込まれ、脆弱性・シークレット・設定ミスをリアルタイムで検出できるようになります。
+      さらに、脅威ハンティングや検知エンジニアリングに特化したAIエージェントが新たに追加され、DatabricksなどのクラウドプラットフォームへのWiz対応も拡大。Exabeamもアドオン発表を行い、Google Agent Development Kitとの統合によるAIエージェントの行動分析機能を提供します。
+      AI時代のクラウドセキュリティ体制が大きく強化され、開発から本番環境までの一貫したセキュリティカバレッジが実現されます。
     </p>
-    <a href="https://techstartups.com/2026/05/07/top-tech-news-today-may-7-2026/" target="_blank" rel="noopener">元記事を読む（Tech Startups）</a>
+    <a href="https://cloud.google.com/blog/products/identity-security/next26-redefining-security-for-the-ai-era-with-google-cloud-and-wiz" target="_blank" rel="noopener">元記事を読む（Google Cloud Blog）</a>
   </div>
 
 </main>
 
 <footer>
-  Tech News Agent による自動生成レポート &mdash; 2026年5月8日
+  Tech News Agent による自動生成レポート &mdash; 2026年5月9日
 </footer>
 
 </body>
