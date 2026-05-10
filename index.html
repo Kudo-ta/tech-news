@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テックニュース日報 - 2026年5月9日</title>
+  <title>テックニュース日報 - 2026年5月10日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -28,6 +28,11 @@
       font-size: 0.95rem;
       color: #8eb4d4;
       letter-spacing: 0.08em;
+    }
+    header .subtitle {
+      margin-top: 8px;
+      font-size: 0.82rem;
+      color: #5a7d9a;
     }
     main {
       max-width: 860px;
@@ -58,7 +63,7 @@
     }
     .tag-ai       { background: #dbeafe; color: #1d4ed8; }
     .tag-security { background: #fee2e2; color: #b91c1c; }
-    .tag-cloud    { background: #dcfce7; color: #15803d; }
+    .tag-mobile   { background: #dcfce7; color: #15803d; }
     .card h2 {
       font-size: 1.2rem;
       font-weight: 700;
@@ -82,7 +87,7 @@
     .card:nth-child(2) a { color: #b91c1c; }
     .card:nth-child(3) a { color: #15803d; }
     .card a:hover { text-decoration: underline; }
-    .card a::after { content: ' →'; }
+    .card a::after { content: ' \2192'; }
     footer {
       text-align: center;
       padding: 24px;
@@ -95,48 +100,46 @@
 
 <header>
   <h1>テックニュース日報</h1>
-  <div class="date">2026年5月9日（土）</div>
+  <div class="date">2026年5月10日（日）</div>
+  <div class="subtitle">AI &middot; サイバーセキュリティ &middot; モバイル / ハードウェア</div>
 </header>
 
 <main>
 
   <div class="card">
     <span class="tag tag-ai">AI / ビジネス</span>
-    <h2>AnthropicがARRでOpenAIを初めて逆転——年換算売上高3兆円超、エンタープライズ市場が牽引</h2>
+    <h2>AI活用が急拡大——Cloudflareが従業員の20%を削減、社内AI使用量は3か月で600%増加</h2>
     <p>
-      AIスタートアップのAnthropicが年間経常収益（ARR）で初めてOpenAIを上回り、年換算で約300億ドル（約3兆円）に達したことが明らかになりました。OpenAIのARRは同時期に約240億ドルにとどまっています。
-      この逆転は、消費者向けチャットよりも企業向けエージェント型AIワークフローの採用が急速に拡大していることが主因とされており、大手金融・製薬各社によるAI基盤投資の加速がAnthropicの成長を後押ししています。
-      JPMorganが2026年のAI予算を約1兆9,800億円と設定しNovo NordiskがOpenAIと全社AI展開を締結するなど、エンタープライズAI市場の競争はさらに激化する見通しです。
+      クラウドサービス大手のCloudflareは2026年5月、世界で1,100人以上の従業員を削減すると発表しました。これは全社員の約20%にあたる大規模なリストラで、背景には社内でのAI活用が急速に拡大したことがあります。同社によると、AIの社内使用量はわずか3か月で600%以上増加したとのことです。
+      この動きは、AI導入を機に組織構造を根本から見直す企業が世界的に相次いでいるトレンドの一例であり、テクノロジー業界における雇用の在り方が大きな転換期を迎えていることを示しています。Cloudflare以外にも多くの企業が2026年初頭から人員削減を加速させており、AIを軸とした経営再編が本格化しています。
     </p>
-    <a href="https://nathanbenaich.substack.com/p/state-of-ai-may-2026" target="_blank" rel="noopener">元記事を読む（State of AI）</a>
+    <a href="https://finance.yahoo.com/sectors/technology/articles/layoffs-accelerate-may-2026-firms-040430218.html" target="_blank" rel="noopener">元記事を読む（Yahoo Finance）</a>
   </div>
 
   <div class="card">
     <span class="tag tag-security">サイバーセキュリティ</span>
-    <h2>クラウド基盤を標的にする新マルウェア「PCPJack」が発覚——ワーム型で自律拡散、730万DLの不正アプリも</h2>
+    <h2>2026年はAI攻撃の元年——フィッシングがAI生成で人間のレッドチームを超える脅威へ</h2>
     <p>
-      セキュリティ研究者が、露出したクラウドインフラを狙う新たな認証情報窃取フレームワーク「PCPJack」の詳細を公開しました。PCPJackはDocker・Kubernetes・Redis・MongoDB・RayMLなどのクラウドサービスや脆弱なWebアプリを標的とし、ワームのように自律的に感染を広げる設計が特徴です。
-      また同時期に、Google Playストアで電話番号から通話履歴を取得できると偽る不正アプリ28本が計730万回以上ダウンロードされていたことも判明しており、クラウド・モバイル双方での警戒が急務となっています。
-      企業はクラウドポートの公開設定の見直しと認証情報の定期ローテーションを直ちに実施することが強く推奨されます。
+      2026年に入り、AIを活用したサイバー攻撃が急増しています。公開リポジトリ上で発見された悪意あるパッケージは75%増加し、クラウド環境への不正侵入は35%増加。さらに深刻なのは、AI生成のフィッシングメールが人間のセキュリティ専門家（レッドチーム）による攻撃を精度・成功率ともに上回り始めているという点です。
+      また、研究者がClaude CodeなどのAI開発ツールのMCPトラフィックをリダイレクトしてOAuthトークンを窃取できる脆弱性を報告しており、AIツールそのものへの攻撃も新たな脅威として浮上しています。セキュリティ体制のAI対応強化が急務となっています。
     </p>
-    <a href="https://thehackernews.com/" target="_blank" rel="noopener">元記事を読む（The Hacker News）</a>
+    <a href="https://thehackernews.com/2026/05/2026-year-of-ai-assisted-attacks.html" target="_blank" rel="noopener">元記事を読む（The Hacker News）</a>
   </div>
 
   <div class="card">
-    <span class="tag tag-cloud">クラウド / 開発者ツール</span>
-    <h2>Google Cloud Next '26——WizとのAIセキュリティ統合を発表、Lovable・Databricksにも対応拡大</h2>
+    <span class="tag tag-mobile">モバイル / ハードウェア</span>
+    <h2>2026年5月のスマートフォン戦線——200MPデュアル望遠・8,000mAh超バッテリー・AI専用チップが主役に</h2>
     <p>
-      Google Cloud Next '26にて、GoogleはWiz（2025年買収）との深化した統合を発表しました。5月より一般提供が始まったWizのセキュリティスキャンがローコード開発プラットフォーム「Lovable」に組み込まれ、脆弱性・シークレット・設定ミスをリアルタイムで検出できるようになります。
-      さらに、脅威ハンティングや検知エンジニアリングに特化したAIエージェントが新たに追加され、DatabricksなどのクラウドプラットフォームへのWiz対応も拡大。Exabeamもアドオン発表を行い、Google Agent Development Kitとの統合によるAIエージェントの行動分析機能を提供します。
-      AI時代のクラウドセキュリティ体制が大きく強化され、開発から本番環境までの一貫したセキュリティカバレッジが実現されます。
+      2026年5月は主要スマートフォンメーカーによるフラッグシップ攻勢が続いています。OPPOのFind X9 UltraとVivoのX300 Ultraはデュアル200MPペリスコープレンズを搭載し、DSLRカメラ並みの超望遠撮影を実現。OnePlus Nord CE 6は8,000mAhという超大容量バッテリーで複数日使用を可能にしました。
+      搭載チップもSnapdragon 8 Elite Gen 5やDimensity 9500が主流となり、端末上でのジェネレーティブAI処理や複数アプリをまたぐAIエージェント機能が標準化しつつあります。モバイルとAIの融合が加速し、スマートフォンは単なる通信端末を超えた個人用AIプラットフォームへと進化しています。
     </p>
-    <a href="https://cloud.google.com/blog/products/identity-security/next26-redefining-security-for-the-ai-era-with-google-cloud-and-wiz" target="_blank" rel="noopener">元記事を読む（Google Cloud Blog）</a>
+    <a href="https://www.analyticsinsight.net/phones/top-smartphone-launches-in-may-2026" target="_blank" rel="noopener">元記事を読む（Analytics Insight）</a>
   </div>
 
 </main>
 
 <footer>
-  Tech News Agent による自動生成レポート &mdash; 2026年5月9日
+  Tech News Agent による自動生成レポート &mdash; 2026年5月10日
 </footer>
 
 </body>
