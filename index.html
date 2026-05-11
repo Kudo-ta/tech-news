@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テックニュース日報 - 2026年5月10日</title>
+  <title>テックニュース日報 - 2026年5月11日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -47,10 +47,10 @@
       border-radius: 12px;
       box-shadow: 0 2px 12px rgba(0,0,0,0.08);
       padding: 28px 32px;
-      border-top: 4px solid #2563eb;
+      border-top: 4px solid #7c3aed;
     }
     .card:nth-child(2) { border-top-color: #dc2626; }
-    .card:nth-child(3) { border-top-color: #16a34a; }
+    .card:nth-child(3) { border-top-color: #0891b2; }
     .tag {
       display: inline-block;
       font-size: 0.72rem;
@@ -61,9 +61,9 @@
       border-radius: 20px;
       margin-bottom: 12px;
     }
-    .tag-ai       { background: #dbeafe; color: #1d4ed8; }
+    .tag-ai       { background: #ede9fe; color: #5b21b6; }
     .tag-security { background: #fee2e2; color: #b91c1c; }
-    .tag-mobile   { background: #dcfce7; color: #15803d; }
+    .tag-cloud    { background: #cffafe; color: #0e7490; }
     .card h2 {
       font-size: 1.2rem;
       font-weight: 700;
@@ -81,11 +81,11 @@
       display: inline-block;
       font-size: 0.85rem;
       font-weight: 600;
-      color: #2563eb;
+      color: #5b21b6;
       text-decoration: none;
     }
     .card:nth-child(2) a { color: #b91c1c; }
-    .card:nth-child(3) a { color: #15803d; }
+    .card:nth-child(3) a { color: #0e7490; }
     .card a:hover { text-decoration: underline; }
     .card a::after { content: ' \2192'; }
     footer {
@@ -100,46 +100,49 @@
 
 <header>
   <h1>テックニュース日報</h1>
-  <div class="date">2026年5月10日（日）</div>
-  <div class="subtitle">AI &middot; サイバーセキュリティ &middot; モバイル / ハードウェア</div>
+  <div class="date">2026年5月11日（月）</div>
+  <div class="subtitle">AI / 投資 &middot; サイバーセキュリティ &middot; クラウド / 開発者ツール</div>
 </header>
 
 <main>
 
   <div class="card">
-    <span class="tag tag-ai">AI / ビジネス</span>
-    <h2>AI活用が急拡大——Cloudflareが従業員の20%を削減、社内AI使用量は3か月で600%増加</h2>
+    <span class="tag tag-ai">AI / 投資</span>
+    <h2>NVIDIAのAI関連投資が400億ドル超え——データセンターや光ファイバー企業へ大規模出資</h2>
     <p>
-      クラウドサービス大手のCloudflareは2026年5月、世界で1,100人以上の従業員を削減すると発表しました。これは全社員の約20%にあたる大規模なリストラで、背景には社内でのAI活用が急速に拡大したことがあります。同社によると、AIの社内使用量はわずか3か月で600%以上増加したとのことです。
-      この動きは、AI導入を機に組織構造を根本から見直す企業が世界的に相次いでいるトレンドの一例であり、テクノロジー業界における雇用の在り方が大きな転換期を迎えていることを示しています。Cloudflare以外にも多くの企業が2026年初頭から人員削減を加速させており、AIを軸とした経営再編が本格化しています。
+      NVIDIAは2026年に入ってから、AI関連企業への投資総額が400億ドルを突破したとCNBCが5月9日に報じました。
+      同社はデータセンター運営会社のIRENに最大21億ドル、光通信大手コーニングに最大32億ドルを出資するなど、GPU事業にとどまらずAIインフラ全体のエコシステム構築を積極的に進めています。
+      この戦略的投資の拡大は、AI産業における主導権を半導体からクラウド基盤・ネットワーク層まで広げようとするNVIDIAの強い意志を示しており、業界全体の競争地図を塗り替える可能性があります。
     </p>
-    <a href="https://finance.yahoo.com/sectors/technology/articles/layoffs-accelerate-may-2026-firms-040430218.html" target="_blank" rel="noopener">元記事を読む（Yahoo Finance）</a>
+    <a href="https://www.cnbc.com/2026/05/09/nvidia-embraces-ai-investor-topping-40-billion-in-equity-bets-2026.html" target="_blank" rel="noopener">元記事を読む（CNBC）</a>
   </div>
 
   <div class="card">
     <span class="tag tag-security">サイバーセキュリティ</span>
-    <h2>2026年はAI攻撃の元年——フィッシングがAI生成で人間のレッドチームを超える脅威へ</h2>
+    <h2>Apache HTTP/2に深刻な脆弱性（CVE-2026-23918）——二重解放バグによるリモートコード実行のリスク</h2>
     <p>
-      2026年に入り、AIを活用したサイバー攻撃が急増しています。公開リポジトリ上で発見された悪意あるパッケージは75%増加し、クラウド環境への不正侵入は35%増加。さらに深刻なのは、AI生成のフィッシングメールが人間のセキュリティ専門家（レッドチーム）による攻撃を精度・成功率ともに上回り始めているという点です。
-      また、研究者がClaude CodeなどのAI開発ツールのMCPトラフィックをリダイレクトしてOAuthトークンを窃取できる脆弱性を報告しており、AIツールそのものへの攻撃も新たな脅威として浮上しています。セキュリティ体制のAI対応強化が急務となっています。
+      Apache HTTP Server 2.4.66のHTTP/2プロトコル処理に、CVSSスコア8.8の重大な脆弱性（CVE-2026-23918）が発見されたとThe Hacker Newsが報告しました。
+      「ダブルフリー（二重解放）」と呼ばれるメモリ破壊バグで、悪用に成功した攻撃者はサーバー上で任意のコードをリモートから実行できる恐れがあります。
+      Apacheを本番環境で運用している組織は、直ちに公式のセキュリティアドバイザリを確認し、パッチの適用を最優先で行うことが強く推奨されます。
     </p>
-    <a href="https://thehackernews.com/2026/05/2026-year-of-ai-assisted-attacks.html" target="_blank" rel="noopener">元記事を読む（The Hacker News）</a>
+    <a href="https://thehackernews.com/2026/05/critical-apache-http2-flaw-cve-2026.html" target="_blank" rel="noopener">元記事を読む（The Hacker News）</a>
   </div>
 
   <div class="card">
-    <span class="tag tag-mobile">モバイル / ハードウェア</span>
-    <h2>2026年5月のスマートフォン戦線——200MPデュアル望遠・8,000mAh超バッテリー・AI専用チップが主役に</h2>
+    <span class="tag tag-cloud">クラウド / 開発者ツール</span>
+    <h2>Kyverno 1.18リリース——CNCFグラデュエーション後、初の正式バージョンが公開</h2>
     <p>
-      2026年5月は主要スマートフォンメーカーによるフラッグシップ攻勢が続いています。OPPOのFind X9 UltraとVivoのX300 Ultraはデュアル200MPペリスコープレンズを搭載し、DSLRカメラ並みの超望遠撮影を実現。OnePlus Nord CE 6は8,000mAhという超大容量バッテリーで複数日使用を可能にしました。
-      搭載チップもSnapdragon 8 Elite Gen 5やDimensity 9500が主流となり、端末上でのジェネレーティブAI処理や複数アプリをまたぐAIエージェント機能が標準化しつつあります。モバイルとAIの融合が加速し、スマートフォンは単なる通信端末を超えた個人用AIプラットフォームへと進化しています。
+      Kubernetes向けポリシーエンジン「Kyverno」が5月5日、バージョン1.18をリリースしました。
+      これはCloud Native Computing Foundation（CNCF）のグラデュエーテッド（卒業）プロジェクトとして認定されてから初めての正式リリースであり、本番利用に耐える高い安定性と成熟度が証明された節目となります。
+      ポリシー適用の柔軟性と一貫性がさらに強化されており、大規模なKubernetesクラスタにおけるセキュリティガバナンスや運用コンプライアンスの向上に貢献することが期待されています。
     </p>
-    <a href="https://www.analyticsinsight.net/phones/top-smartphone-launches-in-may-2026" target="_blank" rel="noopener">元記事を読む（Analytics Insight）</a>
+    <a href="https://www.cncf.io/blog/" target="_blank" rel="noopener">元記事を読む（CNCF Blog）</a>
   </div>
 
 </main>
 
 <footer>
-  Tech News Agent による自動生成レポート &mdash; 2026年5月10日
+  Tech News Agent による自動生成レポート &mdash; 2026年5月11日
 </footer>
 
 </body>
