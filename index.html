@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テックニュース日報 - 2026年5月11日</title>
+  <title>テックニュース日報 - 2026年5月12日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -100,49 +100,47 @@
 
 <header>
   <h1>テックニュース日報</h1>
-  <div class="date">2026年5月11日（月）</div>
-  <div class="subtitle">AI / 投資 &middot; サイバーセキュリティ &middot; クラウド / 開発者ツール</div>
+  <div class="date">2026年5月12日（火）</div>
+  <div class="subtitle">AI / ML &middot; サイバーセキュリティ &middot; クラウド / 開発者ツール</div>
 </header>
 
 <main>
 
   <div class="card">
-    <span class="tag tag-ai">AI / 投資</span>
-    <h2>NVIDIAのAI関連投資が400億ドル超え——データセンターや光ファイバー企業へ大規模出資</h2>
+    <span class="tag tag-ai">AI / ML</span>
+    <h2>ヤン・ルカン氏設立のAMI Labs、「世界モデル」構築に向けシードで約1,500億円調達</h2>
     <p>
-      NVIDIAは2026年に入ってから、AI関連企業への投資総額が400億ドルを突破したとCNBCが5月9日に報じました。
-      同社はデータセンター運営会社のIRENに最大21億ドル、光通信大手コーニングに最大32億ドルを出資するなど、GPU事業にとどまらずAIインフラ全体のエコシステム構築を積極的に進めています。
-      この戦略的投資の拡大は、AI産業における主導権を半導体からクラウド基盤・ネットワーク層まで広げようとするNVIDIAの強い意志を示しており、業界全体の競争地図を塗り替える可能性があります。
+      チューリング賞受賞者のヤン・ルカン氏が設立したAdvanced Machine Intelligence（AMI）Labsが、シードラウンドで10億3,000万ドル（約1,500億円）の資金調達を完了し、評価額35億ドルに達した。
+      AMI Labsは大規模言語モデル（LLM）に依存しない新しいAIアーキテクチャとして「世界モデル（World Models）」の構築を目指しており、物理世界の因果関係を深く理解するAIの実現を掲げている。
+      同じタイミングで、NVIDIAがOpenAIへ300億ドルの出資を含む2026年の累計エクイティ投資が400億ドルを超えるなど、AI業界への大型資金流入が続いている。
     </p>
-    <a href="https://www.cnbc.com/2026/05/09/nvidia-embraces-ai-investor-topping-40-billion-in-equity-bets-2026.html" target="_blank" rel="noopener">元記事を読む（CNBC）</a>
+    <a href="https://www.crescendo.ai/news/latest-ai-news-and-updates" target="_blank" rel="noopener">元記事を読む（Crescendo AI News）</a>
   </div>
 
   <div class="card">
     <span class="tag tag-security">サイバーセキュリティ</span>
-    <h2>Apache HTTP/2に深刻な脆弱性（CVE-2026-23918）——二重解放バグによるリモートコード実行のリスク</h2>
+    <h2>Google、AIが生成したゼロデイエクスプロイトを初めて実環境の攻撃で確認——5か国機関も共同警告</h2>
     <p>
-      Apache HTTP Server 2.4.66のHTTP/2プロトコル処理に、CVSSスコア8.8の重大な脆弱性（CVE-2026-23918）が発見されたとThe Hacker Newsが報告しました。
-      「ダブルフリー（二重解放）」と呼ばれるメモリ破壊バグで、悪用に成功した攻撃者はサーバー上で任意のコードをリモートから実行できる恐れがあります。
-      Apacheを本番環境で運用している組織は、直ちに公式のセキュリティアドバイザリを確認し、パッチの適用を最優先で行うことが強く推奨されます。
+      Googleは、未知の脅威アクターがAIシステムを活用して開発したゼロデイエクスプロイトを実際の攻撃に使用した事例を初めて確認したと発表した。これはAI技術が脆弱性発見とエクスプロイト生成に悪用された初の実証事例とされ、セキュリティコミュニティに衝撃を与えている。
+      これに呼応し、米・英・豪・加・NZ（ファイブアイズ）のサイバーセキュリティ機関が連名で、重要インフラや防衛環境に展開されるエージェント型AIシステムのセキュリティリスクに関する共同ガイダンスを公開し、早急な対策を促している。
     </p>
-    <a href="https://thehackernews.com/2026/05/critical-apache-http2-flaw-cve-2026.html" target="_blank" rel="noopener">元記事を読む（The Hacker News）</a>
+    <a href="https://thehackernews.com/" target="_blank" rel="noopener">元記事を読む（The Hacker News）</a>
   </div>
 
   <div class="card">
     <span class="tag tag-cloud">クラウド / 開発者ツール</span>
-    <h2>Kyverno 1.18リリース——CNCFグラデュエーション後、初の正式バージョンが公開</h2>
+    <h2>Google Cloud Next '26：WizとのセキュリティGA統合やExabeam ADK連携など主要発表まとめ</h2>
     <p>
-      Kubernetes向けポリシーエンジン「Kyverno」が5月5日、バージョン1.18をリリースしました。
-      これはCloud Native Computing Foundation（CNCF）のグラデュエーテッド（卒業）プロジェクトとして認定されてから初めての正式リリースであり、本番利用に耐える高い安定性と成熟度が証明された節目となります。
-      ポリシー適用の柔軟性と一貫性がさらに強化されており、大規模なKubernetesクラスタにおけるセキュリティガバナンスや運用コンプライアンスの向上に貢献することが期待されています。
+      Google Cloud Next '26において、WizのセキュリティスキャニングをLovableプラットフォームへ直接統合する機能が一般提供（GA）開始となった。開発者はIDE内でリアルタイムに脆弱性・シークレット・設定ミスを検出できるようになり、コードコミット前にセキュリティガードレールを適用する「DevSecOps」ワークフローが大きく前進する。
+      またExabeamがGoogle CloudのAgent Development Kit（ADK）と連携した「Agent Behavior Analytics」機能を発表するなど、エージェント型AIの行動監視・異常検知基盤の整備も加速している。
     </p>
-    <a href="https://www.cncf.io/blog/" target="_blank" rel="noopener">元記事を読む（CNCF Blog）</a>
+    <a href="https://cloud.google.com/blog/topics/google-cloud-next/google-cloud-next-2026-wrap-up" target="_blank" rel="noopener">元記事を読む（Google Cloud Blog）</a>
   </div>
 
 </main>
 
 <footer>
-  Tech News Agent による自動生成レポート &mdash; 2026年5月11日
+  Tech News Agent による自動生成レポート &mdash; 2026年5月12日
 </footer>
 
 </body>
