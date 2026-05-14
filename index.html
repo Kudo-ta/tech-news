@@ -3,41 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テックニュース日報 - 2026年5月13日</title>
+  <title>テックニュース - 2026年5月14日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
       background: #f0f2f5;
       color: #222;
-      line-height: 1.7;
+      min-height: 100vh;
     }
     header {
-      background: linear-gradient(135deg, #0f1923 0%, #1a2e44 100%);
+      background: linear-gradient(135deg, #0d1b2a 0%, #1b3a5c 100%);
       color: #fff;
       padding: 36px 24px 28px;
       text-align: center;
     }
     header h1 {
       font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: 0.04em;
+      letter-spacing: 0.05em;
       margin-bottom: 8px;
     }
-    header .date {
+    header p {
       font-size: 0.95rem;
-      color: #8eb4d4;
-      letter-spacing: 0.08em;
-    }
-    header .subtitle {
-      margin-top: 8px;
-      font-size: 0.82rem;
-      color: #5a7d9a;
+      color: #a8c6e8;
     }
     main {
       max-width: 860px;
       margin: 40px auto;
-      padding: 0 20px 60px;
+      padding: 0 16px 60px;
       display: flex;
       flex-direction: column;
       gap: 28px;
@@ -46,103 +39,148 @@
       background: #fff;
       border-radius: 12px;
       box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-      padding: 28px 32px;
-      border-top: 4px solid #7c3aed;
+      overflow: hidden;
+      transition: box-shadow 0.2s;
     }
-    .card:nth-child(2) { border-top-color: #dc2626; }
-    .card:nth-child(3) { border-top-color: #0891b2; }
-    .tag {
+    .card:hover {
+      box-shadow: 0 6px 24px rgba(0,0,0,0.13);
+    }
+    .card-header {
+      padding: 22px 28px 14px;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .category {
       display: inline-block;
       font-size: 0.72rem;
       font-weight: 700;
-      letter-spacing: 0.1em;
+      letter-spacing: 0.08em;
       text-transform: uppercase;
       padding: 3px 10px;
       border-radius: 20px;
       margin-bottom: 12px;
     }
-    .tag-ai     { background: #ede9fe; color: #5b21b6; }
-    .tag-sec    { background: #fee2e2; color: #b91c1c; }
-    .tag-mobile { background: #cffafe; color: #0e7490; }
-    .card h2 {
-      font-size: 1.2rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      color: #111827;
-      line-height: 1.5;
+    .cat-security { background: #fde8e8; color: #c0392b; }
+    .cat-ai       { background: #e8f4fd; color: #1565c0; }
+    .cat-patch    { background: #fff3e0; color: #e65100; }
+    .card-header h2 {
+      font-size: 1.18rem;
+      line-height: 1.55;
+      color: #111;
     }
-    .card p {
+    .card-body {
+      padding: 16px 28px 22px;
+    }
+    .card-body p {
       font-size: 0.95rem;
-      color: #374151;
-      margin-bottom: 16px;
-      line-height: 1.85;
+      line-height: 1.8;
+      color: #444;
     }
-    .card a {
-      display: inline-block;
+    .card-footer {
+      padding: 14px 28px;
+      background: #fafafa;
+      border-top: 1px solid #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .pub-date {
+      font-size: 0.8rem;
+      color: #888;
+    }
+    .source-link {
       font-size: 0.85rem;
       font-weight: 600;
-      color: #5b21b6;
+      color: #1565c0;
       text-decoration: none;
+      padding: 5px 14px;
+      border: 1.5px solid #1565c0;
+      border-radius: 20px;
+      transition: background 0.15s, color 0.15s;
     }
-    .card:nth-child(2) a { color: #b91c1c; }
-    .card:nth-child(3) a { color: #0e7490; }
-    .card a:hover { text-decoration: underline; }
-    .card a::after { content: ' \2192'; }
+    .source-link:hover {
+      background: #1565c0;
+      color: #fff;
+    }
     footer {
       text-align: center;
-      padding: 24px;
+      padding: 20px;
       font-size: 0.8rem;
-      color: #9ca3af;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>テックニュース日報</h1>
-  <div class="date">2026年5月13日（水）</div>
-  <div class="subtitle">AI / クラウド &middot; サイバーセキュリティ &middot; モバイル / ハードウェア</div>
+  <h1>今日のテックニュース</h1>
+  <p>2026年5月14日（木）</p>
 </header>
 
 <main>
 
-  <div class="card">
-    <span class="tag tag-ai">AI / クラウド</span>
-    <h2>OpenAI と Microsoft がパートナーシップを再構築――AWS など競合クラウドへの展開が解禁に</h2>
-    <p>
-      OpenAI と Microsoft は長年にわたる独占的な提携関係を見直し、非独占的な新契約へと移行したことが明らかになった。
-      これにより OpenAI は Amazon Web Services（AWS）をはじめとする競合クラウドプロバイダーへも製品を提供できるようになり、クラウド AI 市場の競争が一段と激化する見通しだ。
-      また Amazon が OpenAI への100億ドル規模の投資交渉に入ったとも報じられており、業界の勢力図が大きく塗り替えられようとしている。
-    </p>
-    <a href="https://llm-stats.com/ai-news" target="_blank" rel="noopener">元記事を読む（LLM Stats）</a>
-  </div>
+  <!-- Article 1 -->
+  <article class="card">
+    <div class="card-header">
+      <span class="category cat-security">サイバーセキュリティ / AI</span>
+      <h2>世界初：AIが生成したゼロデイ脆弱性エクスプロイトをGoogleが検出・阻止</h2>
+    </div>
+    <div class="card-body">
+      <p>
+        Googleの脅威インテリジェンスグループ（GTIG）は2026年5月11日、犯罪グループがAIモデルを使用してゼロデイ脆弱性を発見・悪用した史上初の事例を確認したと発表しました。
+        発見された脆弱性はオープンソースのWebベース管理ツールにおける二要素認証（2FA）バイパスを可能にするPythonスクリプトで、大規模な「マス・エクスプロイテーション」イベントへの悪用が計画されていたとみられています。
+        Googleはこの試みを事前に検出して阻止することに成功し、「AIが関与したゼロデイの裏には、さらに多くの未発見事例が存在する可能性がある」と警告しています。
+      </p>
+    </div>
+    <div class="card-footer">
+      <span class="pub-date">2026年5月11日 &mdash; CNBC / SecurityWeek</span>
+      <a class="source-link" href="https://www.cnbc.com/2026/05/11/google-thwarts-effort-hacker-group-use-ai-mass-exploitation-event.html" target="_blank" rel="noopener">元記事を読む</a>
+    </div>
+  </article>
 
-  <div class="card">
-    <span class="tag tag-sec">サイバーセキュリティ</span>
-    <h2>Google、AIを悪用したゼロデイ脆弱性攻撃を世界で初めて確認――脅威アクターが AI でエクスプロイトを生成</h2>
-    <p>
-      Google のセキュリティ研究チームは、正体不明の脅威アクターが AI システムを活用してゼロデイ脆弱性を発見しエクスプロイトコードを生成、実際の攻撃に使用したことを世界で初めて確認したと発表した。
-      AI が悪意ある目的でサイバー攻撃に実用化された事例として公式に認定された初のケースとなり、セキュリティ業界に大きな衝撃を与えている。
-      Google は Google Cloud Next 2026 において、自律的な脅威ハンティングや検知エンジニアリングを担う AI セキュリティエージェントも発表しており、攻防両面での AI 活用競争が本格化している。
-    </p>
-    <a href="https://thehackernews.com/" target="_blank" rel="noopener">元記事を読む（The Hacker News）</a>
-  </div>
+  <!-- Article 2 -->
+  <article class="card">
+    <div class="card-header">
+      <span class="category cat-patch">サイバーセキュリティ</span>
+      <h2>Microsoft 5月パッチチューズデー：120件の脆弱性修正、16件はAIが自動発見</h2>
+    </div>
+    <div class="card-body">
+      <p>
+        Microsoftは2026年5月13日（米国時間）の月例セキュリティアップデートで、120件の脆弱性を修正しました。今回はゼロデイは含まれていませんが、17件が「緊急（Critical）」に分類されており、Windows DNSのヒープバッファオーバーフロー（CVSSスコア9.8）や、SharePoint Server・Windows NetlogonにおけるリモートコードRCE欠陥が特に危険度が高いとされています。
+        注目すべき点は、修正対象120件のうち16件が社内のAI脆弱性発見システム「MDASH」によって自動検出されたことで、防御側でのAI活用が急速に実用化されていることを示しています。
+        今回のアップデートにはXboxスタイルのデスクトップUI刷新など機能追加も含まれており、セキュリティと機能の両面での更新となっています。
+      </p>
+    </div>
+    <div class="card-footer">
+      <span class="pub-date">2026年5月13日 &mdash; BleepingComputer / TechRepublic</span>
+      <a class="source-link" href="https://www.bleepingcomputer.com/news/microsoft/microsoft-may-2026-patch-tuesday-fixes-120-flaws-no-zero-days/" target="_blank" rel="noopener">元記事を読む</a>
+    </div>
+  </article>
 
-  <div class="card">
-    <span class="tag tag-mobile">モバイル / ハードウェア</span>
-    <h2>Google I/O 2026 が5月19〜20日に開催確定――Android Show も直前に実施、次世代 AI チップ競争も加速</h2>
-    <p>
-      Google は年次開発者イベント「Google I/O 2026」をカリフォルニア州マウンテンビューで5月19日〜20日に開催することを正式発表した。
-      直前の5月12日には「The Android Show」も行われ、スマートフォン・Wear OS・Gemini AI の最新動向が公開される予定だ。
-      Qualcomm・Samsung・MediaTek などが AI ワークロード専用の次世代モバイルチップを準備中で、今後の端末では大規模なオンデバイス AI 処理が現実のものとなる見込みだ。
-    </p>
-    <a href="https://techwiser.com/upcoming-tech-events-gadgets/" target="_blank" rel="noopener">元記事を読む（TechWiser）</a>
-  </div>
+  <!-- Article 3 -->
+  <article class="card">
+    <div class="card-header">
+      <span class="category cat-ai">AI / 機械学習</span>
+      <h2>ヤン・ルカン設立のAMI Labs、欧州史上最大シードで10億3,000万ドルを調達——「世界モデル」AIを開発</h2>
+    </div>
+    <div class="card-body">
+      <p>
+        MetaのチーフAIサイエンティストとして知られるヤン・ルカン（Yann LeCun）氏が創業したAdvanced Machine Intelligence（AMI）Labsが、シードラウンドで10億3,000万ドル（約1,550億円）の資金調達を完了しました。欧州のスタートアップ史上最大のシードラウンドであり、企業評価額は35億ドルに達しています。
+        同社は現在主流の大規模言語モデル（LLM）とは根本的に異なる「ワールドモデル（世界モデル）」アーキテクチャを研究しており、物理世界の仕組みを理解することで学習する次世代AIの実現を目指しています。
+        AI分野への投資熱が依然として高まる中、大手テック企業以外の独立系AI研究機関への資金流入も活発化しており、LLM一辺倒の市場に新たな潮流が生まれています。
+      </p>
+    </div>
+    <div class="card-footer">
+      <span class="pub-date">2026年5月初旬 &mdash; MarketingProfs / AI and News</span>
+      <a class="source-link" href="https://www.aiandnews.com/blog/ai-news-insights-may-2026/" target="_blank" rel="noopener">元記事を読む</a>
+    </div>
+  </article>
 
 </main>
 
 <footer>
-  Tech News Agent による自動生成レポート &mdash; 2026年5月13日
+  <p>Tech News Agent &mdash; 自動生成レポート &copy; 2026</p>
 </footer>
 
 </body>
