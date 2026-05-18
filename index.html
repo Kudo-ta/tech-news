@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テックニュース デイリーレポート - 2026年5月17日</title>
+  <title>テックニュース デイリーレポート - 2026年5月18日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -68,7 +68,7 @@
     }
     .cat-ai       { background: #e8f4fd; color: #1565c0; }
     .cat-security { background: #fde8e8; color: #c0392b; }
-    .cat-hardware { background: #e8fdf0; color: #15803d; }
+    .cat-mobile   { background: #e8fdf0; color: #15803d; }
     .card-header h2 {
       font-size: 1.18rem;
       line-height: 1.55;
@@ -122,26 +122,28 @@
 
 <header>
   <h1>今日のテックニュース</h1>
-  <p class="date">2026年5月17日（日）</p>
-  <p class="subtitle">AI / ML &ensp;|&ensp; サイバーセキュリティ &ensp;|&ensp; モバイル・ハードウェア</p>
+  <p class="date">2026年5月18日（月）</p>
+  <p class="subtitle">AI / セキュリティ &ensp;|&ensp; サイバーセキュリティ &ensp;|&ensp; モバイル・ハードウェア</p>
 </header>
 
 <main>
 
-  <!-- Article 1: AI/ML -->
+  <!-- Article 1: AI + Security -->
   <article class="card">
     <div class="card-header">
-      <span class="category cat-ai">AI / ML</span>
-      <h2>Anthropicが「ドリーミング」技術を発表——AIエージェントが過去の行動を自律的に振り返り次回性能を改善</h2>
+      <span class="category cat-ai">AI / セキュリティ</span>
+      <h2>OpenAI、AI駆動の脆弱性検出・パッチ検証ツール「Daybreak」を正式発表</h2>
     </div>
     <div class="card-body">
       <p>
-        Anthropicは、自律型AIエージェントがセッションとセッションの間に過去の行動パターンを分析・振り返り、次回の行動精度を自律的に向上させる新技術「ドリーミング（dreaming）」を発表しました。長時間にわたる複雑なワークフローを担うマネージドエージェントの開発加速を目的としており、AIの自律性を大幅に高める取り組みとして業界内外から注目されています。同週、OpenAIは史上最大規模の民間資金調達となる1,220億ドル（約18兆円）のラウンドを完了し、企業評価額は8,520億ドルに達しました。
+        OpenAIは、最先端AIモデルとCodex Securityを組み合わせたサイバーセキュリティ新イニシアチブ「Daybreak」を正式に立ち上げた。
+        このプラットフォームは組織がシステムの脆弱性を自動検出し、パッチ適用の検証までを一貫して行えるもので、Akamai・Cisco・Cloudflare・CrowdStrikeなど主要セキュリティ企業との提携も同時に発表された。
+        AIによるセキュリティ運用自動化が加速する中、業界横断での脅威対応の新たな共通基盤となることが期待されている。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年5月 &mdash; Air Street Press</span>
-      <a class="source-link" href="https://press.airstreet.com/p/state-of-ai-may-2026" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年5月 &mdash; The Hacker News</span>
+      <a class="source-link" href="https://thehackernews.com/2026/05/openai-launches-daybreak-for-ai-powered.html" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
@@ -149,33 +151,37 @@
   <article class="card">
     <div class="card-header">
       <span class="category cat-security">サイバーセキュリティ</span>
-      <h2>CISA、Cisco Catalyst SD-WANの最高深刻度（CVSS 10.0）脆弱性を悪用済みカタログに追加——連邦機関は即日対応必須</h2>
+      <h2>Microsoft SharePointにゼロデイ脆弱性——リモートコード実行の積極的な悪用を確認、即時パッチを勧告</h2>
     </div>
     <div class="card-body">
       <p>
-        米サイバーセキュリティ・インフラセキュリティ庁（CISA）は、Cisco Catalyst SD-WAN Controllerに存在する認証バイパス脆弱性（CVE-2026-20182）を「既知悪用脆弱性（KEV）」カタログに追加し、連邦政府機関に対して2026年5月17日までの修正を義務付けました。本脆弱性はCVSSスコアが最高値の10.0と評価されており、認証なしでシステムを乗っ取られる危険性があります。またGoogle Cloud Next 2026では、Exabeamがエージェント型AIワークフローの不審な動作をリアルタイム検知する「エージェント行動分析」機能を発表するなど、AIセキュリティの強化が業界全体で急務となっています。
+        Microsoftは、SharePointに存在するゼロデイ脆弱性（CVE-2026-32201）を公表し、管理者に対して緊急パッチの適用を呼びかけている。
+        この脆弱性はリモートコード実行を可能にするもので、実際の攻撃への悪用がすでに確認されている深刻な問題だ。
+        同月にはホームセキュリティ大手ADTが約550万人のユーザー情報を流出させるOkta SSO経由のクラウド不正アクセス被害を受けており、クラウドサービスとID管理のセキュリティ強化が急務となっている。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年5月17日 &mdash; The Hacker News / Channel Insider</span>
-      <a class="source-link" href="https://thehackernews.com/" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年5月 &mdash; eSecurity Planet</span>
+      <a class="source-link" href="https://www.esecurityplanet.com/weekly-roundup/supply-chain-attacks-ai-security-and-major-breaches-define-this-week-in-cybersecurity-in-may-2026/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
   <!-- Article 3: Mobile/Hardware -->
   <article class="card">
     <div class="card-header">
-      <span class="category cat-hardware">モバイル / ハードウェア</span>
-      <h2>Samsungがヘルスセンサー内蔵OLEDを公開、シリコン炭素電池搭載スマートフォンが2026年の主流に</h2>
+      <span class="category cat-mobile">モバイル / ハードウェア</span>
+      <h2>Google「Android Show」でAI特化ノートPC「Googlebook」とAndroid 17を発表——Gemini主軸の新時代へ</h2>
     </div>
     <div class="card-body">
       <p>
-        Samsungは、心拍数・体温などの健康センサーを直接統合した最新のOLEDスマートフォンディスプレイを披露し、スマートフォンとウェアラブルデバイスの融合がさらに進む未来を示しました。また2026年前半のスマートフォン市場ではシリコン炭素電池技術が主流化しており、同じ筐体サイズで従来比より高いエネルギー密度を実現し、2日間のバッテリー持続を現実的に達成する機種が増加しています。さらにQualcommとSnapの親会社Specs Inc.が多年間の戦略的パートナーシップを締結し、Snapdragonチップ搭載スマートグラスを年内に消費者向けに投入する計画も明らかになりました。
+        Googleは5月12日のバーチャルイベント「Android Show: I/O Edition」において、Gemini AIをコアに設計した新ノートPC「Googlebook」を発表した。
+        Acer・Asus・Dell・HP・Lenovoと共同開発し、今秋から順次販売開始予定のGooglebookは、設計段階からGemini Intelligenceを中心に据えた初のノートPCラインとなる。
+        あわせて発表されたAndroid 17では、Android Auto向け適応型ディスプレイ対応やウェルネス強化機能、Gemini搭載Chromeの改善など、AIと日常体験をさらに融合させるアップデートが盛り込まれた。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年5月 &mdash; GSMArena / Gizmochina</span>
-      <a class="source-link" href="https://www.gsmarena.com/news.php3" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年5月12日 &mdash; TechCrunch</span>
+      <a class="source-link" href="https://techcrunch.com/2026/05/12/everything-google-announced-at-its-android-show-from-googlebooks-to-vibe-coded-widgets/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
