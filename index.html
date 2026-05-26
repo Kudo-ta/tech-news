@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テックニュース日報 - 2026年5月25日</title>
+  <title>テックニュース日報 - 2026年5月26日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -66,9 +66,9 @@
       border-radius: 20px;
       margin-bottom: 12px;
     }
-    .cat-ai       { background: #e8f4fd; color: #1565c0; }
-    .cat-security { background: #fde8e8; color: #c0392b; }
-    .cat-hardware { background: #e8fdf0; color: #15803d; }
+    .cat-ai      { background: #e8f4fd; color: #1565c0; }
+    .cat-cloud   { background: #fde8e8; color: #c0392b; }
+    .cat-devtool { background: #e8fdf0; color: #15803d; }
     .card-header h2 {
       font-size: 1.18rem;
       line-height: 1.55;
@@ -122,8 +122,8 @@
 
 <header>
   <h1>今日のテックニュース</h1>
-  <p class="date">2026年5月25日（月）</p>
-  <p class="subtitle">AI / ML &ensp;|&ensp; サイバーセキュリティ &ensp;|&ensp; ハードウェア / モバイル</p>
+  <p class="date">2026年5月26日（火）</p>
+  <p class="subtitle">AI / ML &ensp;|&ensp; クラウド・セキュリティ &ensp;|&ensp; 開発者ツール</p>
 </header>
 
 <main>
@@ -132,50 +132,50 @@
   <article class="card">
     <div class="card-header">
       <span class="category cat-ai">AI / ML</span>
-      <h2>Google GeminiがOpenAI超えの人気に――AnthropicとOpenAIはそれぞれ年間収益200億ドル規模へ、AI競争がさらに激化</h2>
+      <h2>Google I/O 2026：Gemini 3.5 Flash が一般提供開始——同等モデルの4倍の速度でフロンティア性能を実現</h2>
     </div>
     <div class="card-body">
       <p>
-        2026年5月現在、OpenAIの年間収益は250億ドルを超え、IPO（新規株式公開）に向けた準備を本格化させていることが明らかになりました。一方Anthropicも年間収益190億ドルに迫る勢いで、Googleとの連携のもとクラウドインフラ・チップへの投資に2,000億ドル以上を約束しました。米政府はMicrosoftやxAIなど大手AI企業に対しモデルの公開前に規制当局へのアクセスを求めており、AI規制の整備も加速しています。生成AIは今やビジネス基盤・地政学的レバレッジとして位置付けられ、AI市場は競争激化・コスト増大・政治化という三重の課題に直面しています。
+        Googleは Google I/O 2026 において、次世代AIモデル「Gemini 3.5 Flash」の一般提供（GA）を発表しました。同モデルは同等クラスのモデルと比較して最大4倍の高速処理を実現しながら、フロンティアレベルの知性を維持しており、価格は入力100万トークンあたり1.50ドル、出力9ドルと競争力の高い価格設定となっています。Google検索のAIモードのデフォルトエンジンに採用され、マルチモーダル入力や「情報エージェント」機能も統合されることが明らかになりました。さらに小型モデル「Gemini Spark」や「Gemini Omni」も発表され、AI機能がGoogleの主要製品全体に広く展開される方針が示されました。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年5月 &mdash; Air Street Press / imfounder.com</span>
-      <a class="source-link" href="https://press.airstreet.com/p/state-of-ai-may-2026" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年5月 &mdash; Engadget / Google Blog</span>
+      <a class="source-link" href="https://www.engadget.com/2176896/everything-google-announced-io-2026-gemini-omni-spark/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
-  <!-- Article 2: Cybersecurity -->
+  <!-- Article 2: Cloud / Security -->
   <article class="card">
     <div class="card-header">
-      <span class="category cat-security">サイバーセキュリティ</span>
-      <h2>Google Cloud Next 2026：AIエージェント専用セキュリティ機能が拡充——Exabeamら主要各社が「Agent Behavior Analytics」を発表</h2>
+      <span class="category cat-cloud">クラウド / セキュリティ</span>
+      <h2>Google Cloud Next 2026：Wiz と連携したエージェント型セキュリティ防御基盤——AI時代のSOCを刷新</h2>
     </div>
     <div class="card-body">
       <p>
-        Google Cloud Next 2026において、Netskope・Rubrik・Commvault・Exabeamなどのセキュリティベンダーが、AIエージェントを保護するための新機能を相次いで発表しました。ExabeamはGoogle Cloudの「Agent Development Kit」および「Agent Gateway」と連携した"Agent Behavior Analytics"（エージェント行動分析）を公開し、AIエージェントの不審な動作をリアルタイムで検出・対応できる仕組みを提供します。企業インフラへのAIエージェント組み込みが進む中、エージェント固有のゼロトラスト設計とふるまい検知が2026年のクラウドセキュリティの最重要テーマとなっています。
+        Google Cloud は「Google Cloud Next 2026」において、セキュリティ企業 Wiz との統合を活用したAI駆動の脅威防御プラットフォームを発表しました。脅威ハンティング専門エージェント（Threat Hunting Agent）や検知エンジニアリングエージェント（Detection Engineering Agent）など複数の特化型AIエージェントを組み合わせることで、従来の階層型SOCモデルをCI/CDライクな自動化ワークフローへと転換します。また、Wiz のセキュリティスキャンが開発プラットフォーム Lovable に統合され、5月より一般提供が開始。AIエージェントを標的とした新たな攻撃への対策として、5カ国（米・英・豪・加・ニュージーランド）のサイバー情報機関が共同でガイダンスを発行したことも大きな注目を集めています。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年5月 &mdash; Channel Insider</span>
-      <a class="source-link" href="https://www.channelinsider.com/security/tools-and-platforms/google-cloud-next-2026-tech-recap/" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年5月 &mdash; Google Cloud Blog</span>
+      <a class="source-link" href="https://cloud.google.com/blog/products/identity-security/next26-redefining-security-for-the-ai-era-with-google-cloud-and-wiz" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
-  <!-- Article 3: Hardware / Mobile -->
+  <!-- Article 3: Developer Tools -->
   <article class="card">
     <div class="card-header">
-      <span class="category cat-hardware">ハードウェア / モバイル</span>
-      <h2>Appleが米国内チップ生産を本格模索――IntelおよびSamsungとの提携交渉でTSMC依存脱却へ</h2>
+      <span class="category cat-devtool">開発者ツール</span>
+      <h2>WebMCP：ブラウザ上でAIエージェントがツールを実行できる新オープンWeb標準——Chrome 149でオリジントライアル開始</h2>
     </div>
     <div class="card-body">
       <p>
-        地政学的緊張と台湾サプライチェーンへの過度な依存を懸念するAppleが、米国内でのチップ製造パートナーとしてIntelおよびSamsungとの協議を本格化していることが明らかになりました。TSMCへの集中リスクを分散し製造拠点を多様化する動きは、Apple単独にとどまらず半導体業界全体のトレンドとなっており、米国・欧州・日本など各国政府の補助金政策とも相まって脱・台湾依存の流れが加速しています。またGoogleはI/O 2026にてGemini AI搭載の新型Android XRグラスを発表、OpenAIもAIエージェント統合型スマートフォンの開発を探っているとされ、次世代ハードウェア競争は激しさを増しています。
+        Googleは Google I/O 2026 の開発者向けキーノートで、「WebMCP」と呼ばれる新しいWebオープン標準の提案を発表しました。開発者がWebアプリに構造化ツールを公開することで、ブラウザベースのAIエージェントがページの枠を超えた複雑なタスクを実行できるようになる仕組みで、Chrome 149 からのオリジントライアルとして試験的に提供が始まっています。同日には、AIエージェントが Android Studio の機能を活用してアプリの開発・実行を自動化できる「安定版 Android CLI」も発表され、開発者向けエージェント統合の波が急速に拡大しています。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年5月20日 &mdash; Tech Startups</span>
-      <a class="source-link" href="https://techstartups.com/2026/05/20/top-tech-news-today-may-20-2026/" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年5月 &mdash; Google Developers Blog</span>
+      <a class="source-link" href="https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
