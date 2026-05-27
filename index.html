@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テックニュース日報 - 2026年5月26日</title>
+  <title>テックニュース日報 - 2026年5月27日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -68,7 +68,7 @@
     }
     .cat-ai      { background: #e8f4fd; color: #1565c0; }
     .cat-cloud   { background: #fde8e8; color: #c0392b; }
-    .cat-devtool { background: #e8fdf0; color: #15803d; }
+    .cat-sec     { background: #fef3e2; color: #b45309; }
     .card-header h2 {
       font-size: 1.18rem;
       line-height: 1.55;
@@ -122,8 +122,8 @@
 
 <header>
   <h1>今日のテックニュース</h1>
-  <p class="date">2026年5月26日（火）</p>
-  <p class="subtitle">AI / ML &ensp;|&ensp; クラウド・セキュリティ &ensp;|&ensp; 開発者ツール</p>
+  <p class="date">2026年5月27日（水）</p>
+  <p class="subtitle">AI / ML &ensp;|&ensp; クラウド・セキュリティ &ensp;|&ensp; モバイル / ハードウェア</p>
 </header>
 
 <main>
@@ -132,50 +132,50 @@
   <article class="card">
     <div class="card-header">
       <span class="category cat-ai">AI / ML</span>
-      <h2>Google I/O 2026：Gemini 3.5 Flash が一般提供開始——同等モデルの4倍の速度でフロンティア性能を実現</h2>
+      <h2>Google、「Gemini 3.5」と AIエージェント「Gemini Spark」を正式発表——同等モデル比4倍の高速処理でフロンティア性能を実現</h2>
     </div>
     <div class="card-body">
       <p>
-        Googleは Google I/O 2026 において、次世代AIモデル「Gemini 3.5 Flash」の一般提供（GA）を発表しました。同モデルは同等クラスのモデルと比較して最大4倍の高速処理を実現しながら、フロンティアレベルの知性を維持しており、価格は入力100万トークンあたり1.50ドル、出力9ドルと競争力の高い価格設定となっています。Google検索のAIモードのデフォルトエンジンに採用され、マルチモーダル入力や「情報エージェント」機能も統合されることが明らかになりました。さらに小型モデル「Gemini Spark」や「Gemini Omni」も発表され、AI機能がGoogleの主要製品全体に広く展開される方針が示されました。
+        Googleは最新AIモデル「Gemini 3.5 Flash」と自律型AIエージェント「Gemini Spark」を正式発表した。Gemini 3.5 Flash はフロンティアレベルの知性を維持しながら従来比4倍の処理速度を誇り、入力100万トークンあたり1.50ドル・出力9ドルという競争力の高い価格設定でコンテキストウィンドウ100万トークンをサポートする。また「Gemini Omni」機能により画像・音声・テキストを入力として動画を生成することも可能となり、GoogleのAI展開が製品全体でさらに加速している。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年5月 &mdash; Engadget / Google Blog</span>
-      <a class="source-link" href="https://www.engadget.com/2176896/everything-google-announced-io-2026-gemini-omni-spark/" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年5月 &mdash; LLM Stats / imfounder</span>
+      <a class="source-link" href="https://llm-stats.com/ai-news" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
-  <!-- Article 2: Cloud / Security -->
+  <!-- Article 2: AI / ML – Anthropic -->
   <article class="card">
     <div class="card-header">
-      <span class="category cat-cloud">クラウド / セキュリティ</span>
-      <h2>Google Cloud Next 2026：Wiz と連携したエージェント型セキュリティ防御基盤——AI時代のSOCを刷新</h2>
+      <span class="category cat-ai">AI / ML</span>
+      <h2>Anthropic、AIエージェントの自己改善技術「ドリーミング」を発表——セッション間学習で継続的な能力向上を実現</h2>
     </div>
     <div class="card-body">
       <p>
-        Google Cloud は「Google Cloud Next 2026」において、セキュリティ企業 Wiz との統合を活用したAI駆動の脅威防御プラットフォームを発表しました。脅威ハンティング専門エージェント（Threat Hunting Agent）や検知エンジニアリングエージェント（Detection Engineering Agent）など複数の特化型AIエージェントを組み合わせることで、従来の階層型SOCモデルをCI/CDライクな自動化ワークフローへと転換します。また、Wiz のセキュリティスキャンが開発プラットフォーム Lovable に統合され、5月より一般提供が開始。AIエージェントを標的とした新たな攻撃への対策として、5カ国（米・英・豪・加・ニュージーランド）のサイバー情報機関が共同でガイダンスを発行したことも大きな注目を集めています。
+        Anthropicは自律型AIエージェントが過去の行動を振り返り、パターンを特定して次回以降のパフォーマンスを向上させる新技術「ドリーミング（Dreaming）」を発表した。この手法はセッションとセッションの合間に動作し、エージェントが経験から継続的に学習できる仕組みを提供するもので、AIエージェント研究における新たなアプローチとして注目を集めている。また同社の高度なモデル「Mythos」が金融システムに数十年間潜伏していた重大な脆弱性を発見したことも報告されており、AIによるレガシーシステム診断の有効性があらためて示された。
+      </p>
+    </div>
+    <div class="card-footer">
+      <span class="pub-date">2026年5月 &mdash; imfounder</span>
+      <a class="source-link" href="https://imfounder.com/science-tech/ai/ai-updates-may-2026/" target="_blank" rel="noopener">元記事を読む</a>
+    </div>
+  </article>
+
+  <!-- Article 3: Cloud / Security -->
+  <article class="card">
+    <div class="card-header">
+      <span class="category cat-sec">クラウド / セキュリティ</span>
+      <h2>Google Cloud Next 2026：WizがIDEに直接統合——AI生成コードの脆弱性をコミット前にリアルタイム検出</h2>
+    </div>
+    <div class="card-body">
+      <p>
+        Google Cloud Next 2026 において、クラウドセキュリティ企業 Wiz はIDE（統合開発環境）およびAIエージェントワークフローへの直接統合を発表した。これにより、AIが生成したコードに含まれる脆弱性・シークレット・設定ミスをコードのコミット前にリアルタイムで検出できるインラインセキュリティフックが実現する。Lovable プラットフォームとのWiz統合も5月より一般提供（GA）が開始され、開発プロセスへのセキュリティ組み込みを「シフトレフト」する動きがAI時代においてさらに加速している。
       </p>
     </div>
     <div class="card-footer">
       <span class="pub-date">2026年5月 &mdash; Google Cloud Blog</span>
       <a class="source-link" href="https://cloud.google.com/blog/products/identity-security/next26-redefining-security-for-the-ai-era-with-google-cloud-and-wiz" target="_blank" rel="noopener">元記事を読む</a>
-    </div>
-  </article>
-
-  <!-- Article 3: Developer Tools -->
-  <article class="card">
-    <div class="card-header">
-      <span class="category cat-devtool">開発者ツール</span>
-      <h2>WebMCP：ブラウザ上でAIエージェントがツールを実行できる新オープンWeb標準——Chrome 149でオリジントライアル開始</h2>
-    </div>
-    <div class="card-body">
-      <p>
-        Googleは Google I/O 2026 の開発者向けキーノートで、「WebMCP」と呼ばれる新しいWebオープン標準の提案を発表しました。開発者がWebアプリに構造化ツールを公開することで、ブラウザベースのAIエージェントがページの枠を超えた複雑なタスクを実行できるようになる仕組みで、Chrome 149 からのオリジントライアルとして試験的に提供が始まっています。同日には、AIエージェントが Android Studio の機能を活用してアプリの開発・実行を自動化できる「安定版 Android CLI」も発表され、開発者向けエージェント統合の波が急速に拡大しています。
-      </p>
-    </div>
-    <div class="card-footer">
-      <span class="pub-date">2026年5月 &mdash; Google Developers Blog</span>
-      <a class="source-link" href="https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
