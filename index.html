@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テックニュース日報 - 2026年5月27日</title>
+  <title>テックニュース日報 - 2026年5月28日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -66,9 +66,9 @@
       border-radius: 20px;
       margin-bottom: 12px;
     }
-    .cat-ai      { background: #e8f4fd; color: #1565c0; }
-    .cat-cloud   { background: #fde8e8; color: #c0392b; }
-    .cat-sec     { background: #fef3e2; color: #b45309; }
+    .cat-ai  { background: #e8f4fd; color: #1565c0; }
+    .cat-sec { background: #fde8e8; color: #c0392b; }
+    .cat-dev { background: #e6f4ea; color: #137333; }
     .card-header h2 {
       font-size: 1.18rem;
       line-height: 1.55;
@@ -122,8 +122,8 @@
 
 <header>
   <h1>今日のテックニュース</h1>
-  <p class="date">2026年5月27日（水）</p>
-  <p class="subtitle">AI / ML &ensp;|&ensp; クラウド・セキュリティ &ensp;|&ensp; モバイル / ハードウェア</p>
+  <p class="date">2026年5月28日（木）</p>
+  <p class="subtitle">AI / ML &ensp;|&ensp; サイバーセキュリティ &ensp;|&ensp; 開発者ツール</p>
 </header>
 
 <main>
@@ -132,50 +132,50 @@
   <article class="card">
     <div class="card-header">
       <span class="category cat-ai">AI / ML</span>
-      <h2>Google、「Gemini 3.5」と AIエージェント「Gemini Spark」を正式発表——同等モデル比4倍の高速処理でフロンティア性能を実現</h2>
+      <h2>OpenAI、GPT-5.4を発表——100万トークンコンテキストと自律型マルチステップ操作を実現、Amazon出資交渉も浮上</h2>
     </div>
     <div class="card-body">
       <p>
-        Googleは最新AIモデル「Gemini 3.5 Flash」と自律型AIエージェント「Gemini Spark」を正式発表した。Gemini 3.5 Flash はフロンティアレベルの知性を維持しながら従来比4倍の処理速度を誇り、入力100万トークンあたり1.50ドル・出力9ドルという競争力の高い価格設定でコンテキストウィンドウ100万トークンをサポートする。また「Gemini Omni」機能により画像・音声・テキストを入力として動画を生成することも可能となり、GoogleのAI展開が製品全体でさらに加速している。
+        OpenAIは最新モデル「GPT-5.4」を公開し、業界最大クラスとなる100万トークンのコンテキストウィンドウと、複数ステップにわたるソフトウェア操作を自律的に実行するエージェント型ワークフロー機能を搭載した。デスクトップ生産性タスクを模擬したベンチマーク「OSWorld-V」ではスコア75%を達成し、人間の基準値72.4%をわずかに上回ることが確認されている。また、OpenAIはMicrosoft以外のクラウドプロバイダーへの製品提供を可能にする形でパートナーシップを再編し、Amazonが最大100億ドルの出資に向けて交渉中とも伝えられており、AIプラットフォーム競争の構図が大きく変わりつつある。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年5月 &mdash; LLM Stats / imfounder</span>
-      <a class="source-link" href="https://llm-stats.com/ai-news" target="_blank" rel="noopener">元記事を読む</a>
-    </div>
-  </article>
-
-  <!-- Article 2: AI / ML – Anthropic -->
-  <article class="card">
-    <div class="card-header">
-      <span class="category cat-ai">AI / ML</span>
-      <h2>Anthropic、AIエージェントの自己改善技術「ドリーミング」を発表——セッション間学習で継続的な能力向上を実現</h2>
-    </div>
-    <div class="card-body">
-      <p>
-        Anthropicは自律型AIエージェントが過去の行動を振り返り、パターンを特定して次回以降のパフォーマンスを向上させる新技術「ドリーミング（Dreaming）」を発表した。この手法はセッションとセッションの合間に動作し、エージェントが経験から継続的に学習できる仕組みを提供するもので、AIエージェント研究における新たなアプローチとして注目を集めている。また同社の高度なモデル「Mythos」が金融システムに数十年間潜伏していた重大な脆弱性を発見したことも報告されており、AIによるレガシーシステム診断の有効性があらためて示された。
-      </p>
-    </div>
-    <div class="card-footer">
-      <span class="pub-date">2026年5月 &mdash; imfounder</span>
+      <span class="pub-date">2026年5月 &mdash; imfounder / LLM Stats</span>
       <a class="source-link" href="https://imfounder.com/science-tech/ai/ai-updates-may-2026/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
-  <!-- Article 3: Cloud / Security -->
+  <!-- Article 2: Cybersecurity -->
   <article class="card">
     <div class="card-header">
-      <span class="category cat-sec">クラウド / セキュリティ</span>
-      <h2>Google Cloud Next 2026：WizがIDEに直接統合——AI生成コードの脆弱性をコミット前にリアルタイム検出</h2>
+      <span class="category cat-sec">サイバーセキュリティ</span>
+      <h2>Giteaに深刻な脆弱性（CVE-2026-27771）——30か国・3万超の環境でプライベートコンテナイメージが無認証流出のリスク</h2>
     </div>
     <div class="card-body">
       <p>
-        Google Cloud Next 2026 において、クラウドセキュリティ企業 Wiz はIDE（統合開発環境）およびAIエージェントワークフローへの直接統合を発表した。これにより、AIが生成したコードに含まれる脆弱性・シークレット・設定ミスをコードのコミット前にリアルタイムで検出できるインラインセキュリティフックが実現する。Lovable プラットフォームとのWiz統合も5月より一般提供（GA）が開始され、開発プロセスへのセキュリティ組み込みを「シフトレフト」する動きがAI時代においてさらに加速している。
+        セルフホスト型Gitサービス「Gitea」において、未認証の攻撃者がプライベートコンテナイメージを認証なしに取得できる深刻な脆弱性（CVE-2026-27771）が発覚した。バージョン1.26.2より前のすべてのリリースが対象で、30か国以上の3万を超えるデプロイ環境に影響が及ぶと見られている。同時期にFBIはサイレント・ランサム・グループが法律事務所を新たな標的として攻撃を強化しているとして緊急警告を発しており、セルフホスト型サービスを利用する組織はただちにアップデートを適用し、外部公開ポートの棚卸しと監査を実施することが推奨される。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年5月 &mdash; Google Cloud Blog</span>
-      <a class="source-link" href="https://cloud.google.com/blog/products/identity-security/next26-redefining-security-for-the-ai-era-with-google-cloud-and-wiz" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年5月27日 &mdash; The Hacker News</span>
+      <a class="source-link" href="https://thehackernews.com/" target="_blank" rel="noopener">元記事を読む</a>
+    </div>
+  </article>
+
+  <!-- Article 3: Developer Tools -->
+  <article class="card">
+    <div class="card-header">
+      <span class="category cat-dev">開発者ツール</span>
+      <h2>Google I/O 2026：Gemini 3.5・WebMCP・Android AI CLI——開発者向け大型発表でAIエージェント時代の標準争いが激化</h2>
+    </div>
+    <div class="card-body">
+      <p>
+        Googleは「Google I/O 2026」（5月19〜20日）において、エージェント型タスクでフロンティア性能を発揮しつつ他モデル比4倍の出力速度を誇る「Gemini 3.5 Flash」を発表した。さらにブラウザ上のAIエージェントが構造化ツールにアクセスできる新しいオープンWeb標準「WebMCP」を提案し、Chrome 149でのオリジントライアルを開始することを明らかにした。Android Studioでは、React NativeやWeb フレームワーク、iOSコードをネイティブKotlin Androidアプリへ自動移行するプレビュー機能も披露され、クロスプラットフォーム開発の効率化に向けた取り組みが一段と加速している。
+      </p>
+    </div>
+    <div class="card-footer">
+      <span class="pub-date">2026年5月19〜20日 &mdash; Google Developers Blog</span>
+      <a class="source-link" href="https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
