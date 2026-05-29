@@ -3,74 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テックニュース日報 - 2026年5月28日</title>
+  <title>デイリーテックニュース - 2026年5月29日</title>
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
       background: #f0f2f5;
       color: #222;
+      line-height: 1.7;
       min-height: 100vh;
     }
     header {
-      background: linear-gradient(135deg, #0d1b2a 0%, #1b3a5c 100%);
+      background: linear-gradient(135deg, #0d1b2a 0%, #1b3a5c 60%, #0f3460 100%);
       color: #fff;
-      padding: 40px 24px 30px;
+      padding: 44px 24px 34px;
       text-align: center;
     }
     header h1 {
       font-size: 2rem;
       font-weight: 700;
       letter-spacing: 0.05em;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
     }
     header .date {
-      font-size: 0.95rem;
-      color: #a8c6e8;
+      font-size: 1rem;
+      color: #a0c4ff;
       letter-spacing: 0.08em;
     }
     header .subtitle {
-      font-size: 0.82rem;
+      font-size: 0.83rem;
       color: #7a9bbf;
       margin-top: 6px;
     }
     main {
       max-width: 860px;
       margin: 40px auto;
-      padding: 0 16px 60px;
+      padding: 0 18px 64px;
       display: flex;
       flex-direction: column;
       gap: 28px;
     }
     .card {
       background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      border-radius: 14px;
+      box-shadow: 0 3px 16px rgba(0,0,0,0.09);
       overflow: hidden;
-      transition: box-shadow 0.2s;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
     .card:hover {
-      box-shadow: 0 6px 24px rgba(0,0,0,0.13);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 32px rgba(0,0,0,0.14);
     }
     .card-header {
       padding: 22px 28px 14px;
       border-bottom: 1px solid #f0f0f0;
     }
-    .category {
+    .badge {
       display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
       font-size: 0.72rem;
       font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 3px 10px;
-      border-radius: 20px;
+      letter-spacing: 0.07em;
       margin-bottom: 12px;
     }
-    .cat-ai  { background: #e8f4fd; color: #1565c0; }
-    .cat-sec { background: #fde8e8; color: #c0392b; }
-    .cat-dev { background: #e6f4ea; color: #137333; }
+    .badge-ai       { background: #e8f4fd; color: #1565c0; }
+    .badge-security { background: #fde8e8; color: #c0392b; }
+    .badge-business { background: #e6f4ea; color: #137333; }
     .card-header h2 {
-      font-size: 1.18rem;
+      font-size: 1.15rem;
+      font-weight: 700;
       line-height: 1.55;
       color: #111;
     }
@@ -79,7 +81,7 @@
     }
     .card-body p {
       font-size: 0.95rem;
-      line-height: 1.85;
+      line-height: 1.9;
       color: #444;
     }
     .card-footer {
@@ -97,11 +99,11 @@
       color: #888;
     }
     .source-link {
-      font-size: 0.85rem;
+      font-size: 0.84rem;
       font-weight: 600;
       color: #1565c0;
       text-decoration: none;
-      padding: 5px 14px;
+      padding: 5px 16px;
       border: 1.5px solid #1565c0;
       border-radius: 20px;
       transition: background 0.15s, color 0.15s;
@@ -112,9 +114,10 @@
     }
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 24px;
       font-size: 0.8rem;
       color: #aaa;
+      border-top: 1px solid #e0e0e0;
     }
   </style>
 </head>
@@ -122,60 +125,60 @@
 
 <header>
   <h1>今日のテックニュース</h1>
-  <p class="date">2026年5月28日（木）</p>
-  <p class="subtitle">AI / ML &ensp;|&ensp; サイバーセキュリティ &ensp;|&ensp; 開発者ツール</p>
+  <p class="date">2026年5月29日（金）</p>
+  <p class="subtitle">AI / セキュリティ / ビジネス &ensp;|&ensp; 最新テクノロジーの動向</p>
 </header>
 
 <main>
 
-  <!-- Article 1: AI / ML -->
+  <!-- Article 1: Anthropic Claude Mythos / Project Glasswing -->
   <article class="card">
     <div class="card-header">
-      <span class="category cat-ai">AI / ML</span>
-      <h2>OpenAI、GPT-5.4を発表——100万トークンコンテキストと自律型マルチステップ操作を実現、Amazon出資交渉も浮上</h2>
+      <span class="badge badge-ai">AI / セキュリティ</span>
+      <h2>AnthropicのAIモデル「Claude Mythos」が1万件超のゼロデイ脆弱性を自律発見——Project Glasswing 最新アップデート</h2>
     </div>
     <div class="card-body">
       <p>
-        OpenAIは最新モデル「GPT-5.4」を公開し、業界最大クラスとなる100万トークンのコンテキストウィンドウと、複数ステップにわたるソフトウェア操作を自律的に実行するエージェント型ワークフロー機能を搭載した。デスクトップ生産性タスクを模擬したベンチマーク「OSWorld-V」ではスコア75%を達成し、人間の基準値72.4%をわずかに上回ることが確認されている。また、OpenAIはMicrosoft以外のクラウドプロバイダーへの製品提供を可能にする形でパートナーシップを再編し、Amazonが最大100億ドルの出資に向けて交渉中とも伝えられており、AIプラットフォーム競争の構図が大きく変わりつつある。
+        Anthropicは「Project Glasswing」の一環として最新AIモデル「Claude Mythos Preview」を活用し、主要OS・Webブラウザを含む重要ソフトウェア全般において1万件以上の高・重大レベルのゼロデイ脆弱性を自律的に発見した。AWS・Apple・Google・Microsoftなど大手テクノロジー企業にもアクセスが提供されており、AIによる脆弱性発見の速度が人間による修正能力をはるかに上回るという新たな課題も明らかになっている。Anthropicは米国政府やパートナー企業と連携しつつ、より強固な安全対策が整い次第、Mythosクラスのモデルを一般公開する方針を示している。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年5月 &mdash; imfounder / LLM Stats</span>
-      <a class="source-link" href="https://imfounder.com/science-tech/ai/ai-updates-may-2026/" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年5月26日 &mdash; The Hacker News</span>
+      <a class="source-link" href="https://thehackernews.com/2026/05/claude-mythos-ai-finds-10000-high.html" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
-  <!-- Article 2: Cybersecurity -->
+  <!-- Article 2: Microsoft Patch Tuesday + Out-of-Band SharePoint -->
   <article class="card">
     <div class="card-header">
-      <span class="category cat-sec">サイバーセキュリティ</span>
-      <h2>Giteaに深刻な脆弱性（CVE-2026-27771）——30か国・3万超の環境でプライベートコンテナイメージが無認証流出のリスク</h2>
+      <span class="badge badge-security">サイバーセキュリティ</span>
+      <h2>Microsoftが120件の脆弱性を修正——SharePoint Serverに帯域外緊急パッチも追加リリース（CVSSスコア8.8）</h2>
     </div>
     <div class="card-body">
       <p>
-        セルフホスト型Gitサービス「Gitea」において、未認証の攻撃者がプライベートコンテナイメージを認証なしに取得できる深刻な脆弱性（CVE-2026-27771）が発覚した。バージョン1.26.2より前のすべてのリリースが対象で、30か国以上の3万を超えるデプロイ環境に影響が及ぶと見られている。同時期にFBIはサイレント・ランサム・グループが法律事務所を新たな標的として攻撃を強化しているとして緊急警告を発しており、セルフホスト型サービスを利用する組織はただちにアップデートを適用し、外部公開ポートの棚卸しと監査を実施することが推奨される。
+        Microsoftは2026年5月のPatch Tuesdayでゼロデイ脆弱性なしとしながらも120件の脆弱性を修正したが、その後さらにSharePoint Serverを対象とした帯域外（緊急）パッチ（CVE-2026-45659、CVSSスコア8.8）を個別にリリースした。同脆弱性は認証済み攻撃者によるリモートコード実行を可能にするもので、既に1,300台以上のサーバーへの積極的な悪用が確認されており、管理者には速やかなパッチ適用が強く推奨されている。Office・Netlogon・DNS・Hyper-Vなど複数コンポーネントにも重大な修正が含まれており、IT担当者は優先度を付けたトリアージの実施が急務となっている。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年5月27日 &mdash; The Hacker News</span>
-      <a class="source-link" href="https://thehackernews.com/" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年5月13日 &mdash; BleepingComputer</span>
+      <a class="source-link" href="https://www.bleepingcomputer.com/news/microsoft/microsoft-may-2026-patch-tuesday-fixes-120-flaws-no-zero-days/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
-  <!-- Article 3: Developer Tools -->
+  <!-- Article 3: Meta AI CapEx -->
   <article class="card">
     <div class="card-header">
-      <span class="category cat-dev">開発者ツール</span>
-      <h2>Google I/O 2026：Gemini 3.5・WebMCP・Android AI CLI——開発者向け大型発表でAIエージェント時代の標準争いが激化</h2>
+      <span class="badge badge-business">AI / ビジネス</span>
+      <h2>MetaがAIインフラ投資を最大1,450億ドルへ増額——Zuckerberg CEO、「超知性」実現に向け全力投資を宣言</h2>
     </div>
     <div class="card-body">
       <p>
-        Googleは「Google I/O 2026」（5月19〜20日）において、エージェント型タスクでフロンティア性能を発揮しつつ他モデル比4倍の出力速度を誇る「Gemini 3.5 Flash」を発表した。さらにブラウザ上のAIエージェントが構造化ツールにアクセスできる新しいオープンWeb標準「WebMCP」を提案し、Chrome 149でのオリジントライアルを開始することを明らかにした。Android Studioでは、React NativeやWeb フレームワーク、iOSコードをネイティブKotlin Androidアプリへ自動移行するプレビュー機能も披露され、クロスプラットフォーム開発の効率化に向けた取り組みが一段と加速している。
+        Metaは2026年の設備投資（CapEx）予測を当初の1,150〜1,350億ドルから1,250〜1,450億ドルへと大幅に上方修正した。この増額はコンポーネント価格の上昇とデータセンター拡張コストに加え、「Superintelligence Labs」を中心としたAI研究の加速が主な要因となっている。Mark Zuckerberg CEOはOpenAI・Googleとの競争に勝つべくAIインフラを「中核事業基盤」と位置づけており、JPMorganもAI投資をコアITインフラへ再分類するなど、大企業のAI投資が「試験段階」から「本格稼働段階」へ移行していることを象徴する動きとして注目されている。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年5月19〜20日 &mdash; Google Developers Blog</span>
-      <a class="source-link" href="https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年4月29日 &mdash; Fortune</span>
+      <a class="source-link" href="https://fortune.com/2026/04/29/meta-zuckerberg-145-billion-ai-spending-roi/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
