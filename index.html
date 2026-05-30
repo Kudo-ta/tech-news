@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>デイリーテックニュース - 2026年5月29日</title>
+  <title>テックニュース日報 - 2026年5月30日</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
       background: #f0f2f5;
@@ -69,7 +69,7 @@
     }
     .badge-ai       { background: #e8f4fd; color: #1565c0; }
     .badge-security { background: #fde8e8; color: #c0392b; }
-    .badge-business { background: #e6f4ea; color: #137333; }
+    .badge-cloud    { background: #e6f4ea; color: #137333; }
     .card-header h2 {
       font-size: 1.15rem;
       font-weight: 700;
@@ -125,60 +125,66 @@
 
 <header>
   <h1>今日のテックニュース</h1>
-  <p class="date">2026年5月29日（金）</p>
-  <p class="subtitle">AI / セキュリティ / ビジネス &ensp;|&ensp; 最新テクノロジーの動向</p>
+  <p class="date">2026年5月30日（土）</p>
+  <p class="subtitle">AI / サイバーセキュリティ / クラウド &ensp;|&ensp; 最新テクノロジーの動向</p>
 </header>
 
 <main>
 
-  <!-- Article 1: Anthropic Claude Mythos / Project Glasswing -->
+  <!-- Article 1: Gemini 3.5 Flash GA -->
   <article class="card">
     <div class="card-header">
-      <span class="badge badge-ai">AI / セキュリティ</span>
-      <h2>AnthropicのAIモデル「Claude Mythos」が1万件超のゼロデイ脆弱性を自律発見——Project Glasswing 最新アップデート</h2>
+      <span class="badge badge-ai">AI / ML</span>
+      <h2>Google、「Gemini 3.5 Flash」を一般提供開始——同クラス最速・100万トークンコンテキストを低価格で実現</h2>
     </div>
     <div class="card-body">
       <p>
-        Anthropicは「Project Glasswing」の一環として最新AIモデル「Claude Mythos Preview」を活用し、主要OS・Webブラウザを含む重要ソフトウェア全般において1万件以上の高・重大レベルのゼロデイ脆弱性を自律的に発見した。AWS・Apple・Google・Microsoftなど大手テクノロジー企業にもアクセスが提供されており、AIによる脆弱性発見の速度が人間による修正能力をはるかに上回るという新たな課題も明らかになっている。Anthropicは米国政府やパートナー企業と連携しつつ、より強固な安全対策が整い次第、Mythosクラスのモデルを一般公開する方針を示している。
+        Googleは最新の大規模言語モデル「Gemini 3.5 Flash」の一般提供を開始した。同モデルは100万トークンという広大なコンテキストウィンドウを持ち、同等クラスのモデルと比べて4倍の処理速度を誇る。価格は入力100万トークンあたり1.50ドル、出力9ドルと競争力があり、エージェント型AIアプリケーションへの採用拡大が期待される。
+        AIインフラ競争が激化する中、Googleは高い知能と低レイテンシを両立したAPIを開発者・企業向けに提供することで、OpenAIやAnthropicとの差別化を図る。
+        今回のリリースはGeminiシリーズの継続的な強化の一環であり、マルチモーダル対応や長文脈処理の分野でも業界標準を塗り替えうる存在として注目を集めている。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年5月26日 &mdash; The Hacker News</span>
-      <a class="source-link" href="https://thehackernews.com/2026/05/claude-mythos-ai-finds-10000-high.html" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年5月29日 &mdash; LLM Stats / Air Street Press</span>
+      <a class="source-link" href="https://llm-stats.com/ai-news" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
-  <!-- Article 2: Microsoft Patch Tuesday + Out-of-Band SharePoint -->
+  <!-- Article 2: Malicious NuGet / Kimsuky -->
   <article class="card">
     <div class="card-header">
       <span class="badge badge-security">サイバーセキュリティ</span>
-      <h2>Microsoftが120件の脆弱性を修正——SharePoint Serverに帯域外緊急パッチも追加リリース（CVSSスコア8.8）</h2>
+      <h2>ブラジル金融機関を偽装した悪意あるNuGetパッケージを発見——北朝鮮Kimsukyも韓国軍・企業へ攻撃継続</h2>
     </div>
     <div class="card-body">
       <p>
-        Microsoftは2026年5月のPatch Tuesdayでゼロデイ脆弱性なしとしながらも120件の脆弱性を修正したが、その後さらにSharePoint Serverを対象とした帯域外（緊急）パッチ（CVE-2026-45659、CVSSスコア8.8）を個別にリリースした。同脆弱性は認証済み攻撃者によるリモートコード実行を可能にするもので、既に1,300台以上のサーバーへの積極的な悪用が確認されており、管理者には速やかなパッチ適用が強く推奨されている。Office・Netlogon・DNS・Hyper-Vなど複数コンポーネントにも重大な修正が含まれており、IT担当者は優先度を付けたトリアージの実施が急務となっている。
+        セキュリティ研究者が、ブラジル最大規模の協同組合金融機関「Sicoob」のC# SDKを偽装した悪意あるNuGetパッケージを発見した。バージョン2.0.0〜2.0.4にはPFX証明書を含む機密情報を外部サーバーへ送信するコードが埋め込まれており、開発者は直ちに使用停止と調査が求められる。
+        また、LLMエージェントが公開済みの脆弱性を悪用して初期アクセスを取得した後、後続の侵害活動にも活用された事例が報告されており、AIを利用した攻撃手法の高度化が鮮明になっている。
+        さらに北朝鮮の国家支援グループ「Kimsuky」が、2026年3〜4月にかけて韓国の軍・企業組織を標的とした新たなキャンペーンを実施していたことがセキュリティ機関によって確認されている。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年5月13日 &mdash; BleepingComputer</span>
-      <a class="source-link" href="https://www.bleepingcomputer.com/news/microsoft/microsoft-may-2026-patch-tuesday-fixes-120-flaws-no-zero-days/" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年5月28〜29日 &mdash; The Hacker News / Help Net Security</span>
+      <a class="source-link" href="https://thehackernews.com/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
-  <!-- Article 3: Meta AI CapEx -->
+  <!-- Article 3: Anthropic $200B + Cohere-Aleph Alpha -->
   <article class="card">
     <div class="card-header">
-      <span class="badge badge-business">AI / ビジネス</span>
-      <h2>MetaがAIインフラ投資を最大1,450億ドルへ増額——Zuckerberg CEO、「超知性」実現に向け全力投資を宣言</h2>
+      <span class="badge badge-cloud">クラウド / インフラ</span>
+      <h2>Anthropicが2,000億ドル超のAIインフラ投資を確約——CohereとAleph Alphaの合併でグローバル再編も加速</h2>
     </div>
     <div class="card-body">
       <p>
-        Metaは2026年の設備投資（CapEx）予測を当初の1,150〜1,350億ドルから1,250〜1,450億ドルへと大幅に上方修正した。この増額はコンポーネント価格の上昇とデータセンター拡張コストに加え、「Superintelligence Labs」を中心としたAI研究の加速が主な要因となっている。Mark Zuckerberg CEOはOpenAI・Googleとの競争に勝つべくAIインフラを「中核事業基盤」と位置づけており、JPMorganもAI投資をコアITインフラへ再分類するなど、大企業のAI投資が「試験段階」から「本格稼働段階」へ移行していることを象徴する動きとして注目されている。
+        AI企業Anthropicは、主にGoogle Cloudとの連携を通じて2,000億ドル（約30兆円）超のクラウドインフラおよびAIチップへの投資を表明した。この大規模投資は次世代AIモデルの開発・運用を支える計算基盤の整備を目的とし、業界全体でのインフラ競争をさらに激化させている。
+        同時期に、カナダのAI企業CohereがドイツのAleph Alphaとの合併を発表しており、欧米間でのAI企業再編が新局面を迎えている。米国政府はOpenAI・Microsoftなど大手AI企業に対し、公開前モデルへの早期アクセスを求める規制強化の動きも見せており、AI開発を巡る政策・ビジネスの環境が急速に変化している。
+        こうした大型投資はエネルギー消費の増大をもたらすことも懸念されており、データセンターの持続可能な運営が今後の重要議題として浮上している。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年4月29日 &mdash; Fortune</span>
-      <a class="source-link" href="https://fortune.com/2026/04/29/meta-zuckerberg-145-billion-ai-spending-roi/" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年5月29日 &mdash; Air Street Press / LLM Stats</span>
+      <a class="source-link" href="https://press.airstreet.com/p/state-of-ai-may-2026" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
