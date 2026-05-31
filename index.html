@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テックニュース日報 - 2026年5月30日</title>
+  <title>テックニュース日報 - 2026年5月31日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -69,7 +69,7 @@
     }
     .badge-ai       { background: #e8f4fd; color: #1565c0; }
     .badge-security { background: #fde8e8; color: #c0392b; }
-    .badge-cloud    { background: #e6f4ea; color: #137333; }
+    .badge-hardware { background: #e6f4ea; color: #137333; }
     .card-header h2 {
       font-size: 1.15rem;
       font-weight: 700;
@@ -125,66 +125,66 @@
 
 <header>
   <h1>今日のテックニュース</h1>
-  <p class="date">2026年5月30日（土）</p>
-  <p class="subtitle">AI / サイバーセキュリティ / クラウド &ensp;|&ensp; 最新テクノロジーの動向</p>
+  <p class="date">2026年5月31日（日）</p>
+  <p class="subtitle">AI / サイバーセキュリティ / ハードウェア &ensp;|&ensp; 最新テクノロジーの動向</p>
 </header>
 
 <main>
 
-  <!-- Article 1: Gemini 3.5 Flash GA -->
+  <!-- Article 1: DeepSeek-V4 -->
   <article class="card">
     <div class="card-header">
       <span class="badge badge-ai">AI / ML</span>
-      <h2>Google、「Gemini 3.5 Flash」を一般提供開始——同クラス最速・100万トークンコンテキストを低価格で実現</h2>
+      <h2>DeepSeek、1兆パラメータ超の次世代モデル「DeepSeek-V4」プレビュー版を公開——最前線モデルに匹敵する性能を低コストで実現</h2>
     </div>
     <div class="card-body">
       <p>
-        Googleは最新の大規模言語モデル「Gemini 3.5 Flash」の一般提供を開始した。同モデルは100万トークンという広大なコンテキストウィンドウを持ち、同等クラスのモデルと比べて4倍の処理速度を誇る。価格は入力100万トークンあたり1.50ドル、出力9ドルと競争力があり、エージェント型AIアプリケーションへの採用拡大が期待される。
-        AIインフラ競争が激化する中、Googleは高い知能と低レイテンシを両立したAPIを開発者・企業向けに提供することで、OpenAIやAnthropicとの差別化を図る。
-        今回のリリースはGeminiシリーズの継続的な強化の一環であり、マルチモーダル対応や長文脈処理の分野でも業界標準を塗り替えうる存在として注目を集めている。
+        中国のAI企業DeepSeekが、1兆を超えるパラメータを持つ大規模言語モデル「DeepSeek-V4」のプレビュー版を公開した。同社によれば、性能面ではOpenAIやGoogleといった最前線モデルに匹敵しながらも、推論コストを大幅に抑えた運用が可能だという。
+        このリリースは、AI開発における中国勢の存在感を改めて示すものとなっており、グローバルなAIモデル競争においてコスト効率と性能の両立が新たな競争軸として浮上している。
+        同時期にはOpenAIがGPT-5.4（100万トークンコンテキスト対応）を発表するなど、主要プレーヤーが一斉に次世代モデルを投入する「モデル乱立」の様相を呈している。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年5月29日 &mdash; LLM Stats / Air Street Press</span>
-      <a class="source-link" href="https://llm-stats.com/ai-news" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年5月31日 &mdash; LLM Stats</span>
+      <a class="source-link" href="https://llm-stats.com/llm-updates" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
-  <!-- Article 2: Malicious NuGet / Kimsuky -->
+  <!-- Article 2: CVE Lite CLI / OWASP -->
   <article class="card">
     <div class="card-header">
       <span class="badge badge-security">サイバーセキュリティ</span>
-      <h2>ブラジル金融機関を偽装した悪意あるNuGetパッケージを発見——北朝鮮Kimsukyも韓国軍・企業へ攻撃継続</h2>
+      <h2>「CVE Lite CLI」がOWASP公式インキュベータープロジェクトに認定——開発者ターミナルで脆弱性を即時検出・修正</h2>
     </div>
     <div class="card-body">
       <p>
-        セキュリティ研究者が、ブラジル最大規模の協同組合金融機関「Sicoob」のC# SDKを偽装した悪意あるNuGetパッケージを発見した。バージョン2.0.0〜2.0.4にはPFX証明書を含む機密情報を外部サーバーへ送信するコードが埋め込まれており、開発者は直ちに使用停止と調査が求められる。
-        また、LLMエージェントが公開済みの脆弱性を悪用して初期アクセスを取得した後、後続の侵害活動にも活用された事例が報告されており、AIを利用した攻撃手法の高度化が鮮明になっている。
-        さらに北朝鮮の国家支援グループ「Kimsuky」が、2026年3〜4月にかけて韓国の軍・企業組織を標的とした新たなキャンペーンを実施していたことがセキュリティ機関によって確認されている。
+        オープンソースのセキュリティツール「CVE Lite CLI」がOWASP（Open Web Application Security Project）の公式インキュベータープロジェクトとして正式認定された。このツールはプロジェクトのロックファイルを自動解析し、Open Source Vulnerabilities（OSV）データベースと照合することで依存パッケージの既知脆弱性を即座に検出、パッケージマネージャーに対応した修正コマンドをそのまま提示する。
+        開発者がIDEやCIパイプラインを離れることなくターミナル上で脆弱性対応を完結できる点が高く評価されており、2026年5月のホットなサイバーセキュリティ向けOSSツールとして注目を集めている。
+        ShinyHuntersによる4,200万件超の個人情報漏洩や北朝鮮系グループによる標的型攻撃が続く中、サプライチェーンセキュリティの強化を支援するツールとして幅広い採用が期待される。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年5月28〜29日 &mdash; The Hacker News / Help Net Security</span>
-      <a class="source-link" href="https://thehackernews.com/" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年5月28日 &mdash; Help Net Security</span>
+      <a class="source-link" href="https://www.helpnetsecurity.com/2026/05/28/hottest-cybersecurity-open-source-tools-of-the-month-may-2026/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
-  <!-- Article 3: Anthropic $200B + Cohere-Aleph Alpha -->
+  <!-- Article 3: Apple US chip / AMD Venice -->
   <article class="card">
     <div class="card-header">
-      <span class="badge badge-cloud">クラウド / インフラ</span>
-      <h2>Anthropicが2,000億ドル超のAIインフラ投資を確約——CohereとAleph Alphaの合併でグローバル再編も加速</h2>
+      <span class="badge badge-hardware">ハードウェア / 半導体</span>
+      <h2>Apple、地政学リスクを背景に米国内チップ生産をIntel・Samsungと協議——AMDも2nmプロセス「EPYC Venice」量産開始</h2>
     </div>
     <div class="card-body">
       <p>
-        AI企業Anthropicは、主にGoogle Cloudとの連携を通じて2,000億ドル（約30兆円）超のクラウドインフラおよびAIチップへの投資を表明した。この大規模投資は次世代AIモデルの開発・運用を支える計算基盤の整備を目的とし、業界全体でのインフラ競争をさらに激化させている。
-        同時期に、カナダのAI企業CohereがドイツのAleph Alphaとの合併を発表しており、欧米間でのAI企業再編が新局面を迎えている。米国政府はOpenAI・Microsoftなど大手AI企業に対し、公開前モデルへの早期アクセスを求める規制強化の動きも見せており、AI開発を巡る政策・ビジネスの環境が急速に変化している。
-        こうした大型投資はエネルギー消費の増大をもたらすことも懸念されており、データセンターの持続可能な運営が今後の重要議題として浮上している。
+        Appleが、地政学的リスクや米中関係の緊張を受けてサプライチェーンの地理的分散を加速させるため、米国内でのチップ生産に向けIntelおよびSamsungとの提携を検討していると報じられた。台湾のTSMCへの依存度を下げる動きは業界全体に広がっており、製造拠点の多様化が半導体産業の新たなトレンドとなっている。
+        同時期にAMDはTSMCの最先端2nmプロセスを採用した第6世代EPYCプロセッサ「Venice」の量産を開始したと発表した。高性能コンピューティング向けとしては初となる2nmプロセス製品であり、データセンター市場でのAMDの競争力をさらに押し上げる見込みだ。
+        AI需要の急増に伴い半導体の重要性が増す中、各社の製造戦略は国家安全保障とも密接に絡む問題として引き続き注目を集めている。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年5月29日 &mdash; Air Street Press / LLM Stats</span>
-      <a class="source-link" href="https://press.airstreet.com/p/state-of-ai-may-2026" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年5月31日 &mdash; TechPowerUp / LLM Stats</span>
+      <a class="source-link" href="https://www.techpowerup.com/review/future-hardware-releases/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
