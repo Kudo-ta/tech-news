@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テックニュース日報 - 2026年5月31日</title>
+  <title>テックニュース日報 - 2026年6月1日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -69,7 +69,7 @@
     }
     .badge-ai       { background: #e8f4fd; color: #1565c0; }
     .badge-security { background: #fde8e8; color: #c0392b; }
-    .badge-hardware { background: #e6f4ea; color: #137333; }
+    .badge-mobile   { background: #e6f4ea; color: #137333; }
     .card-header h2 {
       font-size: 1.15rem;
       font-weight: 700;
@@ -125,66 +125,66 @@
 
 <header>
   <h1>今日のテックニュース</h1>
-  <p class="date">2026年5月31日（日）</p>
-  <p class="subtitle">AI / サイバーセキュリティ / ハードウェア &ensp;|&ensp; 最新テクノロジーの動向</p>
+  <p class="date">2026年6月1日（月）</p>
+  <p class="subtitle">AI / サイバーセキュリティ / モバイル &ensp;|&ensp; 最新テクノロジーの動向</p>
 </header>
 
 <main>
 
-  <!-- Article 1: DeepSeek-V4 -->
+  <!-- Article 1: GitHub Copilot billing -->
   <article class="card">
     <div class="card-header">
-      <span class="badge badge-ai">AI / ML</span>
-      <h2>DeepSeek、1兆パラメータ超の次世代モデル「DeepSeek-V4」プレビュー版を公開——最前線モデルに匹敵する性能を低コストで実現</h2>
+      <span class="badge badge-ai">AI / 開発ツール</span>
+      <h2>GitHub Copilot、本日より「AIクレジット制」のメータリング課金に移行——無制限プランから使用量ベースへ</h2>
     </div>
     <div class="card-body">
       <p>
-        中国のAI企業DeepSeekが、1兆を超えるパラメータを持つ大規模言語モデル「DeepSeek-V4」のプレビュー版を公開した。同社によれば、性能面ではOpenAIやGoogleといった最前線モデルに匹敵しながらも、推論コストを大幅に抑えた運用が可能だという。
-        このリリースは、AI開発における中国勢の存在感を改めて示すものとなっており、グローバルなAIモデル競争においてコスト効率と性能の両立が新たな競争軸として浮上している。
-        同時期にはOpenAIがGPT-5.4（100万トークンコンテキスト対応）を発表するなど、主要プレーヤーが一斉に次世代モデルを投入する「モデル乱立」の様相を呈している。
+        GitHubは2026年6月1日より、GitHub Copilotの課金体系をリクエスト数ベースから使用量ベースの「メータリング課金」へ正式に移行した。
+        新たに導入される仮想通貨「GitHub AI Credits」は1クレジット＝0.01ドルで設定されており、AIコーディングセッションの複雑化に伴い推論コストが増大したことで、これまでの無制限サブスクリプションモデルの維持が困難になったことが背景にある。
+        開発者は今後、自身の利用量をより細かく把握・管理しながらCopilotを活用する必要があり、企業のコスト管理や利用計画の見直しが求められる転換点となる。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年5月31日 &mdash; LLM Stats</span>
+      <span class="pub-date">2026年6月1日 &mdash; LLM Stats</span>
       <a class="source-link" href="https://llm-stats.com/llm-updates" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
-  <!-- Article 2: CVE Lite CLI / OWASP -->
+  <!-- Article 2: Microsoft Defender + GitHub Advanced Security -->
   <article class="card">
     <div class="card-header">
-      <span class="badge badge-security">サイバーセキュリティ</span>
-      <h2>「CVE Lite CLI」がOWASP公式インキュベータープロジェクトに認定——開発者ターミナルで脆弱性を即時検出・修正</h2>
+      <span class="badge badge-security">セキュリティ / クラウド</span>
+      <h2>Microsoft、Defender for CloudとGitHub Advanced Securityの統合をGA——開発ライフサイクル全体のセキュリティ可視化を実現</h2>
     </div>
     <div class="card-body">
       <p>
-        オープンソースのセキュリティツール「CVE Lite CLI」がOWASP（Open Web Application Security Project）の公式インキュベータープロジェクトとして正式認定された。このツールはプロジェクトのロックファイルを自動解析し、Open Source Vulnerabilities（OSV）データベースと照合することで依存パッケージの既知脆弱性を即座に検出、パッケージマネージャーに対応した修正コマンドをそのまま提示する。
-        開発者がIDEやCIパイプラインを離れることなくターミナル上で脆弱性対応を完結できる点が高く評価されており、2026年5月のホットなサイバーセキュリティ向けOSSツールとして注目を集めている。
-        ShinyHuntersによる4,200万件超の個人情報漏洩や北朝鮮系グループによる標的型攻撃が続く中、サプライチェーンセキュリティの強化を支援するツールとして幅広い採用が期待される。
+        Microsoftは、Microsoft Defender for CloudとGitHub Advanced Securityの統合機能が一般提供（GA）に達したと発表した。
+        この統合により、コードの変更が本番環境のどこに影響するかを自動的にマッピングし、実際のランタイムコンテキストに基づいたセキュリティアラートの優先順位付けが可能となる。
+        開発チームとセキュリティチームが連携した修復ワークフローも実現しており、開発ライフサイクル全体を通じたセキュリティの統合管理が大幅に前進する。2026年はエージェント型AIを軸にセキュリティ業界のM&Aが活発化しており、今回の統合もその流れに沿った重要な動きとして注目される。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年5月28日 &mdash; Help Net Security</span>
-      <a class="source-link" href="https://www.helpnetsecurity.com/2026/05/28/hottest-cybersecurity-open-source-tools-of-the-month-may-2026/" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年5月21日 &mdash; Microsoft Security Blog</span>
+      <a class="source-link" href="https://www.microsoft.com/en-us/security/blog/2026/05/21/whats-new-in-microsoft-security-may-2026/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
-  <!-- Article 3: Apple US chip / AMD Venice -->
+  <!-- Article 3: Apple WWDC26 -->
   <article class="card">
     <div class="card-header">
-      <span class="badge badge-hardware">ハードウェア / 半導体</span>
-      <h2>Apple、地政学リスクを背景に米国内チップ生産をIntel・Samsungと協議——AMDも2nmプロセス「EPYC Venice」量産開始</h2>
+      <span class="badge badge-mobile">モバイル / ハードウェア</span>
+      <h2>Apple WWDC26、6月8日に開幕——iOS 27でサードパーティAIプロバイダー対応「Extensions」機能が注目の的</h2>
     </div>
     <div class="card-body">
       <p>
-        Appleが、地政学的リスクや米中関係の緊張を受けてサプライチェーンの地理的分散を加速させるため、米国内でのチップ生産に向けIntelおよびSamsungとの提携を検討していると報じられた。台湾のTSMCへの依存度を下げる動きは業界全体に広がっており、製造拠点の多様化が半導体産業の新たなトレンドとなっている。
-        同時期にAMDはTSMCの最先端2nmプロセスを採用した第6世代EPYCプロセッサ「Venice」の量産を開始したと発表した。高性能コンピューティング向けとしては初となる2nmプロセス製品であり、データセンター市場でのAMDの競争力をさらに押し上げる見込みだ。
-        AI需要の急増に伴い半導体の重要性が増す中、各社の製造戦略は国家安全保障とも密接に絡む問題として引き続き注目を集めている。
+        Appleは2026年6月8日にWorldwide Developers Conference（WWDC26）を開催すると正式発表した。
+        今年の最大の注目点は、iOS 27・iPadOS 27・macOS 27においてApple IntelligenceにGoogleやAnthropicといったサードパーティAIプロバイダーを選択・連携できる「Extensions」機能の公開が見込まれている点だ。
+        この機能はApp Store経由でAIプロバイダーをシステムに統合するもので、Appleが自社AIエコシステムの枠を超えてオープンなAIプラットフォームへの転換を本格化させる重要な節目となる可能性がある。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年5月31日 &mdash; TechPowerUp / LLM Stats</span>
-      <a class="source-link" href="https://www.techpowerup.com/review/future-hardware-releases/" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年5月 &mdash; Apple Newsroom</span>
+      <a class="source-link" href="https://www.apple.com/newsroom/2026/05/apple-kicks-off-worldwide-developers-conference-on-june-8/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
