@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テックニュース日報 - 2026年6月1日</title>
+  <title>テックニュース日報 - 2026年6月2日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -67,9 +67,9 @@
       letter-spacing: 0.07em;
       margin-bottom: 12px;
     }
-    .badge-ai       { background: #e8f4fd; color: #1565c0; }
     .badge-security { background: #fde8e8; color: #c0392b; }
     .badge-mobile   { background: #e6f4ea; color: #137333; }
+    .badge-ai       { background: #e8f4fd; color: #1565c0; }
     .card-header h2 {
       font-size: 1.15rem;
       font-weight: 700;
@@ -125,66 +125,66 @@
 
 <header>
   <h1>今日のテックニュース</h1>
-  <p class="date">2026年6月1日（月）</p>
-  <p class="subtitle">AI / サイバーセキュリティ / モバイル &ensp;|&ensp; 最新テクノロジーの動向</p>
+  <p class="date">2026年6月2日（火）</p>
+  <p class="subtitle">サイバーセキュリティ / モバイル・開発者ツール / AI &ensp;|&ensp; 最新テクノロジーの動向</p>
 </header>
 
 <main>
 
-  <!-- Article 1: GitHub Copilot billing -->
+  <!-- Article 1: Cybersecurity -->
   <article class="card">
     <div class="card-header">
-      <span class="badge badge-ai">AI / 開発ツール</span>
-      <h2>GitHub Copilot、本日より「AIクレジット制」のメータリング課金に移行——無制限プランから使用量ベースへ</h2>
+      <span class="badge badge-security">サイバーセキュリティ</span>
+      <h2>Palo Alto Networks の PAN-OS に深刻な認証バイパス脆弱性、公開からわずか4日で悪用が始まる</h2>
     </div>
     <div class="card-body">
       <p>
-        GitHubは2026年6月1日より、GitHub Copilotの課金体系をリクエスト数ベースから使用量ベースの「メータリング課金」へ正式に移行した。
-        新たに導入される仮想通貨「GitHub AI Credits」は1クレジット＝0.01ドルで設定されており、AIコーディングセッションの複雑化に伴い推論コストが増大したことで、これまでの無制限サブスクリプションモデルの維持が困難になったことが背景にある。
-        開発者は今後、自身の利用量をより細かく把握・管理しながらCopilotを活用する必要があり、企業のコスト管理や利用計画の見直しが求められる転換点となる。
+        Palo Alto Networks の次世代ファイアウォール OS「PAN-OS」において、認証バイパスを可能にする脆弱性 CVE-2026-0257 が確認され、公開からわずか4日で実際の攻撃への悪用が観測されました。
+        セキュリティ専門家はパッチの即時適用を強く勧告しており、特にインターネットに公開された管理インターフェースを持つ組織は早急な対応が求められます。
+        あわせて、Linux 系システムで低権限ユーザーが root へ昇格できる「CIFSwitch」の概念実証コードも公開されており（CVE-2026-41089）、企業はこの2件の脆弱性への対処を優先課題とする必要があります。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年6月1日 &mdash; LLM Stats</span>
-      <a class="source-link" href="https://llm-stats.com/llm-updates" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年6月1日 &mdash; SecurityWeek</span>
+      <a class="source-link" href="https://www.securityweek.com/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
-  <!-- Article 2: Microsoft Defender + GitHub Advanced Security -->
+  <!-- Article 2: Mobile / Developer Tools -->
   <article class="card">
     <div class="card-header">
-      <span class="badge badge-security">セキュリティ / クラウド</span>
-      <h2>Microsoft、Defender for CloudとGitHub Advanced Securityの統合をGA——開発ライフサイクル全体のセキュリティ可視化を実現</h2>
+      <span class="badge badge-mobile">モバイル / 開発者ツール</span>
+      <h2>Apple WWDC26 が6月8日開幕——iOS 27・全面刷新 Siri・カスタマイズ対応カメラアプリを発表へ</h2>
     </div>
     <div class="card-body">
       <p>
-        Microsoftは、Microsoft Defender for CloudとGitHub Advanced Securityの統合機能が一般提供（GA）に達したと発表した。
-        この統合により、コードの変更が本番環境のどこに影響するかを自動的にマッピングし、実際のランタイムコンテキストに基づいたセキュリティアラートの優先順位付けが可能となる。
-        開発チームとセキュリティチームが連携した修復ワークフローも実現しており、開発ライフサイクル全体を通じたセキュリティの統合管理が大幅に前進する。2026年はエージェント型AIを軸にセキュリティ業界のM&Aが活発化しており、今回の統合もその流れに沿った重要な動きとして注目される。
+        Apple の世界開発者会議「WWDC26」が2026年6月8〜12日に開催されます。今年の目玉は AI の大幅進化で、全面刷新された Siri や開発者がカスタマイズできる新カメラアプリ、iOS 27 の新機能が披露される見込みです。
+        期間中は100本以上のセッション動画・グループラボ・Apple Developer Forums でのディスカッションが提供され、次世代プラットフォーム向けアプリ開発のロードマップ策定に格好の機会となります。
+        今年のWWDC は Apple Intelligence をサードパーティの AI プロバイダーにも開放する「Extensions」機能の発表も期待されており、Apple のオープン AI 戦略における重要な転換点と位置づけられています。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年5月21日 &mdash; Microsoft Security Blog</span>
-      <a class="source-link" href="https://www.microsoft.com/en-us/security/blog/2026/05/21/whats-new-in-microsoft-security-may-2026/" target="_blank" rel="noopener">元記事を読む</a>
-    </div>
-  </article>
-
-  <!-- Article 3: Apple WWDC26 -->
-  <article class="card">
-    <div class="card-header">
-      <span class="badge badge-mobile">モバイル / ハードウェア</span>
-      <h2>Apple WWDC26、6月8日に開幕——iOS 27でサードパーティAIプロバイダー対応「Extensions」機能が注目の的</h2>
-    </div>
-    <div class="card-body">
-      <p>
-        Appleは2026年6月8日にWorldwide Developers Conference（WWDC26）を開催すると正式発表した。
-        今年の最大の注目点は、iOS 27・iPadOS 27・macOS 27においてApple IntelligenceにGoogleやAnthropicといったサードパーティAIプロバイダーを選択・連携できる「Extensions」機能の公開が見込まれている点だ。
-        この機能はApp Store経由でAIプロバイダーをシステムに統合するもので、Appleが自社AIエコシステムの枠を超えてオープンなAIプラットフォームへの転換を本格化させる重要な節目となる可能性がある。
-      </p>
-    </div>
-    <div class="card-footer">
-      <span class="pub-date">2026年5月 &mdash; Apple Newsroom</span>
+      <span class="pub-date">2026年5月 &mdash; Apple Newsroom / TechCrunch</span>
       <a class="source-link" href="https://www.apple.com/newsroom/2026/05/apple-kicks-off-worldwide-developers-conference-on-june-8/" target="_blank" rel="noopener">元記事を読む</a>
+    </div>
+  </article>
+
+  <!-- Article 3: AI / Developer Tools -->
+  <article class="card">
+    <div class="card-header">
+      <span class="badge badge-ai">AI / 開発者ツール</span>
+      <h2>Google I/O 2026：Android CLI・WebMCP 標準・Kotlin 移行ツールなど開発者向け AI 新機能を一挙公開</h2>
+    </div>
+    <div class="card-body">
+      <p>
+        Google I/O 2026 の開発者基調講演では、AI エージェントが Android Studio の機能を直接呼び出せる「Android CLI」安定版リリース、ブラウザ上の AI エージェントが構造化ツールを利用できるオープン標準「WebMCP」（Chrome 149 の Origin Trial で試験提供開始）、そして React Native や Web フレームワークから Kotlin ネイティブアプリへ自動移行する Android Studio 機能のプレビューが発表されました。
+        さらに Android 17 では 3D 絵文字が導入され、Pixel 端末が先行して利用可能となる予定です。Gemini を活用した音声入力補助機能「Rambler」も登場し、フィラーワード除去や意図した表現への自動修正をリアルタイムで行います。
+        これらの発表は、Google がモバイル・ブラウザ・AI の各領域で開発体験の革新を加速させていることを示す重要なマイルストーンとなっています。
+      </p>
+    </div>
+    <div class="card-footer">
+      <span class="pub-date">2026年6月 &mdash; Google Developers Blog / Engadget</span>
+      <a class="source-link" href="https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
