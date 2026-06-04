@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テックニュース日報 - 2026年6月3日</title>
+  <title>テックニュース日報 - 2026年6月4日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -68,8 +68,8 @@
       margin-bottom: 12px;
     }
     .badge-ai       { background: #e8f4fd; color: #1565c0; }
-    .badge-devtools { background: #e6f4ea; color: #137333; }
-    .badge-cloud    { background: #f3e8fd; color: #6a1b9a; }
+    .badge-security { background: #fdecea; color: #b71c1c; }
+    .badge-hardware { background: #e8f5e9; color: #1b5e20; }
     .card-header h2 {
       font-size: 1.15rem;
       font-weight: 700;
@@ -125,66 +125,66 @@
 
 <header>
   <h1>今日のテックニュース</h1>
-  <p class="date">2026年6月3日（水）</p>
-  <p class="subtitle">AI・ハードウェア / 開発者ツール / クラウド・セキュリティ &ensp;|&ensp; 最新テクノロジーの動向</p>
+  <p class="date">2026年6月4日（木）</p>
+  <p class="subtitle">AI・開発ツール / セキュリティ / ハードウェア &ensp;|&ensp; 最新テクノロジーの動向</p>
 </header>
 
 <main>
 
-  <!-- Article 1: AI / Hardware -->
+  <!-- Article 1: AI -->
   <article class="card">
     <div class="card-header">
-      <span class="badge badge-ai">AI / ハードウェア</span>
-      <h2>NVIDIA が Computex 2026 で新型PC向けチップを発表――AIエージェントのローカル実行を宣言</h2>
+      <span class="badge badge-ai">AI / 機械学習</span>
+      <h2>MicrosoftがBuild 2026で独自コード生成AIモデル「MAI-Code-1-Flash」を発表――OpenAI依存からの脱却へ</h2>
     </div>
     <div class="card-body">
       <p>
-        NVIDIAのジェンスン・フアンCEOは台湾・Computex 2026において、Microsoftとの協力のもと Windows 向け高性能ノートPC用チップを発表し、「PCを再発明する」と宣言しました。
-        同チップはAI処理をデバイス側で完結させることを前提に設計されており、クラウドに依存せずAIエージェントをローカルで動かすことで、コストと応答速度の両面で大きな優位性が見込まれます。
-        また今回の発表と同時期に、Anthropicが評価額9,650億ドルで新たな資金調達ラウンドを完了し、OpenAIを抜いて未上場AI企業として世界最高の時価総額を達成したことも業界に衝撃を与えています。
+        Microsoftは6月2日に開催したBuild 2026開発者カンファレンスにて、テキストによる説明からアプリやWebサイトのソースコードを自動生成する初の自社AIモデル「MAI-Code-1-Flash」を発表しました。
+        同社はOpenAIやAnthropicへの依存を段階的に低減しつつ、AIスタックのより多くの層に自社技術を展開する戦略を明確にしており、開発者向けコスト削減と自社競争力の強化が主な狙いです。
+        なお、Anthropicはこの発表と同じ6月1日にIPO（新規株式公開）の準備として証券当局への秘密裏申請を行ったことも明らかになり、AI業界の上場競争が本格化しています。
       </p>
     </div>
     <div class="card-footer">
       <span class="pub-date">2026年6月2日 &mdash; CNBC</span>
-      <a class="source-link" href="https://www.cnbc.com/2026/06/02/nvidias-new-pc-chips-are-ceos-bid-to-own-every-part-of-ai-stack.html" target="_blank" rel="noopener">元記事を読む</a>
+      <a class="source-link" href="https://www.cnbc.com/2026/06/02/microsoft-unveils-new-ai-models-lessen-reliance-on-openai-lower-costs.html" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
-  <!-- Article 2: Developer Tools -->
+  <!-- Article 2: Security / Developer Tools -->
   <article class="card">
     <div class="card-header">
-      <span class="badge badge-devtools">開発者ツール</span>
-      <h2>GitHub Copilot がトークン従量課金制へ移行――定額制廃止で開発者コミュニティから強い反発</h2>
+      <span class="badge badge-security">セキュリティ / 開発ツール</span>
+      <h2>Microsoft Build 2026：AIエージェント向けセキュリティSDK「Agent 365 SDK」が一般提供開始</h2>
     </div>
     <div class="card-body">
       <p>
-        GitHubは2026年6月1日より、GitHub Copilot の料金体系をこれまでの定額サブスクリプションからトークンベースの従量課金制に全面移行しました。
-        変更は全プランに即時適用され、利用頻度の高いヘビーユーザーを中心にコスト増加を懸念する声が多数上がり、SNS上では大きな批判が巻き起こっています。
-        一方で Microsoft Build 2026 では同ツールの自律コーディング・自動デバッグ・テスト生成機能の大幅強化も発表されており、機能拡充と課金モデルの変革が同時進行しています。
+        MicrosoftはBuild 2026において、AIエージェント開発にセキュリティを標準で組み込むための「Agent 365 SDK」を一般公開しました。
+        このSDKにより、開発者はエージェントの設計段階から可観測性・アクセス制御・コンプライアンス強制を一体的に統合でき、企業が安全なAIエージェントをデフォルトで構築できる環境が整います。
+        さらにGitHub Advanced SecurityとMicrosoft Defender for Cloudの連携機能も正式リリースされ、コードの変更から本番環境までのセキュリティを一元的に可視化する仕組みが実現しました。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年6月1日 &mdash; Build Fast With AI</span>
-      <a class="source-link" href="https://www.buildfastwithai.com/blogs/ai-news-today-june-1-2026" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年6月2日 &mdash; Microsoft Security Blog</span>
+      <a class="source-link" href="https://www.microsoft.com/en-us/security/blog/2026/06/02/microsoft-build-2026-securing-code-agents-and-models-across-the-development-lifecycle/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
-  <!-- Article 3: Cloud / Security -->
+  <!-- Article 3: Hardware -->
   <article class="card">
     <div class="card-header">
-      <span class="badge badge-cloud">クラウド / セキュリティ</span>
-      <h2>Google と Microsoft が AI 時代のクラウドセキュリティ新機能を一斉公開――Confidential VM・Agent SDK が GA</h2>
+      <span class="badge badge-hardware">ハードウェア</span>
+      <h2>NvidiaがComputexで「RTX Spark Superchip」を発表――ローカルAI処理がPC・ミニPCに本格到来</h2>
     </div>
     <div class="card-body">
       <p>
-        Google はインテルとの連携により第6世代 Xeon プロセッサの Intel TDX を活用した Confidential VM（C4シリーズ）をプレビュー公開し、AI・分析ワークロードのデータを機密性の高い環境で処理できるようにしました。
-        また Secret Manager と Agent Development Kit の統合を一般提供（GA）とし、AIエージェント開発時のパスワード漏洩やプロンプトインジェクションリスクを軽減する仕組みを標準で提供します。
-        Microsoft も同日の Build 2026 で Agent 365 SDK を発表し、AIエージェントの設計・展開段階からコンプライアンスとアクセス制御を組み込める統合セキュリティフレームワークの提供を開始しました。
+        NvidiaはComputex 2026にて、Blackwell RTXグラフィクスとGrace CPUを一体化した新チップ「RTX Spark Superchip」を発表しました。
+        ラップトップやミニPCへの搭載を想定した本チップは、これまでクラウド専用とされてきたAIワークロードを個人デバイス上でローカル実行できるようにするもので、Apple・Intel・AMD・Qualcommとの競合が激化する見通しです。
+        AIの処理拠点がエッジ端末へと移行するという大きなトレンドを象徴する発表として、PC業界全体から注目を集めています。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年6月2日 &mdash; Google Cloud Blog / Microsoft Security Blog</span>
-      <a class="source-link" href="https://cloud.google.com/blog/products/identity-security/next26-redefining-security-for-the-ai-era-with-google-cloud-and-wiz" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年6月2日 &mdash; Tech Startups</span>
+      <a class="source-link" href="https://techstartups.com/2026/06/02/top-tech-news-today-june-2-2026/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
