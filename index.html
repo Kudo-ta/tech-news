@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テックニュース日報 - 2026年6月8日</title>
+  <title>テックニュース日報 - 2026年6月9日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -67,9 +67,9 @@
       letter-spacing: 0.07em;
       margin-bottom: 12px;
     }
-    .badge-mobile   { background: #f3e8ff; color: #6b21a8; }
-    .badge-dev      { background: #e8f5e9; color: #1b5e20; }
-    .badge-ai       { background: #e8f4fd; color: #1565c0; }
+    .badge-mobile { background: #f3e8ff; color: #6b21a8; }
+    .badge-sec    { background: #fee2e2; color: #991b1b; }
+    .badge-ai     { background: #e8f4fd; color: #1565c0; }
     .card-header h2 {
       font-size: 1.15rem;
       font-weight: 700;
@@ -125,66 +125,66 @@
 
 <header>
   <h1>今日のテックニュース</h1>
-  <p class="date">2026年6月8日（月）</p>
-  <p class="subtitle">モバイル / OS &ensp;|&ensp; 開発者ツール &ensp;|&ensp; AI / ML &ensp;&mdash;&ensp; 最新テクノロジーの動向</p>
+  <p class="date">2026年6月9日（火）</p>
+  <p class="subtitle">モバイル / OS &ensp;|&ensp; サイバーセキュリティ &ensp;|&ensp; AI / ML &ensp;&mdash;&ensp; 最新テクノロジーの動向</p>
 </header>
 
 <main>
 
-  <!-- Article 1: Apple WWDC 2026 -->
+  <!-- Article 1: Apple WWDC 2026 Day 2 -->
   <article class="card">
     <div class="card-header">
-      <span class="badge badge-mobile">モバイル / OS</span>
-      <h2>Apple WWDC 2026 本日開幕：iOS 27・新Siriアプリ・折りたたみiPhoneを一挙発表</h2>
+      <span class="badge badge-mobile">モバイル / 開発者ツール</span>
+      <h2>Apple WWDC 2026：新SiriのAI機能「Spatial Reframing」やiOS 26.6ベータ版を公開</h2>
     </div>
     <div class="card-body">
       <p>
-        Appleは本日6月8日、年次開発者会議（WWDC 2026）を開幕し、iOS 27・iPadOS 27・macOS 27を正式発表した。
-        最大の目玉は刷新された専用「Siriアプリ」で、テキスト・音声どちらのモードでも会話履歴を横断参照できる「Extensions」機能を搭載し、Apple Intelligenceが大幅強化される。
-        Siriの一部チャットボット機能にはGoogleのGeminiチームとの共同開発AIモデルが採用されており、9月発売予定の折りたたみ型「iPhone Fold」も正式発表――開いた状態でiPadライクな2アプリ同時表示が可能になる。
+        6月8日に開幕したAppleのWWDC 2026では、AI強化されたSiriの刷新と、既存写真のアングルをAIで再生成できる新機能「Spatial Reframing（空間リフレーミング）」が大きな注目を集めた。
+        同日よりiOS 26.6・iPadOS 26.6・macOS 26.6・visionOS 26.6・watchOS 26.6のベータ版が開発者向けに公開され、各プラットフォームとのAI統合が大幅に深まった。
+        さらに子どもの端末利用を管理するデジタル保護者機能も新たに追加されており、ウェブサイトへのアクセスを保護者が承認できる仕組みも整備された。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年6月8日 &mdash; Newsweek</span>
-      <a class="source-link" href="https://www.newsweek.com/wwdc-2026-everything-apple-is-expected-to-announce-on-june-8-12016937" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年6月8日 &mdash; CNBC / Apple Developer</span>
+      <a class="source-link" href="https://www.cnbc.com/2026/06/08/apple-wwdc-2026-live-updates.html" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
-  <!-- Article 2: Microsoft Build 2026 -->
+  <!-- Article 2: Claude Code CI/CD vulnerability -->
   <article class="card">
     <div class="card-header">
-      <span class="badge badge-dev">開発者ツール / セキュリティ</span>
-      <h2>Microsoft Build 2026：「Agent 365 SDK」GA――AIエージェントの開発から実行まで一気通貫でセキュリティを統合</h2>
+      <span class="badge badge-sec">サイバーセキュリティ</span>
+      <h2>MicrosoftがAnthropicのClaude Code GitHub Actionに脆弱性を発見――CI/CDシークレット漏洩の恐れ</h2>
     </div>
     <div class="card-body">
       <p>
-        Microsoftは先週開催したMicrosoft Build 2026において、AIエージェント向けセキュリティ機能群を大量投入した。
-        「Agent 365 SDK」が一般提供（GA）となり、開発ワークフローにセキュリティ制御を直接組み込める設計が標準化。さらに「Microsoft Execution Container（MXC）SDK」でエージェント実行のOSレベル制御が可能になり、「Windows 365 for Agents」ではポリシー管理された完全分離クラウドPCでエージェントを稼働できる。
-        AIが企業システムへ深く統合されるにつれ、セキュリティ・ファースト設計が開発現場の新たな標準となりつつある。
+        Microsoftのセキュリティ研究者が、AnthropicのAIツール「Claude Code」のGitHub Actionに深刻な脆弱性を発見したと6月8日に報告した。プロンプトインジェクション攻撃を悪用することで、CI/CDパイプラインに保存されたAPIキーや認証トークンなどの機密情報が窃取される可能性がある。
+        AI駆動の開発ワークフローが急速に普及する中、サプライチェーン攻撃のリスクが高まっており、開発チームはAI連携ワークフローのアクセス権限とシークレット管理を早急に見直す必要があると専門家は警告している。
+        Anthropic側は対応策の調査・公表を進めており、CI/CDへのAI統合に関するセキュリティベストプラクティスの重要性が改めて浮き彫りになった。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年6月2日 &mdash; Microsoft Security Blog</span>
-      <a class="source-link" href="https://www.microsoft.com/en-us/security/blog/2026/06/02/microsoft-build-2026-securing-code-agents-and-models-across-the-development-lifecycle/" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年6月8日 &mdash; SecurityWeek</span>
+      <a class="source-link" href="https://www.securityweek.com/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
-  <!-- Article 3: Agentic AI -->
+  <!-- Article 3: Anthropic valuation + GPT-5.5 -->
   <article class="card">
     <div class="card-header">
-      <span class="badge badge-ai">AI / ML</span>
-      <h2>AIの主戦場は「チャット」から「自律タスク実行」へ――Googleのエージェント型Gemini・医療AI・人型ロボットが世界に普及</h2>
+      <span class="badge badge-ai">AI / スタートアップ</span>
+      <h2>AnthropicがOpenAIを抜き世界最高評価額9,650億ドルのAIスタートアップに――GPT-5.5も幻覚率52%削減を達成</h2>
     </div>
     <div class="card-body">
       <p>
-        2026年6月、AI業界の重心が会話型AIから複雑なタスクを自律完結させる「エージェント型AI」へと急速に移行している。
-        GoogleはI/O 2026で発表したGemini 4をAndroidのOS層に統合する「Gemini Intelligence」を展開中で、Uberのロボタクシーがスペインでサービスイン、BYDが人型ロボット市場に参入するなど現実世界への応用が急拡大した。
-        医療分野ではUC San DiegoのAIによる眼疾患早期検出など具体的な成果も報告されており、AIの社会実装はいよいよ研究段階から本格運用フェーズへ移行した。
+        AIスタートアップのAnthropicが評価額9,650億ドル（約140兆円）を達成し、OpenAIを超えて世界で最も高く評価されたAIスタートアップの座を獲得した。Claude Opus 4.8が新たなパフォーマンス基準を打ち立て、企業向け市場での急速な採用拡大が評価額上昇を牽引している。
+        一方、OpenAIも新モデル「GPT-5.5 Instant」を発表し、AIの誤回答（ハルシネーション）率を52.5%削減したと報告しており、AI精度をめぐる各社の競争はさらに激化している。
+        また、IntelはXeon 6+プロセッサを6月1日に正式発表し、旧世代比で9対1のサーバー集約比率を実現するなど、AIワークロード向けハードウェアの高速化も続いている。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年6月7日 &mdash; Medium (AI News Week)</span>
-      <a class="source-link" href="https://medium.com/@davidakpovi/ai-news-week-of-june-1-to-june-7-2026-7957940c805a" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年6月 &mdash; AIApps / Medium</span>
+      <a class="source-link" href="https://www.aiapps.com/blog/ai-news-breakthroughs-launches-trends-must-read/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
