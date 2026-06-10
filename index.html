@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テックニュース日報 - 2026年6月9日</title>
+  <title>テックニュース日報 - 2026年6月10日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -67,9 +67,9 @@
       letter-spacing: 0.07em;
       margin-bottom: 12px;
     }
-    .badge-mobile { background: #f3e8ff; color: #6b21a8; }
-    .badge-sec    { background: #fee2e2; color: #991b1b; }
     .badge-ai     { background: #e8f4fd; color: #1565c0; }
+    .badge-dev    { background: #dcfce7; color: #166534; }
+    .badge-mobile { background: #f3e8ff; color: #6b21a8; }
     .card-header h2 {
       font-size: 1.15rem;
       font-weight: 700;
@@ -125,66 +125,66 @@
 
 <header>
   <h1>今日のテックニュース</h1>
-  <p class="date">2026年6月9日（火）</p>
-  <p class="subtitle">モバイル / OS &ensp;|&ensp; サイバーセキュリティ &ensp;|&ensp; AI / ML &ensp;&mdash;&ensp; 最新テクノロジーの動向</p>
+  <p class="date">2026年6月10日（水）</p>
+  <p class="subtitle">AI / セキュリティ &ensp;|&ensp; 開発者ツール &ensp;|&ensp; モバイル / ハードウェア &ensp;&mdash;&ensp; 最新テクノロジーの動向</p>
 </header>
 
 <main>
 
-  <!-- Article 1: Apple WWDC 2026 Day 2 -->
+  <!-- Article 1: Anthropic Project Glasswing -->
   <article class="card">
     <div class="card-header">
-      <span class="badge badge-mobile">モバイル / 開発者ツール</span>
-      <h2>Apple WWDC 2026：新SiriのAI機能「Spatial Reframing」やiOS 26.6ベータ版を公開</h2>
+      <span class="badge badge-ai">AI / セキュリティ</span>
+      <h2>AnthropicのProject Glasswing、1か月でソフトウェアの重大脆弱性1万件超を自動検出</h2>
     </div>
     <div class="card-body">
       <p>
-        6月8日に開幕したAppleのWWDC 2026では、AI強化されたSiriの刷新と、既存写真のアングルをAIで再生成できる新機能「Spatial Reframing（空間リフレーミング）」が大きな注目を集めた。
-        同日よりiOS 26.6・iPadOS 26.6・macOS 26.6・visionOS 26.6・watchOS 26.6のベータ版が開発者向けに公開され、各プラットフォームとのAI統合が大幅に深まった。
-        さらに子どもの端末利用を管理するデジタル保護者機能も新たに追加されており、ウェブサイトへのアクセスを保護者が承認できる仕組みも整備された。
+        Anthropicが主導する「Project Glasswing」は、最新AIモデル「Claude Mythos Preview」を活用して社会インフラ的に重要なオープンソースソフトウェアのセキュリティ診断を行う取り組みで、運用開始からわずか1か月で高・重大度の脆弱性を1万件以上発見したと発表されました。
+        AIが膨大なコードベースを自動的に精査し、人間のセキュリティエンジニアを補完する形で深刻な欠陥を次々と特定しており、実用フェーズに入ったAI主導の脆弱性検出として業界から高い評価を得ています。
+        この成果は、AIがサイバーセキュリティの防衛側でも大きな力を発揮できることを示す具体的な実証例として注目されており、今後の重要インフラ保護への活用拡大が期待されています。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年6月8日 &mdash; CNBC / Apple Developer</span>
-      <a class="source-link" href="https://www.cnbc.com/2026/06/08/apple-wwdc-2026-live-updates.html" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年6月 &mdash; Crescendo AI / Radical Data Science</span>
+      <a class="source-link" href="https://www.crescendo.ai/news/latest-ai-news-and-updates" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
-  <!-- Article 2: Claude Code CI/CD vulnerability -->
+  <!-- Article 2: VS Code Supply Chain Security -->
   <article class="card">
     <div class="card-header">
-      <span class="badge badge-sec">サイバーセキュリティ</span>
-      <h2>MicrosoftがAnthropicのClaude Code GitHub Actionに脆弱性を発見――CI/CDシークレット漏洩の恐れ</h2>
+      <span class="badge badge-dev">開発者ツール</span>
+      <h2>VS Code、拡張機能の自動更新に2時間の遅延を導入――サプライチェーン攻撃対策を強化</h2>
     </div>
     <div class="card-body">
       <p>
-        Microsoftのセキュリティ研究者が、AnthropicのAIツール「Claude Code」のGitHub Actionに深刻な脆弱性を発見したと6月8日に報告した。プロンプトインジェクション攻撃を悪用することで、CI/CDパイプラインに保存されたAPIキーや認証トークンなどの機密情報が窃取される可能性がある。
-        AI駆動の開発ワークフローが急速に普及する中、サプライチェーン攻撃のリスクが高まっており、開発チームはAI連携ワークフローのアクセス権限とシークレット管理を早急に見直す必要があると専門家は警告している。
-        Anthropic側は対応策の調査・公表を進めており、CI/CDへのAI統合に関するセキュリティベストプラクティスの重要性が改めて浮き彫りになった。
+        Microsoftは「Microsoft Build 2026」において、Visual Studio Code（VS Code）の拡張機能自動アップデートに2時間の遅延を設けるセキュリティ機能を発表しました。悪意ある更新が拡張機能マーケットプレイスに紛れ込んだ場合でも、検知・対応する時間的猶予を確保するための措置です。
+        今回の発表はBuild 2026で披露された一連のセキュリティ強化の一環であり、開発ライフサイクル全体でコード・AIエージェント・モデルを保護するための新機能が多数追加されました。AIエージェントを組み込んだ開発ワークフローが急増する中、ツールチェーン自体のセキュリティ確保が急務となっています。
+        さらにAgent 365 SDKが一般提供（GA）となり、開発者がアクセス制御やコンプライアンス管理をエージェント設計段階から組み込めるようになりました。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年6月8日 &mdash; SecurityWeek</span>
-      <a class="source-link" href="https://www.securityweek.com/" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年6月2日 &mdash; Microsoft Security Blog</span>
+      <a class="source-link" href="https://www.microsoft.com/en-us/security/blog/2026/06/02/microsoft-build-2026-securing-code-agents-and-models-across-the-development-lifecycle/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
-  <!-- Article 3: Anthropic valuation + GPT-5.5 -->
+  <!-- Article 3: Apple WWDC 2026 -->
   <article class="card">
     <div class="card-header">
-      <span class="badge badge-ai">AI / スタートアップ</span>
-      <h2>AnthropicがOpenAIを抜き世界最高評価額9,650億ドルのAIスタートアップに――GPT-5.5も幻覚率52%削減を達成</h2>
+      <span class="badge badge-mobile">モバイル / ハードウェア</span>
+      <h2>Apple WWDC 2026：GoogleのAIと連携した「Siri AI」発表、Tim CookがCEO退任も明らかに</h2>
     </div>
     <div class="card-body">
       <p>
-        AIスタートアップのAnthropicが評価額9,650億ドル（約140兆円）を達成し、OpenAIを超えて世界で最も高く評価されたAIスタートアップの座を獲得した。Claude Opus 4.8が新たなパフォーマンス基準を打ち立て、企業向け市場での急速な採用拡大が評価額上昇を牽引している。
-        一方、OpenAIも新モデル「GPT-5.5 Instant」を発表し、AIの誤回答（ハルシネーション）率を52.5%削減したと報告しており、AI精度をめぐる各社の競争はさらに激化している。
-        また、IntelはXeon 6+プロセッサを6月1日に正式発表し、旧世代比で9対1のサーバー集約比率を実現するなど、AIワークロード向けハードウェアの高速化も続いている。
+        6月8日に開幕したAppleの年次開発者会議「WWDC 2026」では、Google AIとの提携による次世代音声アシスタント「Siri AI」を核とした大規模なAIエコシステムの刷新が発表されました。iOS 27・iPadOS 27・macOS 27をはじめ主要プラットフォームに「Apple Intelligence」が統合され、AI生成映像の解説機能や自然言語検索、ペアレンタルコントロールの大幅強化が盛り込まれています。
+        対応デバイスはiPhone 16シリーズ以降、iPhone 15 Pro/Pro Max、M1以降搭載のiPad・Macなどで、外部の大規模データセンターへの依存を最小化しながらAI機能を実現するAppleの独自アプローチが特徴です。
+        また、Tim Cook CEOが今年のWWDCを最後にAppleのトップを退くことが明らかになり、9月1日付でハードウェアエンジニアリング担当上級副社長のJohn Ternusが後任CEOに就任することが発表され、業界に大きな衝撃を与えました。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年6月 &mdash; AIApps / Medium</span>
-      <a class="source-link" href="https://www.aiapps.com/blog/ai-news-breakthroughs-launches-trends-must-read/" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年6月8日 &mdash; Engadget</span>
+      <a class="source-link" href="https://www.engadget.com/2189698/everything-announced-at-apples-wwdc-2026-keynote/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
