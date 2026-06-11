@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テックニュース日報 - 2026年6月10日</title>
+  <title>テックニュース日報 - 2026年6月11日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -67,9 +67,9 @@
       letter-spacing: 0.07em;
       margin-bottom: 12px;
     }
-    .badge-ai     { background: #e8f4fd; color: #1565c0; }
-    .badge-dev    { background: #dcfce7; color: #166534; }
+    .badge-cyber  { background: #fff0f0; color: #b71c1c; }
     .badge-mobile { background: #f3e8ff; color: #6b21a8; }
+    .badge-ai     { background: #e8f5e9; color: #1b5e20; }
     .card-header h2 {
       font-size: 1.15rem;
       font-weight: 700;
@@ -125,66 +125,66 @@
 
 <header>
   <h1>今日のテックニュース</h1>
-  <p class="date">2026年6月10日（水）</p>
-  <p class="subtitle">AI / セキュリティ &ensp;|&ensp; 開発者ツール &ensp;|&ensp; モバイル / ハードウェア &ensp;&mdash;&ensp; 最新テクノロジーの動向</p>
+  <p class="date">2026年6月11日（木）</p>
+  <p class="subtitle">サイバーセキュリティ &ensp;|&ensp; モバイル / 開発者ツール &ensp;|&ensp; AI / ハードウェア &ensp;&mdash;&ensp; 最新テクノロジーの動向</p>
 </header>
 
 <main>
 
-  <!-- Article 1: Anthropic Project Glasswing -->
+  <!-- Article 1: Microsoft Patch Tuesday -->
   <article class="card">
     <div class="card-header">
-      <span class="badge badge-ai">AI / セキュリティ</span>
-      <h2>AnthropicのProject Glasswing、1か月でソフトウェアの重大脆弱性1万件超を自動検出</h2>
+      <span class="badge badge-cyber">サイバーセキュリティ</span>
+      <h2>マイクロソフト、200件の脆弱性を修正する6月パッチを公開 — ゼロデイ5件を含む大規模更新</h2>
     </div>
     <div class="card-body">
       <p>
-        Anthropicが主導する「Project Glasswing」は、最新AIモデル「Claude Mythos Preview」を活用して社会インフラ的に重要なオープンソースソフトウェアのセキュリティ診断を行う取り組みで、運用開始からわずか1か月で高・重大度の脆弱性を1万件以上発見したと発表されました。
-        AIが膨大なコードベースを自動的に精査し、人間のセキュリティエンジニアを補完する形で深刻な欠陥を次々と特定しており、実用フェーズに入ったAI主導の脆弱性検出として業界から高い評価を得ています。
-        この成果は、AIがサイバーセキュリティの防衛側でも大きな力を発揮できることを示す具体的な実証例として注目されており、今後の重要インフラ保護への活用拡大が期待されています。
+        マイクロソフトは2026年6月の「Patch Tuesday」として、200件もの脆弱性に対するセキュリティ更新プログラムを一斉公開しました。
+        このうち5件はすでに一般に公開されているゼロデイ脆弱性であり、1件は実際の攻撃での悪用が確認されており、企業環境での早急なパッチ適用が求められています。
+        さらに同時期に、バックアップ大手のVeeamもCVSSスコア9.4の重大な脆弱性（CVE-2026-44963）を修正するパッチを別途提供しており、システム管理者にとって対応が急務となっています。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年6月 &mdash; Crescendo AI / Radical Data Science</span>
+      <span class="pub-date">2026年6月 &mdash; BleepingComputer / SecurityWeek</span>
+      <a class="source-link" href="https://www.bleepingcomputer.com/" target="_blank" rel="noopener">元記事を読む</a>
+    </div>
+  </article>
+
+  <!-- Article 2: Apple WWDC 2026 -->
+  <article class="card">
+    <div class="card-header">
+      <span class="badge badge-mobile">モバイル / 開発者ツール</span>
+      <h2>Apple WWDC 2026開幕 — iOS 27・Siri AI大幅刷新、Tim Cook CEOの退任も発表</h2>
+    </div>
+    <div class="card-body">
+      <p>
+        Appleは6月8日からアップルパークで年次開発者会議「WWDC 2026」を開催し、iOS 27の発表とともにSiriをプライバシーを維持しながら高度な文脈理解を行うAIアシスタントへと全面刷新することを明らかにしました。
+        写真アプリの表示速度70%向上やAirDropの80%高速化など体感できるパフォーマンス改善も披露され、新機能「Spatial Reframing」ではAIを使って既存写真のアングルや構図を後から調整できるようになります。
+        また、CEO Tim Cook氏が9月1日付でハードウェアエンジニアリング担当SVPのJohn Ternus氏にバトンを渡すことが発表され、今回が同氏にとって最後のWWDC基調講演となり、業界全体に大きな衝撃が走りました。
+      </p>
+    </div>
+    <div class="card-footer">
+      <span class="pub-date">2026年6月8〜12日 &mdash; TechCrunch / CNBC</span>
+      <a class="source-link" href="https://techcrunch.com/2026/06/09/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/" target="_blank" rel="noopener">元記事を読む</a>
+    </div>
+  </article>
+
+  <!-- Article 3: NVIDIA x SK hynix -->
+  <article class="card">
+    <div class="card-header">
+      <span class="badge badge-ai">AI / ハードウェア</span>
+      <h2>NVIDIAとSK hynix、次世代AIメモリを共同開発する複数年パートナーシップを締結</h2>
+    </div>
+    <div class="card-body">
+      <p>
+        NVIDIAとSK hynixは、次世代AIインフラ向けメモリの共同開発を目的とした複数年にわたる戦略的技術パートナーシップの締結を発表しました。
+        対象範囲は「Vera Rubin」AIスーパーコンピューター、Vera CPU、RTX Spark PC、Jetson Thorロボティクスプラットフォームと多岐にわたり、AI処理の高速化・省電力化を実現する最先端HBMメモリの共同設計が中核となります。
+        NVIDIA GTC 2026でもエージェント型AIの実運用展開が主要テーマとなっており、Fortune 500企業が製造・物流・金融分野でのAIエージェント本番導入を相次いで発表する中、ハードウェア基盤の強化が加速しています。
+      </p>
+    </div>
+    <div class="card-footer">
+      <span class="pub-date">2026年6月 &mdash; Crescendo AI News</span>
       <a class="source-link" href="https://www.crescendo.ai/news/latest-ai-news-and-updates" target="_blank" rel="noopener">元記事を読む</a>
-    </div>
-  </article>
-
-  <!-- Article 2: VS Code Supply Chain Security -->
-  <article class="card">
-    <div class="card-header">
-      <span class="badge badge-dev">開発者ツール</span>
-      <h2>VS Code、拡張機能の自動更新に2時間の遅延を導入――サプライチェーン攻撃対策を強化</h2>
-    </div>
-    <div class="card-body">
-      <p>
-        Microsoftは「Microsoft Build 2026」において、Visual Studio Code（VS Code）の拡張機能自動アップデートに2時間の遅延を設けるセキュリティ機能を発表しました。悪意ある更新が拡張機能マーケットプレイスに紛れ込んだ場合でも、検知・対応する時間的猶予を確保するための措置です。
-        今回の発表はBuild 2026で披露された一連のセキュリティ強化の一環であり、開発ライフサイクル全体でコード・AIエージェント・モデルを保護するための新機能が多数追加されました。AIエージェントを組み込んだ開発ワークフローが急増する中、ツールチェーン自体のセキュリティ確保が急務となっています。
-        さらにAgent 365 SDKが一般提供（GA）となり、開発者がアクセス制御やコンプライアンス管理をエージェント設計段階から組み込めるようになりました。
-      </p>
-    </div>
-    <div class="card-footer">
-      <span class="pub-date">2026年6月2日 &mdash; Microsoft Security Blog</span>
-      <a class="source-link" href="https://www.microsoft.com/en-us/security/blog/2026/06/02/microsoft-build-2026-securing-code-agents-and-models-across-the-development-lifecycle/" target="_blank" rel="noopener">元記事を読む</a>
-    </div>
-  </article>
-
-  <!-- Article 3: Apple WWDC 2026 -->
-  <article class="card">
-    <div class="card-header">
-      <span class="badge badge-mobile">モバイル / ハードウェア</span>
-      <h2>Apple WWDC 2026：GoogleのAIと連携した「Siri AI」発表、Tim CookがCEO退任も明らかに</h2>
-    </div>
-    <div class="card-body">
-      <p>
-        6月8日に開幕したAppleの年次開発者会議「WWDC 2026」では、Google AIとの提携による次世代音声アシスタント「Siri AI」を核とした大規模なAIエコシステムの刷新が発表されました。iOS 27・iPadOS 27・macOS 27をはじめ主要プラットフォームに「Apple Intelligence」が統合され、AI生成映像の解説機能や自然言語検索、ペアレンタルコントロールの大幅強化が盛り込まれています。
-        対応デバイスはiPhone 16シリーズ以降、iPhone 15 Pro/Pro Max、M1以降搭載のiPad・Macなどで、外部の大規模データセンターへの依存を最小化しながらAI機能を実現するAppleの独自アプローチが特徴です。
-        また、Tim Cook CEOが今年のWWDCを最後にAppleのトップを退くことが明らかになり、9月1日付でハードウェアエンジニアリング担当上級副社長のJohn Ternusが後任CEOに就任することが発表され、業界に大きな衝撃を与えました。
-      </p>
-    </div>
-    <div class="card-footer">
-      <span class="pub-date">2026年6月8日 &mdash; Engadget</span>
-      <a class="source-link" href="https://www.engadget.com/2189698/everything-announced-at-apples-wwdc-2026-keynote/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
