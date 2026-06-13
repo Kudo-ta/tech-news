@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テックニュース日報 - 2026年6月12日</title>
+  <title>テックニュース日報 - 2026年6月13日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -67,9 +67,9 @@
       letter-spacing: 0.07em;
       margin-bottom: 12px;
     }
-    .badge-ai     { background: #e8f5e9; color: #1b5e20; }
-    .badge-cloud  { background: #e3f2fd; color: #0d47a1; }
-    .badge-mobile { background: #f3e8ff; color: #6b21a8; }
+    .badge-ai  { background: #e8f5e9; color: #1b5e20; }
+    .badge-sec { background: #fdecea; color: #b71c1c; }
+    .badge-hw  { background: #f3e8ff; color: #6b21a8; }
     .card-header h2 {
       font-size: 1.15rem;
       font-weight: 700;
@@ -125,66 +125,60 @@
 
 <header>
   <h1>今日のテックニュース</h1>
-  <p class="date">2026年6月12日（金）</p>
-  <p class="subtitle">AI / ML &ensp;|&ensp; クラウド / セキュリティ &ensp;|&ensp; モバイル / ハードウェア &ensp;&mdash;&ensp; 最新テクノロジーの動向</p>
+  <p class="date">2026年6月13日（土）</p>
+  <p class="subtitle">AI / ML &ensp;|&ensp; サイバーセキュリティ &ensp;|&ensp; モバイル / ハードウェア &ensp;&mdash;&ensp; 最新テクノロジーの動向</p>
 </header>
 
 <main>
 
-  <!-- Article 1: OpenAI GPT-5.4 -->
+  <!-- Article 1: AI/ML - Claude growth & Agentic AI -->
   <article class="card">
     <div class="card-header">
       <span class="badge badge-ai">AI / ML</span>
-      <h2>OpenAI、GPT-5.4を発表 — コンテキスト100万トークン対応で「自律型AIワーカー」時代へ</h2>
+      <h2>Claudeが四半期で306%成長 — 生成AIチャットボット市場の勢力図が急速に塗り替わる</h2>
     </div>
     <div class="card-body">
       <p>
-        OpenAIは最新モデル「GPT-5.4」を公開し、100万トークンのコンテキストウィンドウと複数ステップにわたるワークフローの自律実行機能を実装しました。
-        OSWorld-Vベンチマークでは人間ベースライン（72.4%）を上回る75%を記録し、知識労働の多くで人間と同等以上のパフォーマンスを発揮します。
-        今回の発表はAIが単なるチャットツールから「自律的なデジタルコワーカー」へと転換する歴史的な節目と評価されており、企業の業務自動化に向けた動きが加速する見通しです。
+        AnthropicのAIアシスタント「Claude」が2026年1月から4月にかけてウェブ訪問数を約2億300万回から8億2400万回へと306%増加させ、生成AI市場で急速にシェアを拡大している。ChatGPTは依然54.7%のシェアを持つものの、2025年2月の76.5%から大幅に後退し、Google Geminiも27.4%まで伸びており市場分散が加速している。また、AIの利用形態はチャット型から「エージェント型」へ本格移行しており、調査・コーディング支援・法律業務・決済処理などのタスクを自律実行するシステムが企業現場に浸透しつつある。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年6月12日 &mdash; LLM Stats</span>
+      <span class="pub-date">2026年6月 &mdash; LLM Stats / Build Fast With AI</span>
       <a class="source-link" href="https://llm-stats.com/ai-news" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
-  <!-- Article 2: IBM + Google Cloud -->
+  <!-- Article 2: Cybersecurity - TrapDoor campaign -->
   <article class="card">
     <div class="card-header">
-      <span class="badge badge-cloud">クラウド / セキュリティ</span>
-      <h2>IBMとGoogle Cloud、AI量産化に向けた戦略的パートナーシップを締結</h2>
+      <span class="badge badge-sec">サイバーセキュリティ</span>
+      <h2>「TrapDoor」キャンペーン発覚 — 開発者を狙う悪意ある偽パッケージがSSHキー・暗号資産を窃取</h2>
     </div>
     <div class="card-body">
       <p>
-        IBMとGoogle Cloudは、企業がAIを本番環境へスケールさせ基幹システムを近代化するための戦略的パートナーシップを発表し、IBMの業界専門知識とGoogle CloudのGemini Enterprise Agent Platformを組み合わせた新たなAI実装支援体制を構築します。
-        同時期のMicrosoft Build 2026では「Agent 365 SDK」が一般提供開始され、AIエージェントへのアクセス制御やコンプライアンス強制をデフォルトで組み込む仕組みも整備されました。
-        セキュリティ面では、ID詐取・クラウド設定ミス・ランサムウェア・ソフトウェアサプライチェーンリスクが引き続き主要脅威として警戒されており、各社がAI活用と並行してセキュリティ強化に取り組んでいます。
+        暗号資産・DeFi・Solana・AIコミュニティの開発者を標的にしたサプライチェーン攻撃「TrapDoor」が確認された。攻撃者は正規ライブラリに偽装したnpmパッケージ等を配布し、開発者のSSHキー・クラウド認証情報・ブラウザデータ・暗号ウォレットを密かに外部へ送信する。また、ServiceNowは6月5日に未認証ユーザーが想定外の権限を取得できる脆弱性へのパッチを緊急配布しており、AIツールやエージェントを組み込んだ開発環境のセキュリティ強化が急務となっている。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年6月4日 &mdash; IBM Newsroom / Microsoft Security Blog</span>
-      <a class="source-link" href="https://newsroom.ibm.com/2026-06-04-ibm-and-google-cloud-announce-strategic-partnership-to-scale-ai-with-human-expertise-and-ai-powered-delivery" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年6月上旬 &mdash; Boston Institute of Analytics / Help Net Security</span>
+      <a class="source-link" href="https://bostoninstituteofanalytics.org/blog/weekly-cybersecurity-update-latest-cybersecurity-news-30-may-6-june-2026/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
-  <!-- Article 3: Apple WWDC 2026 -->
+  <!-- Article 3: Hardware - NVIDIA/Microsoft RTX Spark + Samsung S25 AI -->
   <article class="card">
     <div class="card-header">
-      <span class="badge badge-mobile">モバイル / ハードウェア</span>
-      <h2>Apple WWDC 2026：Gemini搭載「Siri AI」とiOS 27を発表 — Tim Cook最後のWWDC</h2>
+      <span class="badge badge-hw">モバイル / ハードウェア</span>
+      <h2>NVIDIAとMicrosoftが「RTX Spark」発表 — データセンター級AIをWindowsパソコンで実現</h2>
     </div>
     <div class="card-body">
       <p>
-        Appleは6月8〜12日のWWDC 2026で、GoogleのGeminiモデルを採用した刷新版「Siri AI」を発表し、個人の文脈を深く理解してアプリと連携する高度なアシスタントに生まれ変わります。
-        iOS 27ではiPhone 11以降を対象に、写真表示速度70%向上・AirDrop転送速度80%高速化・マルチタスク用CPUスケジューラ改善など大幅なパフォーマンス強化が盛り込まれました。
-        また、CEO Tim Cook氏が9月1日付でハードウェアエンジニアリング担当SVPのJohn Ternus氏にバトンを渡すと発表され、今回が同氏にとって最後のWWDC基調講演となりました。
+        NVIDIAとMicrosoftは、データセンタークラスのAI処理能力をパーソナルコンピュータで実現する「RTX Spark」システムを発表し、強力なAIエージェントをクラウドに依存せずローカルで動作させる環境の整備を目指す。同時期にSamsung Galaxy S26向けに先行提供されていた3つのGalaxy AI機能がGalaxy S25シリーズの2026年6月セキュリティアップデートでバックポートされるなど、スマートフォン全体でのオンデバイスAI機能の標準化も進んでいる。AIを端末内で処理するエッジAIへの移行が、PCからスマートフォンまで幅広いデバイスカテゴリで加速している。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年6月8〜12日 &mdash; TechCrunch / CNBC</span>
-      <a class="source-link" href="https://techcrunch.com/2026/06/09/wwdc-2026-everything-announced-on-siri-ai-os-27-apple-intelligence-and-more/" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年6月 &mdash; TechRadar / GSMArena</span>
+      <a class="source-link" href="https://www.techradar.com/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
