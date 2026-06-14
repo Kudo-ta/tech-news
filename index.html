@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テックニュース日報 - 2026年6月13日</title>
+  <title>テックニュース日報 - 2026年6月14日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -69,7 +69,7 @@
     }
     .badge-ai  { background: #e8f5e9; color: #1b5e20; }
     .badge-sec { background: #fdecea; color: #b71c1c; }
-    .badge-hw  { background: #f3e8ff; color: #6b21a8; }
+    .badge-dev { background: #f3e8ff; color: #6b21a8; }
     .card-header h2 {
       font-size: 1.15rem;
       font-weight: 700;
@@ -125,60 +125,60 @@
 
 <header>
   <h1>今日のテックニュース</h1>
-  <p class="date">2026年6月13日（土）</p>
-  <p class="subtitle">AI / ML &ensp;|&ensp; サイバーセキュリティ &ensp;|&ensp; モバイル / ハードウェア &ensp;&mdash;&ensp; 最新テクノロジーの動向</p>
+  <p class="date">2026年6月14日（日）</p>
+  <p class="subtitle">AI / ハードウェア &ensp;|&ensp; サイバーセキュリティ &ensp;|&ensp; 開発ツール &ensp;&mdash;&ensp; 最新テクノロジーの動向</p>
 </header>
 
 <main>
 
-  <!-- Article 1: AI/ML - Claude growth & Agentic AI -->
+  <!-- Article 1: AI/Hardware - NVIDIA & SK Hynix -->
   <article class="card">
     <div class="card-header">
-      <span class="badge badge-ai">AI / ML</span>
-      <h2>Claudeが四半期で306%成長 — 生成AIチャットボット市場の勢力図が急速に塗り替わる</h2>
+      <span class="badge badge-ai">AI / ハードウェア</span>
+      <h2>NVIDIAとSKハイニックスが次世代AI向けメモリを共同開発する複数年パートナーシップを締結</h2>
     </div>
     <div class="card-body">
       <p>
-        AnthropicのAIアシスタント「Claude」が2026年1月から4月にかけてウェブ訪問数を約2億300万回から8億2400万回へと306%増加させ、生成AI市場で急速にシェアを拡大している。ChatGPTは依然54.7%のシェアを持つものの、2025年2月の76.5%から大幅に後退し、Google Geminiも27.4%まで伸びており市場分散が加速している。また、AIの利用形態はチャット型から「エージェント型」へ本格移行しており、調査・コーディング支援・法律業務・決済処理などのタスクを自律実行するシステムが企業現場に浸透しつつある。
+        NVIDIAとSKハイニックスは、NVIDIAのAIインフラロードマップに沿った次世代メモリを共同開発する複数年にわたる技術パートナーシップを締結したと発表しました。大規模言語モデルや生成AIワークロードの急増に対応するため、より高帯域・低消費電力のメモリソリューションの実現を目指します。また、NAVERとNVIDIAはNVIDIA DSXプラットフォームを活用した韓国のGAK世宗データセンターでギガワット規模への拡張計画も明らかにしており、AI基盤ハードウェアへの投資がグローバルで加速しています。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年6月 &mdash; LLM Stats / Build Fast With AI</span>
-      <a class="source-link" href="https://llm-stats.com/ai-news" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年6月14日 &mdash; Crescendo AI / AI News</span>
+      <a class="source-link" href="https://www.crescendo.ai/news/latest-ai-news-and-updates" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
-  <!-- Article 2: Cybersecurity - TrapDoor campaign -->
+  <!-- Article 2: Cybersecurity - OnyxC2 malware -->
   <article class="card">
     <div class="card-header">
       <span class="badge badge-sec">サイバーセキュリティ</span>
-      <h2>「TrapDoor」キャンペーン発覚 — 開発者を狙う悪意ある偽パッケージがSSHキー・暗号資産を窃取</h2>
+      <h2>新型マルウェア「OnyxC2」が200以上のアプリを標的に — 高度な検出回避技術で認証情報を窃取</h2>
     </div>
     <div class="card-body">
       <p>
-        暗号資産・DeFi・Solana・AIコミュニティの開発者を標的にしたサプライチェーン攻撃「TrapDoor」が確認された。攻撃者は正規ライブラリに偽装したnpmパッケージ等を配布し、開発者のSSHキー・クラウド認証情報・ブラウザデータ・暗号ウォレットを密かに外部へ送信する。また、ServiceNowは6月5日に未認証ユーザーが想定外の権限を取得できる脆弱性へのパッチを緊急配布しており、AIツールやエージェントを組み込んだ開発環境のセキュリティ強化が急務となっている。
+        セキュリティ研究者が、200以上のアプリケーションおよびブラウザ拡張機能を標的とする新型マルウェア「OnyxC2」を発見しました（2026年6月11日報告）。このマルウェアは暗号化ペイロード・DLLサイドローディング・インメモリ実行を組み合わせてウイルス対策ソフトの検出を巧みに回避し、仮想通貨ウォレット・SSHキー・クラウド認証情報・ブラウザデータなど幅広い機密情報を窃取します。開発者や仮想通貨・AIコミュニティのユーザーが主な標的とされており、早急なセキュリティ対策の実施が推奨されています。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年6月上旬 &mdash; Boston Institute of Analytics / Help Net Security</span>
-      <a class="source-link" href="https://bostoninstituteofanalytics.org/blog/weekly-cybersecurity-update-latest-cybersecurity-news-30-may-6-june-2026/" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年6月11日 &mdash; SecurityWeek / Dark Reading</span>
+      <a class="source-link" href="https://www.securityweek.com/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
-  <!-- Article 3: Hardware - NVIDIA/Microsoft RTX Spark + Samsung S25 AI -->
+  <!-- Article 3: Developer Tools - Microsoft Build 2026 -->
   <article class="card">
     <div class="card-header">
-      <span class="badge badge-hw">モバイル / ハードウェア</span>
-      <h2>NVIDIAとMicrosoftが「RTX Spark」発表 — データセンター級AIをWindowsパソコンで実現</h2>
+      <span class="badge badge-dev">開発ツール / ハードウェア</span>
+      <h2>Microsoft Build 2026：「Surface RTX Spark Dev Box」発表 — 1ペタフロップのAI演算をローカルで実現</h2>
     </div>
     <div class="card-body">
       <p>
-        NVIDIAとMicrosoftは、データセンタークラスのAI処理能力をパーソナルコンピュータで実現する「RTX Spark」システムを発表し、強力なAIエージェントをクラウドに依存せずローカルで動作させる環境の整備を目指す。同時期にSamsung Galaxy S26向けに先行提供されていた3つのGalaxy AI機能がGalaxy S25シリーズの2026年6月セキュリティアップデートでバックポートされるなど、スマートフォン全体でのオンデバイスAI機能の標準化も進んでいる。AIを端末内で処理するエッジAIへの移行が、PCからスマートフォンまで幅広いデバイスカテゴリで加速している。
+        マイクロソフトはサンフランシスコで開催した「Microsoft Build 2026」において、開発者向けハイエンドPC「Surface RTX Spark Dev Box」を発表しました。最大1ペタフロップのAI演算性能と128GBの統合メモリを備え、1,200億パラメータ規模の大規模言語モデルをクラウドに頼らずローカルで実行できます。あわせてWindows AI APIの対応PC拡大やGitHub Copilotアプリの新機能も明らかにされ、オンデバイスAI開発を推進する同社の戦略が一層鮮明になりました。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年6月 &mdash; TechRadar / GSMArena</span>
-      <a class="source-link" href="https://www.techradar.com/" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年6月 &mdash; Tom's Guide / Microsoft Build</span>
+      <a class="source-link" href="https://www.tomsguide.com/news/live/microsoft-build-2026" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
