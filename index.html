@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テックニュース日報 - 2026年6月18日</title>
+  <title>テックニュース日報 - 2026年6月19日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -69,7 +69,7 @@
     }
     .badge-ai     { background: #ede9ff; color: #4527a0; }
     .badge-cyber  { background: #fde8e8; color: #c62828; }
-    .badge-hw     { background: #e3f2fd; color: #0d47a1; }
+    .badge-dev    { background: #e3f9ee; color: #1b5e20; }
     .card-header h2 {
       font-size: 1.15rem;
       font-weight: 700;
@@ -125,66 +125,66 @@
 
 <header>
   <h1>今日のテックニュース</h1>
-  <p class="date">2026年6月18日（木）</p>
-  <p class="subtitle">AI &ensp;|&ensp; サイバーセキュリティ &ensp;|&ensp; ハードウェア &ensp;&mdash;&ensp; 最新テクノロジーの動向</p>
+  <p class="date">2026年6月19日（金）</p>
+  <p class="subtitle">AI &ensp;|&ensp; サイバーセキュリティ &ensp;|&ensp; 開発者ツール &ensp;&mdash;&ensp; 最新テクノロジーの動向</p>
 </header>
 
 <main>
 
-  <!-- Article 1: AI -->
+  <!-- Article 1: AI/ML -->
   <article class="card">
     <div class="card-header">
-      <span class="badge badge-ai">AI / ビジネス</span>
-      <h2>Anthropic、ビジネス向けAIサブスクリプション市場でシェア25%近くに達する — OpenAIから企業顧客が流入</h2>
+      <span class="badge badge-ai">AI / 機械学習</span>
+      <h2>OpenAI、GPT-5.5 を医療分野向けに強化 — 精度・明瞭さで医師の回答を上回ることを実証</h2>
     </div>
     <div class="card-body">
       <p>
-        2026年6月時点で、Anthropic はビジネス向けAIサブスクリプション市場においてほぼ25%のシェアを獲得し、OpenAI からの顧客移行が鮮明になっています。
-        多くの企業がAnthropicを選ぶ主な理由として、同社が軍事・防衛用途への自社モデル提供に反対するという明確な倫理方針が評価されており、コンプライアンスやESGを重視する企業からの支持が急拡大しています。
-        一方でNVIDIAも最大5500億パラメータを持つ大規模オープンウェイトモデル「Nemotron 3 Ultra」をリリースするなど、AI技術競争は引き続き加速しており、業界全体の勢力図が急速に塗り替えられています。
+        OpenAI は ChatGPT の医療向け機能を GPT-5.5 Instant でアップグレードし、Microsoft Foundry での一般提供（GA）を開始した。社内の比較テストでは、同モデルが回答の正確性・明瞭さ・完成度において医師による記述を上回ることが確認されており、医療分野における AI 活用の新たな水準を示した。
+        GPT-5.5 は長文コンテキストへの深い推論、より信頼性の高いエージェント実行、トークン効率の向上を特長とし、医療・法律・エンタープライズ向けワークフロー自動化に本格的に対応する。
+        Meta が AI 特化の組織再編として約 8,000 名の人員削減と 7,000 名の AI チームへの再配置を進めるなど、業界全体が「AIデモ段階」から「実業務への組み込み段階」へと移行しつつある。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年6月上旬 &mdash; Radical Data Science</span>
-      <a class="source-link" href="https://radicaldatascience.wordpress.com/2026/06/04/ai-news-briefs-bulletin-board-for-june-2026/" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年6月上旬 &mdash; crescendo.ai</span>
+      <a class="source-link" href="https://www.crescendo.ai/news/latest-ai-news-and-updates" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
   <!-- Article 2: Cybersecurity -->
   <article class="card">
     <div class="card-header">
-      <span class="badge badge-cyber">サイバーセキュリティ / 開発者ツール</span>
-      <h2>JetBrains Marketplace で悪意あるAIプラグイン15件を発見 — APIキーを窃取する組織的マルウェアキャンペーン</h2>
+      <span class="badge badge-cyber">サイバーセキュリティ</span>
+      <h2>Chrome V8 にゼロデイ脆弱性 (CVE-2026-11645) — 野放し悪用を確認、即時アップデートを推奨</h2>
     </div>
     <div class="card-body">
       <p>
-        セキュリティ研究者らが、JetBrains Marketplace（IntelliJ IDEA 等の統合開発環境向けプラグインストア）において「AIコーディングアシスタント」を装った悪意あるプラグイン15件を確認しました。
-        これらのプラグインはAIプロバイダーのAPIキーを外部サーバーへ密かに送信するマルウェアを含んでおり、2025年10月から続く組織的なキャンペーンの一部とみられています。最新のプラグインは2026年6月10日にも新たにアップロードされており、今も活発に活動中です。
-        JetBrains IDEを使用する開発者は、インストール済みプラグインを直ちに確認し、不審なものをアンインストールするとともに、影響を受けた可能性のあるAPIキーを速やかにローテーションすることが強く推奨されています。
+        Google は Chrome の V8 JavaScript エンジンに存在する境界外メモリアクセスの脆弱性（CVE-2026-11645）が実際に攻撃者に悪用されていることを公式に認めた。細工された Web ページを開くだけでコードが実行される可能性があり、個人・企業ともに Chrome の即時アップデートが強く推奨される。
+        同月の Microsoft 6 月パッチチューズデーでも計 206 件の脆弱性（うちゼロデイ 3 件、クリティカル 37 件）が修正されており、特権昇格（65 件）とリモートコード実行（55 件）を突く攻撃への対策が急務となっている。
+        さらに、Mastra 名前空間に紐付く npm パッケージ 144 件がサプライチェーン攻撃（easy-day-js）により侵害されていたことも明らかになり、オープンソースエコシステム全体のセキュリティへの注意が高まっている。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年6月12日 &mdash; Boston Institute of Analytics</span>
-      <a class="source-link" href="https://bostoninstituteofanalytics.org/blog/cybersecurity-weekly-news-roundup-june-6-june-12-2026/" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年6月中旬 &mdash; cybersecuritynews.com</span>
+      <a class="source-link" href="https://cybersecuritynews.com/microsoft-patch-tuesday-june-2026/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
-  <!-- Article 3: Hardware -->
+  <!-- Article 3: Developer Tools -->
   <article class="card">
     <div class="card-header">
-      <span class="badge badge-hw">ハードウェア / 半導体</span>
-      <h2>Qualcomm、AIチップ新興企業「Tenstorrent」の買収交渉か — 評価額80〜100億ドル規模の大型M&amp;Aへ</h2>
+      <span class="badge badge-dev">開発者ツール / クラウド</span>
+      <h2>GitLab、Transcend 2026 で次世代 DevOps を発表 — AI 生成コード向け SCM と AI ガバナンス基盤を公開</h2>
     </div>
     <div class="card-body">
       <p>
-        Qualcomm が、著名チップ設計者ジム・ケラー（Jim Keller）氏が率いるAIチップスタートアップ「Tenstorrent」の買収に向けた交渉を進めていると報じられています。
-        取引評価額は80億〜100億ドル規模に達する見込みで、成立すれば近年のAI半導体業界最大級のM&Aとなります。Qualcommはスマートフォン向けプロセッサの主要サプライヤーですが、近年はAIシリコン市場への本格参入を戦略的に推進しており、Tenstorrentの買収によりそのロードマップを大幅に加速させる狙いとみられています。
-        NVIDIAが圧倒的なシェアを持つAI半導体市場において、今後の競争構造を大きく変える可能性のある動向として注目されています。
+        GitLab は Transcend 2026 カンファレンスにて、AI 生成コードに最適化した DevOps プラットフォームの大型アップデートを発表した。新機能として「Next Gen Source Code Management（次世代 SCM）」「GitLab Orbit」、そして AI ガバナンスフレームワークの 3 本柱が公開され、AI が生成するコードのレビュー・追跡・管理をシームレスに行えるよう設計されている。
+        同時期に開催された Microsoft Build 2026 では OpenAI の GPT-5.5 が Foundry で一般提供開始となったほか、Hosted Agents in Foundry Agent Service の GA、そして Claude Sonnet 4.5 / Haiku 4.5 / Opus 4.1 の Foundry カタログへの追加（パブリックプレビュー）が相次いで発表された。
+        AI ネイティブな開発環境整備が各社で加速しており、開発者の生産性とコードガバナンスの両立が 2026 年後半の主要テーマとして浮上している。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年6月16日 &mdash; Tech Startups</span>
-      <a class="source-link" href="https://techstartups.com/2026/06/16/top-tech-news-today-june-16-2026/" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年6月10日 &mdash; kubeify.com</span>
+      <a class="source-link" href="https://shyam.kubeify.com/2026/06/latest-devops-cloud-news-10-june-2026.html" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
