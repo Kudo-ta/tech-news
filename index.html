@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テックニュース日報 - 2026年6月19日</title>
+  <title>テックニュース日報 - 2026年6月20日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -67,9 +67,9 @@
       letter-spacing: 0.07em;
       margin-bottom: 12px;
     }
-    .badge-ai     { background: #ede9ff; color: #4527a0; }
-    .badge-cyber  { background: #fde8e8; color: #c62828; }
-    .badge-dev    { background: #e3f9ee; color: #1b5e20; }
+    .badge-ai    { background: #ede9ff; color: #4527a0; }
+    .badge-cyber { background: #fde8e8; color: #c62828; }
+    .badge-dev   { background: #e3f9ee; color: #1b5e20; }
     .card-header h2 {
       font-size: 1.15rem;
       font-weight: 700;
@@ -125,7 +125,7 @@
 
 <header>
   <h1>今日のテックニュース</h1>
-  <p class="date">2026年6月19日（金）</p>
+  <p class="date">2026年6月20日（土）</p>
   <p class="subtitle">AI &ensp;|&ensp; サイバーセキュリティ &ensp;|&ensp; 開発者ツール &ensp;&mdash;&ensp; 最新テクノロジーの動向</p>
 </header>
 
@@ -135,18 +135,20 @@
   <article class="card">
     <div class="card-header">
       <span class="badge badge-ai">AI / 機械学習</span>
-      <h2>OpenAI、GPT-5.5 を医療分野向けに強化 — 精度・明瞭さで医師の回答を上回ることを実証</h2>
+      <h2>NVIDIA、最大9倍のスループットを誇るオープンオムニモーダル推論モデル「Nemotron 3 Nano Omni」を公開</h2>
     </div>
     <div class="card-body">
       <p>
-        OpenAI は ChatGPT の医療向け機能を GPT-5.5 Instant でアップグレードし、Microsoft Foundry での一般提供（GA）を開始した。社内の比較テストでは、同モデルが回答の正確性・明瞭さ・完成度において医師による記述を上回ることが確認されており、医療分野における AI 活用の新たな水準を示した。
-        GPT-5.5 は長文コンテキストへの深い推論、より信頼性の高いエージェント実行、トークン効率の向上を特長とし、医療・法律・エンタープライズ向けワークフロー自動化に本格的に対応する。
-        Meta が AI 特化の組織再編として約 8,000 名の人員削減と 7,000 名の AI チームへの再配置を進めるなど、業界全体が「AIデモ段階」から「実業務への組み込み段階」へと移行しつつある。
+        NVIDIAは、テキスト・画像・音声を横断して処理できるオープンソースのオムニモーダル推論モデル「Nemotron 3 Nano Omni」を新たにリリースしました。
+        同モデルは、同規模の既存オープンマルチモーダルモデルと比較して最大9倍のスループット向上を実現しており、
+        エンタープライズ向けAI推論基盤の効率化に大きく貢献する可能性があると注目されています。
+        NVIDIAは企業がAIをネイティブなワークフローに統合しやすくするための取り組みを加速しており、
+        開発者コミュニティからの関心も高まっています。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年6月上旬 &mdash; crescendo.ai</span>
-      <a class="source-link" href="https://www.crescendo.ai/news/latest-ai-news-and-updates" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年6月中旬 &mdash; artificialintelligence-news.com</span>
+      <a class="source-link" href="https://www.artificialintelligence-news.com/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
@@ -154,18 +156,20 @@
   <article class="card">
     <div class="card-header">
       <span class="badge badge-cyber">サイバーセキュリティ</span>
-      <h2>Chrome V8 にゼロデイ脆弱性 (CVE-2026-11645) — 野放し悪用を確認、即時アップデートを推奨</h2>
+      <h2>CISA、認証不要のRCE脆弱性CVE-2026-20253に対し連邦機関へ72時間以内のパッチ適用を緊急命令</h2>
     </div>
     <div class="card-body">
       <p>
-        Google は Chrome の V8 JavaScript エンジンに存在する境界外メモリアクセスの脆弱性（CVE-2026-11645）が実際に攻撃者に悪用されていることを公式に認めた。細工された Web ページを開くだけでコードが実行される可能性があり、個人・企業ともに Chrome の即時アップデートが強く推奨される。
-        同月の Microsoft 6 月パッチチューズデーでも計 206 件の脆弱性（うちゼロデイ 3 件、クリティカル 37 件）が修正されており、特権昇格（65 件）とリモートコード実行（55 件）を突く攻撃への対策が急務となっている。
-        さらに、Mastra 名前空間に紐付く npm パッケージ 144 件がサプライチェーン攻撃（easy-day-js）により侵害されていたことも明らかになり、オープンソースエコシステム全体のセキュリティへの注意が高まっている。
+        米国サイバーセキュリティ・インフラセキュリティ庁（CISA）は、認証なしにリモートコード実行（RCE）が可能な
+        深刻な脆弱性「CVE-2026-20253」について、連邦政府機関に対しわずか3日以内のパッチ適用を義務付ける緊急指令を発令しました。
+        この脆弱性を悪用されると、攻撃者がシステムを完全に掌握できる危険性があり、政府ネットワークへの即座な影響が懸念されています。
+        また同日、防衛関連企業がサイバーセキュリティ審査で不正な自己評価を申告したとして50万ドルの制裁金を科されたことも明らかになり、
+        公共セクターにおけるセキュリティコンプライアンスへの関心が高まっています。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年6月中旬 &mdash; cybersecuritynews.com</span>
-      <a class="source-link" href="https://cybersecuritynews.com/microsoft-patch-tuesday-june-2026/" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年6月19日 &mdash; securityweek.com</span>
+      <a class="source-link" href="https://www.securityweek.com/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
@@ -173,18 +177,20 @@
   <article class="card">
     <div class="card-header">
       <span class="badge badge-dev">開発者ツール / クラウド</span>
-      <h2>GitLab、Transcend 2026 で次世代 DevOps を発表 — AI 生成コード向け SCM と AI ガバナンス基盤を公開</h2>
+      <h2>Google I/O 2026でGemini 3.5シリーズと「Antigravity 2.0」AIエージェントプラットフォームを発表、Android開発の自動化が加速</h2>
     </div>
     <div class="card-body">
       <p>
-        GitLab は Transcend 2026 カンファレンスにて、AI 生成コードに最適化した DevOps プラットフォームの大型アップデートを発表した。新機能として「Next Gen Source Code Management（次世代 SCM）」「GitLab Orbit」、そして AI ガバナンスフレームワークの 3 本柱が公開され、AI が生成するコードのレビュー・追跡・管理をシームレスに行えるよう設計されている。
-        同時期に開催された Microsoft Build 2026 では OpenAI の GPT-5.5 が Foundry で一般提供開始となったほか、Hosted Agents in Foundry Agent Service の GA、そして Claude Sonnet 4.5 / Haiku 4.5 / Opus 4.1 の Foundry カタログへの追加（パブリックプレビュー）が相次いで発表された。
-        AI ネイティブな開発環境整備が各社で加速しており、開発者の生産性とコードガバナンスの両立が 2026 年後半の主要テーマとして浮上している。
+        Googleは開発者向けカンファレンス「Google I/O 2026」において、最新世代のAIモデル「Gemini 3.5」シリーズと、
+        AIエージェント開発を支援する新プラットフォーム「Antigravity 2.0」を正式に発表しました。
+        さらに、安定版となった「Android CLI」によりAIエージェントがAndroid Studioと連携して
+        SDKのダウンロードやアプリの自動実行を行えるようになるなど、Androidアプリ開発の自動化が大幅に強化されています。
+        WebアプリからAndroidへの移行支援ツールも提供され、クロスプラットフォーム開発の効率向上が期待されています。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年6月10日 &mdash; kubeify.com</span>
-      <a class="source-link" href="https://shyam.kubeify.com/2026/06/latest-devops-cloud-news-10-june-2026.html" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年6月上旬 &mdash; Google Developers Blog</span>
+      <a class="source-link" href="https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
