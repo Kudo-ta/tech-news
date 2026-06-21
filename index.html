@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テックニュース日報 - 2026年6月20日</title>
+  <title>テックニュース日報 - 2026年6月21日</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -67,9 +67,9 @@
       letter-spacing: 0.07em;
       margin-bottom: 12px;
     }
-    .badge-ai    { background: #ede9ff; color: #4527a0; }
-    .badge-cyber { background: #fde8e8; color: #c62828; }
-    .badge-dev   { background: #e3f9ee; color: #1b5e20; }
+    .badge-ai       { background: #ede9ff; color: #4527a0; }
+    .badge-cyber    { background: #fde8e8; color: #c62828; }
+    .badge-hardware { background: #e3f9ee; color: #1b5e20; }
     .card-header h2 {
       font-size: 1.15rem;
       font-weight: 700;
@@ -125,8 +125,8 @@
 
 <header>
   <h1>今日のテックニュース</h1>
-  <p class="date">2026年6月20日（土）</p>
-  <p class="subtitle">AI &ensp;|&ensp; サイバーセキュリティ &ensp;|&ensp; 開発者ツール &ensp;&mdash;&ensp; 最新テクノロジーの動向</p>
+  <p class="date">2026年6月21日（日）</p>
+  <p class="subtitle">AI &ensp;|&ensp; サイバーセキュリティ &ensp;|&ensp; ハードウェア &ensp;&mdash;&ensp; 最新テクノロジーの動向</p>
 </header>
 
 <main>
@@ -135,20 +135,18 @@
   <article class="card">
     <div class="card-header">
       <span class="badge badge-ai">AI / 機械学習</span>
-      <h2>NVIDIA、最大9倍のスループットを誇るオープンオムニモーダル推論モデル「Nemotron 3 Nano Omni」を公開</h2>
+      <h2>OpenAI、過去最大1,220億ドルの資金調達を完了——企業評価額8,520億ドル、週間ユーザー9億人に迫る</h2>
     </div>
     <div class="card-body">
       <p>
-        NVIDIAは、テキスト・画像・音声を横断して処理できるオープンソースのオムニモーダル推論モデル「Nemotron 3 Nano Omni」を新たにリリースしました。
-        同モデルは、同規模の既存オープンマルチモーダルモデルと比較して最大9倍のスループット向上を実現しており、
-        エンタープライズ向けAI推論基盤の効率化に大きく貢献する可能性があると注目されています。
-        NVIDIAは企業がAIをネイティブなワークフローに統合しやすくするための取り組みを加速しており、
-        開発者コミュニティからの関心も高まっています。
+        OpenAIはAmazon（500億ドル）、Nvidia（300億ドル）、SoftBank（300億ドル）などの大手企業から総額1,220億ドルという過去最大規模の資金調達を完了し、企業評価額は8,520億ドルに達した。
+        月次収益は26億ドルを突破し、ChatGPTの週間アクティブユーザー数も9億人に迫る勢いで、AI業界における圧倒的な存在感を示している。
+        今回の調達資金はAIインフラの拡充と次世代モデルの研究開発に充てられる見通しで、競合各社との差をさらに広げる可能性がある。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年6月中旬 &mdash; artificialintelligence-news.com</span>
-      <a class="source-link" href="https://www.artificialintelligence-news.com/" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年6月中旬 &mdash; LLM Stats</span>
+      <a class="source-link" href="https://llm-stats.com/ai-news" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
@@ -156,41 +154,37 @@
   <article class="card">
     <div class="card-header">
       <span class="badge badge-cyber">サイバーセキュリティ</span>
-      <h2>CISA、認証不要のRCE脆弱性CVE-2026-20253に対し連邦機関へ72時間以内のパッチ適用を緊急命令</h2>
+      <h2>Google Chrome、2026年5件目のゼロデイ脆弱性（CVE-2026-11645）を修正——V8エンジンの範囲外メモリアクセスに悪用確認</h2>
     </div>
     <div class="card-body">
       <p>
-        米国サイバーセキュリティ・インフラセキュリティ庁（CISA）は、認証なしにリモートコード実行（RCE）が可能な
-        深刻な脆弱性「CVE-2026-20253」について、連邦政府機関に対しわずか3日以内のパッチ適用を義務付ける緊急指令を発令しました。
-        この脆弱性を悪用されると、攻撃者がシステムを完全に掌握できる危険性があり、政府ネットワークへの即座な影響が懸念されています。
-        また同日、防衛関連企業がサイバーセキュリティ審査で不正な自己評価を申告したとして50万ドルの制裁金を科されたことも明らかになり、
-        公共セクターにおけるセキュリティコンプライアンスへの関心が高まっています。
+        Googleは、ChromeブラウザのJavaScriptエンジン「V8」に存在する範囲外メモリアクセスの脆弱性（CVE-2026-11645）を修正する緊急アップデートを公開した。この脆弱性は実際に攻撃者によって悪用が確認されており、2026年に入ってから修正された5件目のゼロデイとなる深刻な状況だ。
+        攻撃者がこの脆弱性を利用すると、リモートから任意のコードを実行できる可能性があり、すべてのChromiumベースブラウザも影響を受ける恐れがある。
+        ユーザーはただちにブラウザを最新バージョンへ更新することが強く推奨されている。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年6月19日 &mdash; securityweek.com</span>
-      <a class="source-link" href="https://www.securityweek.com/" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年6月下旬 &mdash; Cyber Security Review</span>
+      <a class="source-link" href="https://www.cybersecurity-review.com/news-june-2026/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
-  <!-- Article 3: Developer Tools -->
+  <!-- Article 3: Hardware -->
   <article class="card">
     <div class="card-header">
-      <span class="badge badge-dev">開発者ツール / クラウド</span>
-      <h2>Google I/O 2026でGemini 3.5シリーズと「Antigravity 2.0」AIエージェントプラットフォームを発表、Android開発の自動化が加速</h2>
+      <span class="badge badge-hardware">ハードウェア</span>
+      <h2>Samsung、業界初の12層HBM4Eメモリサンプル出荷——3.6TB/sの帯域幅でAI処理のボトルネックを解消へ</h2>
     </div>
     <div class="card-body">
       <p>
-        Googleは開発者向けカンファレンス「Google I/O 2026」において、最新世代のAIモデル「Gemini 3.5」シリーズと、
-        AIエージェント開発を支援する新プラットフォーム「Antigravity 2.0」を正式に発表しました。
-        さらに、安定版となった「Android CLI」によりAIエージェントがAndroid Studioと連携して
-        SDKのダウンロードやアプリの自動実行を行えるようになるなど、Androidアプリ開発の自動化が大幅に強化されています。
-        WebアプリからAndroidへの移行支援ツールも提供され、クロスプラットフォーム開発の効率向上が期待されています。
+        Samsungは12層積層構造を採用した次世代広帯域メモリ「HBM4E」の初期サンプルを出荷した。転送速度は最大16Gbps、1スタックあたりのバンド幅は3.6TB/sに達し、容量も1スタック48GBと大幅に向上している。
+        これはAI学習・推論ワークロードにおけるメモリ帯域ボトルネックを根本的に解消できる性能水準であり、次世代のAI GPUやデータセンター向けアクセラレータへの搭載が期待されている。
+        NvidiaやAMDとの供給交渉も活発化しており、AIインフラ市場での競争がさらに激化しそうだ。
       </p>
     </div>
     <div class="card-footer">
-      <span class="pub-date">2026年6月上旬 &mdash; Google Developers Blog</span>
-      <a class="source-link" href="https://developers.googleblog.com/all-the-news-from-the-google-io-2026-developer-keynote/" target="_blank" rel="noopener">元記事を読む</a>
+      <span class="pub-date">2026年6月中旬 &mdash; TechPowerUp</span>
+      <a class="source-link" href="https://www.techpowerup.com/review/future-hardware-releases/" target="_blank" rel="noopener">元記事を読む</a>
     </div>
   </article>
 
